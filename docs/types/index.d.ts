@@ -21,16 +21,16 @@
 /* tslint:disable:max-line-length */
 /* tslint:disable:max-file-line-count */
 
-import complex = require( '@stdlib/complex/cmplx' );
-import conj = require( '@stdlib/complex/conj' );
-import Complex64 = require( '@stdlib/complex/float32' );
-import Complex128 = require( '@stdlib/complex/float64' );
-import imag = require( '@stdlib/complex/imag' );
-import real = require( '@stdlib/complex/real' );
-import reim = require( '@stdlib/complex/reim' );
-import reviveComplex = require( '@stdlib/complex/reviver' );
-import reviveComplex64 = require( '@stdlib/complex/reviver-float32' );
-import reviveComplex128 = require( '@stdlib/complex/reviver-float64' );
+import complex = require( './../../cmplx' );
+import conj = require( './../../conj' );
+import Complex64 = require( './../../float32' );
+import Complex128 = require( './../../float64' );
+import imag = require( './../../imag' );
+import real = require( './../../real' );
+import reim = require( './../../reim' );
+import reviveComplex = require( './../../reviver' );
+import reviveComplex64 = require( './../../reviver-float32' );
+import reviveComplex128 = require( './../../reviver-float64' );
 
 /**
 * Interface describing the `complex` namespace.

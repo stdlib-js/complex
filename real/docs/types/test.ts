@@ -17,8 +17,8 @@
 */
 
 import real = require( './index' );
-import Complex128 = require( '@stdlib/complex/float64' );
-import Complex64 = require( '@stdlib/complex/float32' );
+import Complex128 = require( './../../../float64' );
+import Complex64 = require( './../../../float32' );
 
 
 // TESTS //

@@ -18,8 +18,8 @@
 
 // TypeScript Version: 2.0
 
-import Complex128 = require( '@stdlib/complex/float64' );
-import Complex64 = require( '@stdlib/complex/float32' );
+import Complex128 = require( './../../../float64' );
+import Complex64 = require( './../../../float32' );
 
 type Complex = Complex128 | Complex64;
 

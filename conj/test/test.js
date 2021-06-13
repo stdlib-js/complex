@@ -21,8 +21,8 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var Complex128 = require( '@stdlib/complex/float64' );
-var Complex64 = require( '@stdlib/complex/float32' );
+var Complex128 = require( './../../float64' );
+var Complex64 = require( './../../float32' );
 var conj = require( './../lib' );
 
 
