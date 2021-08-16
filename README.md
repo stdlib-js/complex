@@ -89,9 +89,9 @@ In addition, the namespace contains the following functions:
 -   <span class="signature">[`imag( z )`][@stdlib/complex/imag]</span><span class="delimiter">: </span><span class="description">return the imaginary component of a complex number.</span>
 -   <span class="signature">[`real( z )`][@stdlib/complex/real]</span><span class="delimiter">: </span><span class="description">return the real component of a complex number.</span>
 -   <span class="signature">[`reim( z )`][@stdlib/complex/reim]</span><span class="delimiter">: </span><span class="description">return the real and imaginary components of a complex number.</span>
--   <span class="signature">[`reviveComplex( key, value )`][@stdlib/complex/reviver]</span><span class="delimiter">: </span><span class="description">revive a JSON-serialized complex number.</span>
 -   <span class="signature">[`reviveComplex64( key, value )`][@stdlib/complex/reviver-float32]</span><span class="delimiter">: </span><span class="description">revive a JSON-serialized 64-bit complex number.</span>
 -   <span class="signature">[`reviveComplex128( key, value )`][@stdlib/complex/reviver-float64]</span><span class="delimiter">: </span><span class="description">revive a JSON-serialized 128-bit complex number.</span>
+-   <span class="signature">[`reviveComplex( key, value )`][@stdlib/complex/reviver]</span><span class="delimiter">: </span><span class="description">revive a JSON-serialized complex number.</span>
 
 </div>
 
@@ -195,11 +195,11 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/complex/reim]: https://github.com/stdlib-js/complex/tree/main/reim
 
-[@stdlib/complex/reviver]: https://github.com/stdlib-js/complex/tree/main/reviver
-
 [@stdlib/complex/reviver-float32]: https://github.com/stdlib-js/complex/tree/main/reviver-float32
 
 [@stdlib/complex/reviver-float64]: https://github.com/stdlib-js/complex/tree/main/reviver-float64
+
+[@stdlib/complex/reviver]: https://github.com/stdlib-js/complex/tree/main/reviver
 
 [@stdlib/complex/cmplx]: https://github.com/stdlib-js/complex/tree/main/cmplx
 
