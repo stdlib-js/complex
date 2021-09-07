@@ -103,9 +103,32 @@ for ( i = 0; i < 100; i++ ) {
 
 <!-- /.references -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   [`@stdlib/complex/imag`][@stdlib/complex/imag]: return the imaginary component of a complex number.
+-   [`@stdlib/complex/reim`][@stdlib/complex/reim]: return the real and imaginary components of a complex number.
+
+</section>
+
+<!-- /.related -->
+
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+<!-- <related-links> -->
+
+[@stdlib/complex/imag]: https://github.com/stdlib-js/complex/tree/main/imag
+
+[@stdlib/complex/reim]: https://github.com/stdlib-js/complex/tree/main/reim
+
+<!-- </related-links> -->
 
 </section>
 

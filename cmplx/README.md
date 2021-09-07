@@ -51,8 +51,8 @@ var z = complex( 5.0, 3.0 );
 
 By default, the function returns a [128-bit complex number][@stdlib/complex/float64]. To specify an alternative underlying data type, set the `dtype` parameter to one of the following:
 
--   [`'float64'`][@stdlib/complex/float64]: https://github.com/stdlib-js/complex/tree/main/float64
--   [`'float32'`][@stdlib/complex/float32]: https://github.com/stdlib-js/complex/tree/main/float32
+-   [`'float64'`][@stdlib/complex/float64]: store **real** and **imaginary** components as double-precision floating-point numbers.
+-   [`'float32'`][@stdlib/complex/float32]: store **real** and **imaginary** components as single-precision floating-point numbers.
 
 ```javascript
 var z = complex( 5.0, 3.0, 'float32' );
@@ -109,13 +109,32 @@ for ( i = 0; i < 100; i++ ) {
 
 <!-- /.references -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   [`@stdlib/complex/float64`][@stdlib/complex/float64]: 128-bit complex number.
+-   [`@stdlib/complex/float32`][@stdlib/complex/float32]: 64-bit complex number.
+
+</section>
+
+<!-- /.related -->
+
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
 
+<!-- <related-links> -->
+
 [@stdlib/complex/float64]: https://github.com/stdlib-js/complex/tree/main/float64
 
 [@stdlib/complex/float32]: https://github.com/stdlib-js/complex/tree/main/float32
+
+<!-- </related-links> -->
 
 </section>
 
