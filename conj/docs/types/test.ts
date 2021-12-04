@@ -16,9 +16,9 @@
 * limitations under the License.
 */
 
-import conj = require( './index' );
 import Complex128 = require( './../../../float64' );
 import Complex64 = require( './../../../float32' );
+import conj = require( './index' );
 
 
 // TESTS //

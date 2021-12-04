@@ -1,4 +1,4 @@
-/*
+/**
 * @license Apache-2.0
 *
 * Copyright (c) 2021 The Stdlib Authors.
@@ -16,33 +16,26 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+'use strict';
 
-import Complex128 = require( './../../../float64' );
-import Complex64 = require( './../../../float32' );
+var Complex64 = require( './../../../float32' );
+var caddf = require( '@stdlib/math/base/ops/caddf' );
+var real = require( './../../../real' );
+var imag = require( './../../../imag' );
+var wrap = require( './../lib' );
 
-/**
-* Complex number.
-*/
-type Complex = Complex128 | Complex64;
+var f = wrap( caddf, 2, Complex64 );
 
-/**
-* Returns the complex conjugate of a complex number.
-*
-* @param z - complex number
-* @returns complex conjugate
-*
-* @example
-* var Complex128 = require( `@stdlib/complex/float64` );
-*
-* var z = new Complex128( 5.0, 3.0 );
-*
-* var v = conj( z );
-* // returns <Complex128>
-*/
-declare function conj( z: Complex ): Complex;
+// ...
 
+var z = f( 3.0, 4.0 );
+// returns <Complex64>
 
-// EXPORTS //
+var re = real( z );
+// returns 7.0
 
-export = conj;
+var im = imag( z );
+// returns 0.0
+
+console.log( '%d + %di', re, im );
+// => '7 + 0i'
