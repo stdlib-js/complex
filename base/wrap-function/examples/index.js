@@ -20,8 +20,8 @@
 
 var Complex64 = require( './../../../float32' );
 var caddf = require( '@stdlib/math/base/ops/caddf' );
-var real = require( './../../../real' );
-var imag = require( './../../../imag' );
+var realf = require( './../../../realf' );
+var imagf = require( './../../../imagf' );
 var wrap = require( './../lib' );
 
 var f = wrap( caddf, 2, Complex64 );
@@ -31,10 +31,10 @@ var f = wrap( caddf, 2, Complex64 );
 var z = f( 3.0, 4.0 );
 // returns <Complex64>
 
-var re = real( z );
+var re = realf( z );
 // returns 7.0
 
-var im = imag( z );
+var im = imagf( z );
 // returns 0.0
 
 console.log( '%d + %di', re, im );
