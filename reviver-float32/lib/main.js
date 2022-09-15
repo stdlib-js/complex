@@ -21,38 +21,35 @@
 // MODULES //
 
 var isNumber = require( '@stdlib/assert/is-number' ).isPrimitive;
-var ctors = require( './ctors.js' );
+var Complex64 = require( './../../float32' );
 
 
 // MAIN //
 
 /**
-* Revives a JSON-serialized complex number.
+* Revives a JSON-serialized 64-bit complex number.
 *
 * @param {string} key - key
 * @param {*} value - value
-* @returns {(*|Complex)} value or complex number
+* @returns {(*|Complex64)} value or 64-bit complex number
 *
 * @example
 * var parseJSON = require( '@stdlib/utils/parse-json' );
 *
-* var str = '{"type":"Complex128","re":5,"im":3}';
+* var str = '{"type":"Complex64","re":5,"im":3}';
 *
-* var z = parseJSON( str, reviver );
-* // returns <Complex128>
+* var z = parseJSON( str, reviveComplex64 );
+* // returns <Complex64>
 */
-function reviver( key, value ) {
-	var ctor;
+function reviveComplex64( key, value ) {
 	if (
 		value &&
 		value.type &&
+		value.type === 'Complex64' &&
 		isNumber( value.re ) &&
 		isNumber( value.im )
 	) {
-		ctor = ctors[ value.type ];
-		if ( ctor ) {
-			return new ctor( value.re, value.im );
-		}
+		return new Complex64( value.re, value.im );
 	}
 	return value;
 }
@@ -60,4 +57,4 @@ function reviver( key, value ) {
 
 // EXPORTS //
 
-module.exports = reviver;
+module.exports = reviveComplex64;
