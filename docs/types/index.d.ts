@@ -21,6 +21,7 @@
 /* tslint:disable:max-line-length */
 /* tslint:disable:max-file-line-count */
 
+import base = require( './../../base' );
 import complex = require( './../../cmplx' );
 import conj = require( './../../conj' );
 import conjf = require( './../../conjf' );
@@ -44,6 +45,11 @@ import reviveComplex128 = require( './../../reviver-float64' );
 * Interface describing the `complex` namespace.
 */
 interface Namespace {
+	/**
+	* Base (i.e., lower-level) complex number functions
+	*/
+	base: typeof base;
+
 	/**
 	* Creates a complex number.
 	*
