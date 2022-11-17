@@ -1,7 +1,7 @@
 /*
 * @license Apache-2.0
 *
-* Copyright (c) 2021 The Stdlib Authors.
+* Copyright (c) 2022 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -28,79 +28,75 @@ import { ComplexLike } from '@stdlib/types/object';
 type RealOrComplex = number | ComplexLike;
 
 /**
-* Nullary function.
+* Nullary function returning either a real or complex number.
 *
 * @returns result
 */
-type Nullary = () => any;
+type Nullary = () => RealOrComplex;
 
 /**
-* Unary function accepting complex numbers.
+* Nullary function returning a complex number.
+*
+* @returns result
+*/
+type WrappedNullary = () => ComplexLike;
+
+/**
+* Unary function returning either a real or complex number.
+*
+* @param x - input value
+* @returns result
+*/
+type Unary = ( x: any ) => RealOrComplex;
+
+/**
+* Unary function returning a complex number.
 *
 * @param x - input value
 * @returns result
 */
-type Unary = ( x: ComplexLike ) => any;
+type WrappedUnary = ( x: any ) => ComplexLike;
 
 /**
-* Unary function accepting both real and complex numbers.
-*
-* @param x - input value
-* @returns result
-*/
-type WrappedUnary = ( x: RealOrComplex ) => any;
-
-/**
-* Binary function accepting complex numbers.
-*
-* @param x - input value
-* @param y - input value
-* @returns result
-*/
-type Binary = ( x: ComplexLike, y: ComplexLike ) => any;
-
-/**
-* Binary function accepting both real and complex numbers.
+* Binary function returning either a real or complex number.
 *
 * @param x - input value
 * @param y - input value
 * @returns result
 */
-type WrappedBinary = ( x: RealOrComplex, y: RealOrComplex ) => any;
+type Binary = ( x: any, y: any ) => RealOrComplex;
 
 /**
-* Ternary function accepting complex numbers.
+* Binary function returning a complex number.
 *
 * @param x - input value
 * @param y - input value
-* @param z - input value
 * @returns result
 */
-type Ternary = ( x: ComplexLike, y: ComplexLike, z: ComplexLike ) => any;
+type WrappedBinary = ( x: any, y: any ) => ComplexLike;
 
 /**
-* Ternary function accepting both real and complex numbers.
+* Ternary function returning either a real or complex number.
 *
 * @param x - input value
 * @param y - input value
 * @param z - input value
 * @returns result
 */
-type WrappedTernary = ( x: RealOrComplex, y: RealOrComplex, z: RealOrComplex ) => any; // tslint:disable-line:max-line-length
+type Ternary = ( x: any, y: any, z: any ) => RealOrComplex;
 
 /**
-* Quaternary function accepting complex numbers.
+* Ternary function returning a complex number.
 *
 * @param x - input value
 * @param y - input value
 * @param z - input value
-* @param w - input value
 * @returns result
 */
-type Quaternary = ( x: ComplexLike, y: ComplexLike, z: ComplexLike, w: ComplexLike ) => any; // tslint:disable-line:max-line-length
+type WrappedTernary = ( x: any, y: any, z: any ) => ComplexLike;
 
 /**
-* Quaternary function accepting both real and complex numbers.
+* Quaternary function returning either a real or complex number.
 *
 * @param x - input value
 * @param y - input value
@@ -108,22 +104,21 @@ type Quaternary = ( x: ComplexLike, y: ComplexLike, z: ComplexLike, w: ComplexLi
 * @param w - input value
 * @returns result
 */
-type WrappedQuaternary = ( x: RealOrComplex, y: RealOrComplex, z: RealOrComplex, w: RealOrComplex ) => any; // tslint:disable-line:max-line-length
+type Quaternary = ( x: any, y: any, z: any, w: any ) => RealOrComplex;
 
 /**
-* Quinary function accepting complex numbers.
+* Quaternary function returning a complex number.
 *
 * @param x - input value
 * @param y - input value
 * @param z - input value
 * @param w - input value
-* @param v - input value
 * @returns result
 */
-type Quinary = ( x: ComplexLike, y: ComplexLike, z: ComplexLike, w: ComplexLike, v: ComplexLike ) => any; // tslint:disable-line:max-line-length
+type WrappedQuaternary = ( x: any, y: any, z: any, w: any ) => ComplexLike;
 
 /**
-* Quinary function accepting both real and complex numbers.
+* Quinary function returning either a real or complex number.
 *
 * @param x - input value
 * @param y - input value
@@ -132,23 +127,22 @@ type Quinary = ( x: ComplexLike, y: ComplexLike, z: ComplexLike, w: ComplexLike,
 * @param v - input value
 * @returns result
 */
-type WrappedQuinary = ( x: RealOrComplex, y: RealOrComplex, z: RealOrComplex, w: RealOrComplex, v: RealOrComplex ) => any; // tslint:disable-line:max-line-length
+type Quinary = ( x: any, y: any, z: any, w: any, v: any ) => RealOrComplex;
 
 /**
-* An n-ary function accepting complex numbers.
+* Quinary function returning a complex number.
 *
 * @param x - input value
 * @param y - input value
 * @param z - input value
 * @param w - input value
 * @param v - input value
-* @param args - subsequent input values
 * @returns result
 */
-type Nary = ( x: ComplexLike, y: ComplexLike, z: ComplexLike, w: ComplexLike, v: ComplexLike, ...args: Array<ComplexLike> ) => any; // tslint:disable-line:max-line-length
+type WrappedQuinary = ( x: any, y: any, z: any, w: any, v: any ) => ComplexLike;
 
 /**
-* An n-ary function accepting both real and complex numbers.
+* An n-ary function returning either a real or complex number.
 *
 * @param x - input value
 * @param y - input value
@@ -158,7 +152,20 @@ type Nary = ( x: ComplexLike, y: ComplexLike, z: ComplexLike, w: ComplexLike, v:
 * @param args - subsequent input values
 * @returns result
 */
-type WrappedNary = ( x: RealOrComplex, y: RealOrComplex, z: RealOrComplex, w: RealOrComplex, v: RealOrComplex, ...args: Array<RealOrComplex> ) => any; // tslint:disable-line:max-line-length
+type Nary = ( x: any, y: any, z: any, w: any, v: any, ...args: Array<any> ) => RealOrComplex; // tslint:disable-line:max-line-length
+
+/**
+* An n-ary function returning a complex number.
+*
+* @param x - input value
+* @param y - input value
+* @param z - input value
+* @param w - input value
+* @param v - input value
+* @param args - subsequent input values
+* @returns result
+*/
+type WrappedNary = ( x: any, y: any, z: any, w: any, v: any, ...args: Array<any> ) => ComplexLike; // tslint:disable-line:max-line-length
 
 /**
 * Complex number constructor.
@@ -170,7 +177,7 @@ type WrappedNary = ( x: RealOrComplex, y: RealOrComplex, z: RealOrComplex, w: Re
 type Constructor = new( re: number, im: number ) => ComplexLike;
 
 /**
-* Wraps a nullary function accepting complex number arguments to support providing both real and complex numbers.
+* Wraps a nullary function and casts a function's return value to a complex number.
 *
 * @param fcn - nullary function to wrap
 * @param nargs - number of arguments
@@ -184,11 +191,7 @@ type Constructor = new( re: number, im: number ) => ComplexLike;
 * var imagf = require( `@stdlib/complex/imagf` );
 * var randu = require( `@stdlib/random/base/randu` );
 *
-* function randComplex() {
-*     return new Complex64( randu(), randu() );
-* }
-*
-* var f = wrap( randComplex, 0, Complex64 );
+* var f = wrap( randu, 0, Complex64 );
 *
 * // ...
 *
@@ -201,15 +204,15 @@ type Constructor = new( re: number, im: number ) => ComplexLike;
 * var im = imagf( z );
 * // returns <number>
 */
-declare function wrap( fcn: Nullary, nargs: 0, ctor: Constructor ): Nullary;
+declare function wrap( fcn: Nullary, nargs: 0, ctor: Constructor ): WrappedNullary; // tslint:disable-line:max-line-length
 
 /**
-* Wraps a unary function accepting complex number arguments to support providing both real and complex numbers.
+* Wraps a unary function and casts a function's return value to a complex number.
 *
 * ## Notes
 *
-* -   The returned function **assumes** that the wrapped function accepts **only** complex number input arguments (i.e., every argument must be a complex number).
-* -   The returned function **assumes** that, if an input argument is non-numeric (i.e., not of type `number`), then the input argument is a complex number. The returned function does **not** verify that non-numeric input arguments are, in fact, complex number objects. The returned function passes non-numeric input arguments to the wrapped function without modification.
+* -   The returned function **assumes** that the wrapped function returns either a real or complex number.
+* -   The returned function **assumes** that, if a return value is non-numeric (i.e., not of type `number`), then the return value is a complex number. The returned function does **not** verify that non-numeric return values are, in fact, complex number objects. The returned function returns non-numeric return values from the wrapped function without modification.
 *
 * @param fcn - function to wrap
 * @param nargs - number of arguments
@@ -219,11 +222,11 @@ declare function wrap( fcn: Nullary, nargs: 0, ctor: Constructor ): Nullary;
 *
 * @example
 * var Complex64 = require( `@stdlib/complex/float32` );
-* var cidentityf = require( `@stdlib/math/base/special/cidentityf` );
+* var identityf = require( `@stdlib/math/base/special/identityf` );
 * var realf = require( `@stdlib/complex/realf` );
 * var imagf = require( `@stdlib/complex/imagf` );
 *
-* var f = wrap( cidentityf, 1, Complex64 );
+* var f = wrap( identityf, 1, Complex64 );
 *
 * // ...
 *
@@ -239,12 +242,12 @@ declare function wrap( fcn: Nullary, nargs: 0, ctor: Constructor ): Nullary;
 declare function wrap( fcn: Unary, nargs: 1, ctor: Constructor ): WrappedUnary;
 
 /**
-* Wraps a binary function accepting complex number arguments to support providing both real and complex numbers.
+* Wraps a binary function and casts a function's return value to a complex number.
 *
 * ## Notes
 *
-* -   The returned function **assumes** that the wrapped function accepts **only** complex number input arguments (i.e., every argument must be a complex number).
-* -   The returned function **assumes** that, if an input argument is non-numeric (i.e., not of type `number`), then the input argument is a complex number. The returned function does **not** verify that non-numeric input arguments are, in fact, complex number objects. The returned function passes non-numeric input arguments to the wrapped function without modification.
+* -   The returned function **assumes** that the wrapped function returns either a real or complex number.
+* -   The returned function **assumes** that, if a return value is non-numeric (i.e., not of type `number`), then the return value is a complex number. The returned function does **not** verify that non-numeric return values are, in fact, complex number objects. The returned function returns non-numeric return values from the wrapped function without modification.
 *
 * @param fcn - function to wrap
 * @param nargs - number of arguments
@@ -254,11 +257,11 @@ declare function wrap( fcn: Unary, nargs: 1, ctor: Constructor ): WrappedUnary;
 *
 * @example
 * var Complex64 = require( `@stdlib/complex/float32` );
-* var caddf = require( `@stdlib/math/base/ops/caddf` );
+* var addf = require( `@stdlib/math/base/ops/addf` );
 * var realf = require( `@stdlib/complex/realf` );
 * var imagf = require( `@stdlib/complex/imagf` );
 *
-* var f = wrap( caddf, 2, Complex64 );
+* var f = wrap( addf, 2, Complex64 );
 *
 * // ...
 *
@@ -274,12 +277,12 @@ declare function wrap( fcn: Unary, nargs: 1, ctor: Constructor ): WrappedUnary;
 declare function wrap( fcn: Binary, nargs: 2, ctor: Constructor ): WrappedBinary; // tslint:disable-line:max-line-length
 
 /**
-* Wraps a ternary function accepting complex number arguments to support providing both real and complex numbers.
+* Wraps a ternary function and casts a function's return value to a complex number.
 *
 * ## Notes
 *
-* -   The returned function **assumes** that the wrapped function accepts **only** complex number input arguments (i.e., every argument must be a complex number).
-* -   The returned function **assumes** that, if an input argument is non-numeric (i.e., not of type `number`), then the input argument is a complex number. The returned function does **not** verify that non-numeric input arguments are, in fact, complex number objects. The returned function passes non-numeric input arguments to the wrapped function without modification.
+* -   The returned function **assumes** that the wrapped function returns either a real or complex number.
+* -   The returned function **assumes** that, if a return value is non-numeric (i.e., not of type `number`), then the return value is a complex number. The returned function does **not** verify that non-numeric return values are, in fact, complex number objects. The returned function returns non-numeric return values from the wrapped function without modification.
 *
 * @param fcn - function to wrap
 * @param nargs - number of arguments
@@ -293,9 +296,7 @@ declare function wrap( fcn: Binary, nargs: 2, ctor: Constructor ): WrappedBinary
 * var imagf = require( `@stdlib/complex/imagf` );
 *
 * function add( x, y, z ) {
-*     var re = realf( x ) + realf( y ) + realf( z );
-*     var im = imagf( x ) + imagf( y ) + imagf( z );
-*     return new Complex64( re, im );
+*     return x + y + z;
 * }
 *
 * var f = wrap( add, 3, Complex64 );
@@ -314,12 +315,12 @@ declare function wrap( fcn: Binary, nargs: 2, ctor: Constructor ): WrappedBinary
 declare function wrap( fcn: Ternary, nargs: 3, ctor: Constructor ): WrappedTernary; // tslint:disable-line:max-line-length
 
 /**
-* Wraps a quaternary function accepting complex number arguments to support providing both real and complex numbers.
+* Wraps a quaternary function and casts a function's return value to a complex number.
 *
 * ## Notes
 *
-* -   The returned function **assumes** that the wrapped function accepts **only** complex number input arguments (i.e., every argument must be a complex number).
-* -   The returned function **assumes** that, if an input argument is non-numeric (i.e., not of type `number`), then the input argument is a complex number. The returned function does **not** verify that non-numeric input arguments are, in fact, complex number objects. The returned function passes non-numeric input arguments to the wrapped function without modification.
+* -   The returned function **assumes** that the wrapped function returns either a real or complex number.
+* -   The returned function **assumes** that, if a return value is non-numeric (i.e., not of type `number`), then the return value is a complex number. The returned function does **not** verify that non-numeric return values are, in fact, complex number objects. The returned function returns non-numeric return values from the wrapped function without modification.
 *
 * @param fcn - function to wrap
 * @param nargs - number of arguments
@@ -333,9 +334,7 @@ declare function wrap( fcn: Ternary, nargs: 3, ctor: Constructor ): WrappedTerna
 * var imagf = require( `@stdlib/complex/imagf` );
 *
 * function add( x, y, z, w ) {
-*     var re = realf( x ) + realf( y ) + realf( z ) + realf( w );
-*     var im = imagf( x ) + imagf( y ) + imagf( z ) + imagf( w );
-*     return new Complex64( re, im );
+*     return x + y + z + w;
 * }
 *
 * var f = wrap( add, 4, Complex64 );
@@ -354,12 +353,12 @@ declare function wrap( fcn: Ternary, nargs: 3, ctor: Constructor ): WrappedTerna
 declare function wrap( fcn: Quaternary, nargs: 4, ctor: Constructor ): WrappedQuaternary; // tslint:disable-line:max-line-length
 
 /**
-* Wraps a quinary function accepting complex number arguments to support providing both real and complex numbers.
+* Wraps a quinary function and casts a function's return value to a complex number.
 *
 * ## Notes
 *
-* -   The returned function **assumes** that the wrapped function accepts **only** complex number input arguments (i.e., every argument must be a complex number).
-* -   The returned function **assumes** that, if an input argument is non-numeric (i.e., not of type `number`), then the input argument is a complex number. The returned function does **not** verify that non-numeric input arguments are, in fact, complex number objects. The returned function passes non-numeric input arguments to the wrapped function without modification.
+* -   The returned function **assumes** that the wrapped function returns either a real or complex number.
+* -   The returned function **assumes** that, if a return value is non-numeric (i.e., not of type `number`), then the return value is a complex number. The returned function does **not** verify that non-numeric return values are, in fact, complex number objects. The returned function returns non-numeric return values from the wrapped function without modification.
 *
 * @param fcn - function to wrap
 * @param nargs - number of arguments
@@ -373,9 +372,7 @@ declare function wrap( fcn: Quaternary, nargs: 4, ctor: Constructor ): WrappedQu
 * var imagf = require( `@stdlib/complex/imagf` );
 *
 * function add( x, y, z, w, v ) {
-*     var re = realf( x ) + realf( y ) + realf( z ) + realf( w ) + realf( v );
-*     var im = imagf( x ) + imagf( y ) + imagf( z ) + imagf( w ) + imagf( v );
-*     return new Complex64( re, im );
+*     return x + y + z + w + v;
 * }
 *
 * var f = wrap( add, 5, Complex64 );
@@ -394,12 +391,12 @@ declare function wrap( fcn: Quaternary, nargs: 4, ctor: Constructor ): WrappedQu
 declare function wrap( fcn: Quinary, nargs: 5, ctor: Constructor ): WrappedQuinary; // tslint:disable-line:max-line-length
 
 /**
-* Wraps an n-ary function accepting complex number arguments to support providing both real and complex numbers.
+* Wraps an n-ary function and casts a function's return value to a complex number.
 *
 * ## Notes
 *
-* -   The returned function **assumes** that the wrapped function accepts **only** complex number input arguments (i.e., every argument must be a complex number).
-* -   The returned function **assumes** that, if an input argument is non-numeric (i.e., not of type `number`), then the input argument is a complex number. The returned function does **not** verify that non-numeric input arguments are, in fact, complex number objects. The returned function passes non-numeric input arguments to the wrapped function without modification.
+* -   The returned function **assumes** that the wrapped function returns either a real or complex number.
+* -   The returned function **assumes** that, if a return value is non-numeric (i.e., not of type `number`), then the return value is a complex number. The returned function does **not** verify that non-numeric return values are, in fact, complex number objects. The returned function returns non-numeric return values from the wrapped function without modification.
 *
 * @param fcn - function to wrap
 * @param nargs - number of arguments
@@ -413,9 +410,7 @@ declare function wrap( fcn: Quinary, nargs: 5, ctor: Constructor ): WrappedQuina
 * var imagf = require( `@stdlib/complex/imagf` );
 *
 * function add( x, y, z, w, v, t ) {
-*     var re = realf( x ) + realf( y ) + realf( z ) + realf( w ) + realf( v ) + realf( t );
-*     var im = imagf( x ) + imagf( y ) + imagf( z ) + imagf( w ) + imagf( v ) + imagf( t );
-*     return new Complex64( re, im );
+*     return x + y + z + w + v + t;
 * }
 *
 * var f = wrap( add, 6, Complex64 );
