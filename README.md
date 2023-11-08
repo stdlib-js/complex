@@ -42,13 +42,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex@esm/index.mjs';
+import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex@v0.1.1-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { Complex128, Complex64, base, complex, complexCtors, complexDataType, complexDataTypes, complexPromotionRules, conj, conjf, imag, imagf, real, realf, reim, reimf, reviveComplex, reviveComplex128, reviveComplex64 } from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex@esm/index.mjs';
+import { Complex128, Complex64, base, complex, complexCtors, complexDataType, complexDataTypes, complexPromotionRules, conj, conjf, imag, imagf, real, realf, reim, reimf, reviveComplex, reviveComplex128, reviveComplex64 } from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex@v0.1.1-esm/index.mjs';
 ```
 
 #### ns
@@ -144,7 +144,7 @@ str = v.toString();
 <script type="module">
 
 import objectKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@esm/index.mjs';
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex@esm/index.mjs';
+import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex@v0.1.1-esm/index.mjs';
 
 console.log( objectKeys( ns ) );
 
