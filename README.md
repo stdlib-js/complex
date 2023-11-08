@@ -42,13 +42,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex@deno/mod.js';
+import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex@v0.1.1-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { Complex128, Complex64, base, complex, complexCtors, complexDataType, complexDataTypes, complexPromotionRules, conj, conjf, imag, imagf, real, realf, reim, reimf, reviveComplex, reviveComplex128, reviveComplex64 } from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex@deno/mod.js';
+import { Complex128, Complex64, base, complex, complexCtors, complexDataType, complexDataTypes, complexPromotionRules, conj, conjf, imag, imagf, real, realf, reim, reimf, reviveComplex, reviveComplex128, reviveComplex64 } from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex@v0.1.1-deno/mod.js';
 ```
 
 #### ns
@@ -139,7 +139,7 @@ str = v.toString();
 
 ```javascript
 import objectKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@deno/mod.js';
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex@deno/mod.js';
+import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex@v0.1.1-deno/mod.js';
 
 console.log( objectKeys( ns ) );
 ```
