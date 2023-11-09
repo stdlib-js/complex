@@ -115,6 +115,12 @@ for ( i = 0; i < DTYPES.length; i++ ) {
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/array/dtype`][@stdlib/array/dtype]</span><span class="delimiter">: </span><span class="description">return the data type of an array.</span>
+
 </section>
 
 <!-- /.related -->
@@ -124,6 +130,12 @@ for ( i = 0; i < DTYPES.length; i++ ) {
 <section class="links">
 
 [@stdlib/complex/dtypes]: https://github.com/stdlib-js/complex/tree/main/dtypes
+
+<!-- <related-links> -->
+
+[@stdlib/array/dtype]: https://github.com/stdlib-js/array-dtype
+
+<!-- </related-links> -->
 
 </section>
 
