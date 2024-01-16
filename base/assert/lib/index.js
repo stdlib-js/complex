@@ -72,6 +72,15 @@ setReadOnly( ns, 'isNotEqual', require( './../../../base/assert/is-not-equal' ) 
 */
 setReadOnly( ns, 'isNotEqualf', require( './../../../base/assert/is-not-equalf' ) );
 
+/**
+* @name isSameValue
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/complex/base/assert/is-same-value}
+*/
+setReadOnly( ns, 'isSameValue', require( './../../../base/assert/is-same-value' ) );
+
 
 // EXPORTS //
 
