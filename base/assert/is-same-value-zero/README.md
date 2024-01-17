@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# isSameValue
+# isSameValueZero
 
 > Test whether two double-precision complex floating-point numbers are the same value.
 
@@ -37,10 +37,10 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var isSameValue = require( '@stdlib/complex/base/assert/is-same-value' );
+var isSameValueZero = require( '@stdlib/complex/base/assert/is-same-value-zero' );
 ```
 
-#### isSameValue( z1, z2 )
+#### isSameValueZero( z1, z2 )
 
 Tests whether two double-precision complex floating-point numbers are the same value.
 
@@ -50,11 +50,11 @@ var Complex128 = require( '@stdlib/complex/float64' );
 var z1 = new Complex128( 5.0, 3.0 );
 var z2 = new Complex128( 5.0, 3.0 );
 
-var out = isSameValue( z1, z2 );
+var out = isSameValueZero( z1, z2 );
 // returns true
 ```
 
-In contrast to the strict equality operator `===`, the function distinguishes between `+0` and `-0` and treats `NaNs` as the same value.
+In contrast to the strict equality operator `===`, the function treats `NaNs` as the same value.
 
 ```javascript
 var Complex128 = require( '@stdlib/complex/float64' );
@@ -62,14 +62,20 @@ var Complex128 = require( '@stdlib/complex/float64' );
 var z1 = new Complex128( NaN, NaN );
 var z2 = new Complex128( NaN, NaN );
 
-var out = isSameValue( z1, z2 );
+var out = isSameValueZero( z1, z2 );
 // returns true
+```
 
-z1 = new Complex128( -0.0, 0.0 );
-z2 = new Complex128( 0.0, -0.0 );
+In contrast to the [SameValue Algorithm][ecma-262-same-value-algorithm] (as specified in ECMAScript 5), the function distinguishes between `+0` and `-0`.
 
-out = isSameValue( z1, z2 );
-// returns false
+```javascript
+var Complex128 = require( '@stdlib/complex/float64' );
+
+var z1 = new Complex128( -0.0, 0.0 );
+var z2 = new Complex128( 0.0, -0.0 );
+
+var out = isSameValueZero( z1, z2 );
+// returns true
 ```
 
 </section>
@@ -79,10 +85,6 @@ out = isSameValue( z1, z2 );
 <!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="notes">
-
-## Notes
-
--   The function implements the [SameValue Algorithm][ecma-262-same-value-algorithm] as specified in ECMAScript 5.
 
 </section>
 
@@ -98,21 +100,21 @@ out = isSameValue( z1, z2 );
 
 ```javascript
 var Complex128 = require( '@stdlib/complex/float64' );
-var isSameValue = require( '@stdlib/complex/base/assert/is-same-value' );
+var isSameValueZero = require( '@stdlib/complex/base/assert/is-same-value-zero' );
 
 var z1 = new Complex128( 5.0, 3.0 );
 var z2 = new Complex128( 5.0, 3.0 );
-var out = isSameValue( z1, z2 );
+var out = isSameValueZero( z1, z2 );
 // returns true
 
 z1 = new Complex128( -5.0, -3.0 );
 z2 = new Complex128( 5.0, 3.0 );
-out = isSameValue( z1, z2 );
+out = isSameValueZero( z1, z2 );
 // returns false
 
 z1 = new Complex128( NaN, 3.0 );
 z2 = new Complex128( NaN, 3.0 );
-out = isSameValue( z1, z2 );
+out = isSameValueZero( z1, z2 );
 // returns true
 ```
 
@@ -143,10 +145,10 @@ out = isSameValue( z1, z2 );
 ### Usage
 
 ```c
-#include "stdlib/complex/base/assert/is_same_value.h"
+#include "stdlib/complex/base/assert/is_same_value_zero.h"
 ```
 
-#### stdlib_base_complex128_is_same_value( z1, z2 )
+#### stdlib_base_complex128_is_same_value_zero( z1, z2 )
 
 Tests whether two double-precision complex floating-point numbers are the same value.
 
@@ -157,7 +159,7 @@ Tests whether two double-precision complex floating-point numbers are the same v
 stdlib_complex128_t z1 = stdlib_complex128( 5.0, 2.0 );
 stdlib_complex128_t z2 = stdlib_complex128( 5.0, 2.0 );
 
-bool v = stdlib_base_complex128_is_same_value( z1, z2 );
+bool v = stdlib_base_complex128_is_same_value_zero( z1, z2 );
 ```
 
 The function accepts the following arguments:
@@ -166,7 +168,7 @@ The function accepts the following arguments:
 -   **z2**: `[in] stdlib_complex128_t` second double-precision complex floating-point number.
 
 ```c
-bool stdlib_base_complex128_is_same_value( const stdlib_complex128_t z1, const stdlib_complex128_t z2 );
+bool stdlib_base_complex128_is_same_value_zero( const stdlib_complex128_t z1, const stdlib_complex128_t z2 );
 ```
 
 </section>
@@ -188,7 +190,7 @@ bool stdlib_base_complex128_is_same_value( const stdlib_complex128_t z1, const s
 ### Examples
 
 ```c
-#include "stdlib/complex/base/assert/is_same_value.h"
+#include "stdlib/complex/base/assert/is_same_value_zero.h"
 #include "stdlib/complex/float64.h"
 #include <stdbool.h>
 #include <stdio.h>
@@ -204,7 +206,7 @@ int main( void ) {
     bool v;
     int i;
     for ( i = 0; i < 4; i++ ) {
-        v = stdlib_base_complex128_is_same_value( z[ i ], z[ i ] );
+        v = stdlib_base_complex128_is_same_value_zero( z[ i ], z[ i ] );
         printf( "Same value? %s\n", ( v ) ? "True" : "False" );
     }
 }
