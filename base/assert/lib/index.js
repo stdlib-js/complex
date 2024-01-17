@@ -91,6 +91,15 @@ setReadOnly( ns, 'isSameValue', require( './../../../base/assert/is-same-value' 
 setReadOnly( ns, 'isSameValueZero', require( './../../../base/assert/is-same-value-zero' ) );
 
 /**
+* @name isSameValueZerof
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/complex/base/assert/is-same-value-zerof}
+*/
+setReadOnly( ns, 'isSameValueZerof', require( './../../../base/assert/is-same-value-zerof' ) );
+
+/**
 * @name isSameValuef
 * @memberof ns
 * @readonly

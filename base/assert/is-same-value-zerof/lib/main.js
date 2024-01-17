@@ -20,36 +20,36 @@
 
 // MODULES //
 
-var isSame = require( '@stdlib/number/float64/base/assert/is-same-value-zero' );
-var reim = require( './../../../../reim' );
+var isSame = require( '@stdlib/number/float32/base/assert/is-same-value-zero' );
+var reimf = require( './../../../../reimf' );
 
 
 // MAIN //
 
 /**
-* Tests whether two double-precision complex floating-point numbers are the same value.
+* Tests whether two single-precision complex floating-point numbers are the same value.
 *
 * ## Notes
 *
 * -   The function implements the SameValueZero Algorithm used by `TypedArray` and `ArrayBuffer` constructors, `Map` and `Set` operations, `String.prototype.includes`, and `Array.prototype.includes` since ES2016.
 * -   In contrast to the strict equality operator `===`, `NaNs` are considered the same value.
 *
-* @param {Complex128} z1 - first complex number
-* @param {Complex128} z2 - second complex number
+* @param {Complex64} z1 - first complex number
+* @param {Complex64} z2 - second complex number
 * @returns {boolean} result
 *
 * @example
-* var Complex128 = require( '@stdlib/complex/float64' );
+* var Complex64 = require( '@stdlib/complex/float32' );
 *
-* var z1 = new Complex128( 5.0, 3.0 );
-* var z2 = new Complex128( 5.0, 3.0 );
+* var z1 = new Complex64( 5.0, 3.0 );
+* var z2 = new Complex64( 5.0, 3.0 );
 *
-* var v = isSameValueZero( z1, z2 );
+* var v = isSameValueZerof( z1, z2 );
 * // returns true
 */
-function isSameValueZero( z1, z2 ) {
-	var parts1 = reim( z1 );
-	var parts2 = reim( z2 );
+function isSameValueZerof( z1, z2 ) {
+	var parts1 = reimf( z1 );
+	var parts2 = reimf( z2 );
 	return (
 		isSame( parts1[ 0 ], parts2[ 0 ] ) &&
 		isSame( parts1[ 1 ], parts2[ 1 ] )
@@ -59,4 +59,4 @@ function isSameValueZero( z1, z2 ) {
 
 // EXPORTS //
 
-module.exports = isSameValueZero;
+module.exports = isSameValueZerof;
