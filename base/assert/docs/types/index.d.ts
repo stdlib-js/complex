@@ -21,15 +21,183 @@
 /* eslint-disable max-lines */
 
 import isEqual = require( './../../../../base/assert/is-equal' );
+import isEqualf = require( './../../../../base/assert/is-equalf' );
+import isNotEqual = require( './../../../../base/assert/is-not-equal' );
+import isNotEqualf = require( './../../../../base/assert/is-not-equalf' );
+import isSameValue = require( './../../../../base/assert/is-same-value' );
+import isSameValueZero = require( './../../../../base/assert/is-same-value-zero' );
+import isSameValueZerof = require( './../../../../base/assert/is-same-value-zerof' );
+import isSameValuef = require( './../../../../base/assert/is-same-valuef' );
 
 /**
 * Interface describing the `assert` namespace.
 */
 interface Namespace {
 	/**
-	* TODO
+	* Tests whether two double-precision complex floating-point numbers are equal.
+	*
+	* @param z1 - first complex number
+	* @param z2 - second complex number
+	* @returns boolean indicating if both complex numbers are equal
+	*
+	* @example
+	* var Complex128 = require( './../../../../float64' );
+	*
+	* var z1 = new Complex128( 5.0, 3.0 );
+	* var z2 = new Complex128( 5.0, 3.0 );
+	*
+	* var v = ns.isEqual( z1, z2 );
+	* // returns true
 	*/
 	isEqual: typeof isEqual;
+
+	/**
+	* Tests whether two single-precision complex floating-point numbers are equal.
+	*
+	* @param z1 - first complex number
+	* @param z2 - second complex number
+	* @returns boolean indicating if both complex numbers are equal
+	*
+	* @example
+	* var Complex64 = require( './../../../../float32' );
+	*
+	* var z1 = new Complex64( 5.0, 3.0 );
+	* var z2 = new Complex64( 5.0, 3.0 );
+	*
+	* var v = ns.isEqualf( z1, z2 );
+	* // returns true
+	*/
+	isEqualf: typeof isEqualf;
+
+	/**
+	* Tests whether two double-precision complex floating-point numbers are not equal.
+	*
+	* @param z1 - first complex number
+	* @param z2 - second complex number
+	* @returns boolean indicating if both complex numbers are not equal
+	*
+	* @example
+	* var Complex128 = require( './../../../../float64' );
+	*
+	* var z1 = new Complex128( 5.0, 3.0 );
+	* var z2 = new Complex128( 5.0, -3.0 );
+	*
+	* var v = ns.isNotEqual( z1, z2 );
+	* // returns true
+	*/
+	isNotEqual: typeof isNotEqual;
+
+	/**
+	* Tests whether two single-precision complex floating-point numbers are not equal.
+	*
+	* @param z1 - first complex number
+	* @param z2 - second complex number
+	* @returns boolean indicating if both complex numbers are not equal
+	*
+	* @example
+	* var Complex64 = require( './../../../../float32' );
+	*
+	* var z1 = new Complex64( 5.0, 3.0 );
+	* var z2 = new Complex64( 5.0, -3.0 );
+	*
+	* var v = ns.isNotEqualf( z1, z2 );
+	* // returns true
+	*/
+	isNotEqualf: typeof isNotEqualf;
+
+	/**
+	* Tests whether two double-precision complex floating-point numbers are the same value.
+	*
+	* ## Notes
+	*
+	* -   The function implements the [SameValue Algorithm][ecma-262-same-value-algorithm], as specified in ECMAScript 5.
+	* -   In contrast to the strict equality operator `===`, `-0` and `+0` are distinguishable and `NaNs` are the same.
+	*
+	* [ecma-262-same-value-algorithm]: http://ecma-international.org/ecma-262/5.1/#sec-9.12
+	*
+	* @param z1 - first complex number
+	* @param z2 - second complex number
+	* @returns boolean indicating if both complex numbers are the same value
+	*
+	* @example
+	* var Complex128 = require( './../../../../float64' );
+	*
+	* var z1 = new Complex128( 5.0, 3.0 );
+	* var z2 = new Complex128( 5.0, 3.0 );
+	*
+	* var v = ns.isSameValue( z1, z2 );
+	* // returns true
+	*/
+	isSameValue: typeof isSameValue;
+
+	/**
+	* Tests whether two double-precision complex floating-point numbers are the same value.
+	*
+	* ## Notes
+	*
+	* -   In contrast to the strict equality operator `===`, `NaNs` are treated as the same value.
+	*
+	* @param z1 - first complex number
+	* @param z2 - second complex number
+	* @returns boolean indicating if both complex numbers are the same value
+	*
+	* @example
+	* var Complex128 = require( './../../../../float64' );
+	*
+	* var z1 = new Complex128( 5.0, 3.0 );
+	* var z2 = new Complex128( 5.0, 3.0 );
+	*
+	* var v = ns.isSameValueZero( z1, z2 );
+	* // returns true
+	*/
+	isSameValueZero: typeof isSameValueZero;
+
+	/**
+	* Tests whether two single-precision complex floating-point numbers are the same value.
+	*
+	* ## Notes
+	*
+	* -   In contrast to the strict equality operator `===`, `NaNs` are treated as the same value.
+	*
+	* @param z1 - first complex number
+	* @param z2 - second complex number
+	* @returns boolean indicating if both complex numbers are the same value
+	*
+	* @example
+	* var Complex64 = require( './../../../../float32' );
+	*
+	* var z1 = new Complex64( 5.0, 3.0 );
+	* var z2 = new Complex64( 5.0, 3.0 );
+	*
+	* var v = ns.isSameValueZerof( z1, z2 );
+	* // returns true
+	*/
+	isSameValueZerof: typeof isSameValueZerof;
+
+	/**
+	* Tests whether two single-precision complex floating-point numbers are the same value.
+	*
+	* ## Notes
+	*
+	* -   The function implements the [SameValue Algorithm][ecma-262-same-value-algorithm], as specified in ECMAScript 5.
+	* -   In contrast to the strict equality operator `===`, `-0` and `+0` are distinguishable and `NaNs` are the same.
+	*
+	* [ecma-262-same-value-algorithm]: http://ecma-international.org/ecma-262/5.1/#sec-9.12
+	*
+	* @param z1 - first complex number
+	* @param z2 - second complex number
+	* @returns boolean indicating if both complex numbers are the same value
+	*
+	* @example
+	* var Complex64 = require( './../../../../float32' );
+	*
+	* var z1 = new Complex64( 5.0, 3.0 );
+	* var z2 = new Complex64( 5.0, 3.0 );
+	*
+	* var v = ns.isSameValuef( z1, z2 );
+	* // returns true
+	*/
+	isSameValuef: typeof isSameValuef;
 }
 
 /**
