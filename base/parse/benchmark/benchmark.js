@@ -22,7 +22,7 @@
 
 var bench = require( '@stdlib/bench' );
 var parse = require( './../../../base/parse/lib' );
-var pkg = require( './../../../base/parse/package.json' ).name;
+var pkg = require( './../package.json' ).name;
 
 
 // MAIN //
