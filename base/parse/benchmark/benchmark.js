@@ -21,7 +21,7 @@
 // MODULES //
 
 var bench = require( '@stdlib/bench' );
-var parse = require( './../../../base/parse/lib' );
+var parse = require( './../lib' );
 var pkg = require( './../package.json' ).name;
 
 

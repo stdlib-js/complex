@@ -18,7 +18,7 @@
 
 'use strict';
 
-var parse = require( './../../../base/parse/lib' );
+var parse = require( './../lib' );
 
 var str = '5 + 4i';
 var z = parse( str );
