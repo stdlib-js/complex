@@ -18,8 +18,8 @@
 
 // TypeScript Version: 4.1
 
-import Complex128 = require( './../../../float64' );
-import Complex64 = require( './../../../float32' );
+import Complex128 = require( './../../../float64/ctor' );
+import Complex64 = require( './../../../float32/ctor' );
 
 /**
 * Returns a `Complex128` constructor.

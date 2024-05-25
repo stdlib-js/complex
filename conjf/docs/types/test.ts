@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-import Complex64 = require( './../../../float32' );
+import Complex64 = require( './../../../float32/ctor' );
 import conjf = require( './index' );
 
 

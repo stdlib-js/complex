@@ -21,7 +21,7 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var Complex128 = require( './../../float64' );
+var Complex128 = require( './../../float64/ctor' );
 var real = require( './../lib' );
 
 

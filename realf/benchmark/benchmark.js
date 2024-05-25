@@ -21,7 +21,7 @@
 // MODULES //
 
 var bench = require( '@stdlib/bench' );
-var Complex64 = require( './../../float32' );
+var Complex64 = require( './../../float32/ctor' );
 var randu = require( '@stdlib/random/base/randu' );
 var isnanf = require( '@stdlib/math/base/assert/is-nanf' );
 var pkg = require( './../package.json' ).name;

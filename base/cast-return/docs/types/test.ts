@@ -18,7 +18,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import Complex64 = require( './../../../../float32' );
+import Complex64 = require( './../../../../float32/ctor' );
 import castReturn = require( './index' );
 
 /**

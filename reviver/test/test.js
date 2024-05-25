@@ -23,8 +23,8 @@
 var tape = require( 'tape' );
 var copy = require( '@stdlib/utils/copy' );
 var parseJSON = require( '@stdlib/utils/parse-json' );
-var Complex128 = require( './../../float64' );
-var Complex64 = require( './../../float32' );
+var Complex128 = require( './../../float64/ctor' );
+var Complex64 = require( './../../float32/ctor' );
 var reviver = require( './../lib' );
 
 

@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var Complex128 = require( './../../float64' );
+var Complex128 = require( './../../float64/ctor' );
 var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
 var replace = require( '@stdlib/string/base/replace' );
 var format = require( '@stdlib/string/format' );

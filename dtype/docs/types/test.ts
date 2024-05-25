@@ -16,8 +16,8 @@
 * limitations under the License.
 */
 
-import Complex128 = require( './../../../float64' );
-import Complex64 = require( './../../../float32' );
+import Complex128 = require( './../../../float64/ctor' );
+import Complex64 = require( './../../../float32/ctor' );
 import dtype = require( './index' );
 
 

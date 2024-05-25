@@ -22,8 +22,8 @@
 
 var tape = require( 'tape' );
 var dtypes = require( './../../dtypes' );
-var Complex64 = require( './../../float32' );
-var Complex128 = require( './../../float64' );
+var Complex64 = require( './../../float32/ctor' );
+var Complex128 = require( './../../float64/ctor' );
 var isFunction = require( '@stdlib/assert/is-function' );
 var ctors = require( './../lib' );
 

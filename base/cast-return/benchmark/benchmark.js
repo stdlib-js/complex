@@ -21,7 +21,7 @@
 // MODULES //
 
 var bench = require( '@stdlib/bench' );
-var Complex64 = require( './../../../float32' );
+var Complex64 = require( './../../../float32/ctor' );
 var realf = require( './../../../realf' );
 var imagf = require( './../../../imagf' );
 var isnanf = require( '@stdlib/math/base/assert/is-nanf' );

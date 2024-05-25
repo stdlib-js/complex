@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-import Complex128 = require( './../../../../../float64' );
+import Complex128 = require( './../../../../../float64/ctor' );
 import isSameValueZero = require( './index' );
 
 

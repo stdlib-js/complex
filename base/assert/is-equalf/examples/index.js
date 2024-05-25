@@ -18,7 +18,7 @@
 
 'use strict';
 
-var Complex64 = require( './../../../../float32' );
+var Complex64 = require( './../../../../float32/ctor' );
 var isEqualf = require( './../lib' );
 
 var z1 = new Complex64( 5.0, 3.0 );

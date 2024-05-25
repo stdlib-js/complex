@@ -48,7 +48,7 @@ interface Namespace {
 	* @returns wrapped function
 	*
 	* @example
-	* var Complex64 = require( './../../../float32' );
+	* var Complex64 = require( './../../../float32/ctor' );
 	* var realf = require( './../../../realf' );
 	* var imagf = require( './../../../imagf' );
 	*
@@ -86,7 +86,7 @@ interface Namespace {
 	* @returns wrapped function
 	*
 	* @example
-	* var Complex64 = require( './../../../float32' );
+	* var Complex64 = require( './../../../float32/ctor' );
 	* var realf = require( './../../../realf' );
 	* var imagf = require( './../../../imagf' );
 	*

@@ -21,7 +21,7 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var Complex64 = require( './../../../../float32' );
+var Complex64 = require( './../../../../float32/ctor' );
 var PINF = require( '@stdlib/constants/float32/pinf' );
 var NINF = require( '@stdlib/constants/float32/ninf' );
 var isSameValuef = require( './../lib' );

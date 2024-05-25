@@ -20,8 +20,8 @@
 
 // MODULES //
 
-var Complex64 = require( './../../float32' );
-var Complex128 = require( './../../float64' );
+var Complex64 = require( './../../float32/ctor' );
+var Complex128 = require( './../../float64/ctor' );
 
 
 // MAIN //

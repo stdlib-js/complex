@@ -19,7 +19,7 @@
 /// <reference types="@stdlib/types"/>
 
 import { ComplexLike } from '@stdlib/types/complex';
-import Complex64 = require( './../../../../float32' );
+import Complex64 = require( './../../../../float32/ctor' );
 import wrap = require( './index' );
 
 /**

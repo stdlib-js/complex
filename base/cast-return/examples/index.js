@@ -18,7 +18,7 @@
 
 'use strict';
 
-var Complex64 = require( './../../../float32' );
+var Complex64 = require( './../../../float32/ctor' );
 var addf = require( '@stdlib/math/base/ops/addf' );
 var realf = require( './../../../realf' );
 var imagf = require( './../../../imagf' );
