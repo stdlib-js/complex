@@ -21,11 +21,11 @@
 /**
 * Revive a JSON-serialized 64-bit complex number.
 *
-* @module @stdlib/complex/reviver-float32
+* @module @stdlib/complex/float32/reviver
 *
 * @example
 * var parseJSON = require( '@stdlib/utils/parse-json' );
-* var reviveComplex64 = require( '@stdlib/complex/reviver-float32' );
+* var reviveComplex64 = require( '@stdlib/complex/float32/reviver' );
 *
 * var str = '{"type":"Complex64","re":5,"im":3}';
 *

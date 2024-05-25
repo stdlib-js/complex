@@ -18,7 +18,7 @@
 
 'use strict';
 
-var Complex64 = require( './../../float32/ctor' );
+var Complex64 = require( './../../../float32/ctor' );
 var parseJSON = require( '@stdlib/utils/parse-json' );
 var reviveComplex64 = require( './../lib' );
 

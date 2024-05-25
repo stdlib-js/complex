@@ -21,7 +21,7 @@
 // MODULES //
 
 var isNumber = require( '@stdlib/assert/is-number' ).isPrimitive;
-var Complex64 = require( './../../float32/ctor' );
+var Complex64 = require( './../../../float32/ctor' );
 
 
 // MAIN //

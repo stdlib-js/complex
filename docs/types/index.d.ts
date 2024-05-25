@@ -37,7 +37,7 @@ import realf = require( './../../realf' );
 import reim = require( './../../reim' );
 import reimf = require( './../../reimf' );
 import reviveComplex = require( './../../reviver' );
-import reviveComplex64 = require( './../../reviver-float32' );
+import reviveComplex64 = require( './../../float32/reviver' );
 import reviveComplex128 = require( './../../reviver-float64' );
 
 /**
