@@ -83,8 +83,8 @@ The namespace constains complex number constructors.
 -   <span class="signature">[`complexCtors( dtype )`][@stdlib/complex/ctors]</span><span class="delimiter">: </span><span class="description">complex number constructors.</span>
 -   <span class="signature">[`complexDataType( value )`][@stdlib/complex/dtype]</span><span class="delimiter">: </span><span class="description">return the data type of a complex number.</span>
 -   <span class="signature">[`complexDataTypes()`][@stdlib/complex/dtypes]</span><span class="delimiter">: </span><span class="description">list of complex number data types.</span>
--   <span class="signature">[`Complex64( real, imag )`][@stdlib/complex/float32]</span><span class="delimiter">: </span><span class="description">64-bit complex number.</span>
--   <span class="signature">[`Complex128( real, imag )`][@stdlib/complex/float64]</span><span class="delimiter">: </span><span class="description">128-bit complex number.</span>
+-   <span class="signature">[`Complex64( real, imag )`][@stdlib/complex/float32/ctor]</span><span class="delimiter">: </span><span class="description">64-bit complex number.</span>
+-   <span class="signature">[`Complex128( real, imag )`][@stdlib/complex/float64/ctor]</span><span class="delimiter">: </span><span class="description">128-bit complex number.</span>
 -   <span class="signature">[`complexPromotionRules( [dtype1, dtype2] )`][@stdlib/complex/promotion-rules]</span><span class="delimiter">: </span><span class="description">return the complex number data type with the smallest size and closest "kind" to which data types can be **safely** cast.</span>
 
 </div>
@@ -274,9 +274,9 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/complex/dtypes]: https://github.com/stdlib-js/complex/tree/main/dtypes
 
-[@stdlib/complex/float32]: https://github.com/stdlib-js/complex/tree/main/float32
+[@stdlib/complex/float32/ctor]: https://github.com/stdlib-js/complex/tree/main/float32/ctor
 
-[@stdlib/complex/float64]: https://github.com/stdlib-js/complex/tree/main/float64
+[@stdlib/complex/float64/ctor]: https://github.com/stdlib-js/complex/tree/main/float64/ctor
 
 [@stdlib/complex/promotion-rules]: https://github.com/stdlib-js/complex/tree/main/promotion-rules
 
