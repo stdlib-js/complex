@@ -38,7 +38,7 @@ import reim = require( './../../reim' );
 import reimf = require( './../../reimf' );
 import reviveComplex = require( './../../reviver' );
 import reviveComplex64 = require( './../../float32/reviver' );
-import reviveComplex128 = require( './../../reviver-float64' );
+import reviveComplex128 = require( './../../float64/reviver' );
 
 /**
 * Interface describing the `complex` namespace.
