@@ -20,17 +20,17 @@
 
 // MODULES //
 
-var Complex64 = require( './../../float32/ctor' );
-var Complex128 = require( './../../float64/ctor' );
+var ctors = require( './../../ctors' );
+var DTYPES = require( './dtypes.js' );
 
 
 // MAIN //
 
-// Note: order should match `dtypes` order
-var CTORS = [
-	Complex64,
-	Complex128
-];
+var CTORS = [];
+var i;
+for ( i = 0; i < DTYPES.length; i++ ) {
+	CTORS.push( ctors( DTYPES[ i ] ) );
+}
 
 
 // EXPORTS //

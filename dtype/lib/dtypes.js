@@ -18,13 +18,14 @@
 
 'use strict';
 
+// MODULES //
+
+var dtypes = require( './../../dtypes' );
+
+
 // MAIN //
 
-// Note: order should match `ctors` order
-var DTYPES = [
-	'complex64',
-	'complex128'
-];
+var DTYPES = dtypes();
 
 
 // EXPORTS //
