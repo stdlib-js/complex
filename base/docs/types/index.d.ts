@@ -20,7 +20,6 @@
 
 /* eslint-disable max-lines */
 
-import assert = require( './../../../base/assert' );
 import cast = require( './../../../base/cast-return' );
 import wrap = require( './../../../base/wrap-function' );
 
@@ -28,11 +27,6 @@ import wrap = require( './../../../base/wrap-function' );
 * Interface describing the `base` namespace.
 */
 interface Namespace {
-	/**
-	* Base complex number assert functions.
-	*/
-	assert: typeof assert;
-
 	/**
 	* Wraps an n-ary function and casts a function's return value to a complex number.
 	*
