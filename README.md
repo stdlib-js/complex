@@ -35,20 +35,32 @@ limitations under the License.
 
 > Complex number data types.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/complex
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex@esm/index.mjs';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { Complex128, Complex64, base, complex, complexCtors, complexDataType, complexDataTypes, complexPromotionRules, conj, conjf, imag, imagf, real, realf, reim, reimf, reviveComplex, reviveComplex128, reviveComplex64 } from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex@esm/index.mjs';
+var ns = require( '@stdlib/complex' );
 ```
 
 #### ns
@@ -97,8 +109,8 @@ In addition, the namespace contains the following functions:
 
 <div class="namespace-toc">
 
--   <span class="signature">[`conj( z )`][@stdlib/complex/conj]</span><span class="delimiter">: </span><span class="description">return the complex conjugate of a double-precision complex floating-point number.</span>
--   <span class="signature">[`conjf( z )`][@stdlib/complex/conjf]</span><span class="delimiter">: </span><span class="description">return the complex conjugate of a single-precision complex floating-point number.</span>
+-   <span class="signature">[`conj( z )`][@stdlib/complex/float64/conj]</span><span class="delimiter">: </span><span class="description">return the complex conjugate of a double-precision complex floating-point number.</span>
+-   <span class="signature">[`conjf( z )`][@stdlib/complex/float32/conj]</span><span class="delimiter">: </span><span class="description">return the complex conjugate of a single-precision complex floating-point number.</span>
 -   <span class="signature">[`imag( z )`][@stdlib/complex/imag]</span><span class="delimiter">: </span><span class="description">return the imaginary component of a double-precision complex floating-point number.</span>
 -   <span class="signature">[`imagf( z )`][@stdlib/complex/imagf]</span><span class="delimiter">: </span><span class="description">return the imaginary component of a single-precision complex floating-point number.</span>
 -   <span class="signature">[`real( z )`][@stdlib/complex/real]</span><span class="delimiter">: </span><span class="description">return the real component of a double-precision complex floating-point number.</span>
@@ -133,20 +145,11 @@ str = v.toString();
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import objectKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@esm/index.mjs';
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex@esm/index.mjs';
+```javascript
+var objectKeys = require( '@stdlib/utils/keys' );
+var ns = require( '@stdlib/complex' );
 
 console.log( objectKeys( ns ) );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -170,7 +173,7 @@ console.log( objectKeys( ns ) );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -235,9 +238,9 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <toc-links> -->
 
-[@stdlib/complex/conj]: https://github.com/stdlib-js/complex/tree/main/conj
+[@stdlib/complex/float64/conj]: https://github.com/stdlib-js/complex/tree/main/float64/conj
 
-[@stdlib/complex/conjf]: https://github.com/stdlib-js/complex/tree/main/conjf
+[@stdlib/complex/float32/conj]: https://github.com/stdlib-js/complex/tree/main/float32/conj
 
 [@stdlib/complex/imag]: https://github.com/stdlib-js/complex/tree/main/imag
 
