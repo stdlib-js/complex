@@ -115,8 +115,8 @@ In addition, the namespace contains the following functions:
 -   <span class="signature">[`imagf( z )`][@stdlib/complex/imagf]</span><span class="delimiter">: </span><span class="description">return the imaginary component of a single-precision complex floating-point number.</span>
 -   <span class="signature">[`real( z )`][@stdlib/complex/real]</span><span class="delimiter">: </span><span class="description">return the real component of a double-precision complex floating-point number.</span>
 -   <span class="signature">[`realf( z )`][@stdlib/complex/realf]</span><span class="delimiter">: </span><span class="description">return the real component of a single-precision complex floating-point number.</span>
--   <span class="signature">[`reim( z )`][@stdlib/complex/reim]</span><span class="delimiter">: </span><span class="description">return the real and imaginary components of a double-precision complex floating-point number.</span>
--   <span class="signature">[`reimf( z )`][@stdlib/complex/reimf]</span><span class="delimiter">: </span><span class="description">return the real and imaginary components of a single-precision complex floating-point number.</span>
+-   <span class="signature">[`reim( z )`][@stdlib/complex/float64/reim]</span><span class="delimiter">: </span><span class="description">return the real and imaginary components of a double-precision complex floating-point number.</span>
+-   <span class="signature">[`reimf( z )`][@stdlib/complex/float32/reim]</span><span class="delimiter">: </span><span class="description">return the real and imaginary components of a single-precision complex floating-point number.</span>
 -   <span class="signature">[`reviveComplex( key, value )`][@stdlib/complex/reviver]</span><span class="delimiter">: </span><span class="description">revive a JSON-serialized complex number.</span>
 
 </div>
@@ -250,9 +250,9 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/complex/realf]: https://github.com/stdlib-js/complex/tree/main/realf
 
-[@stdlib/complex/reim]: https://github.com/stdlib-js/complex/tree/main/reim
+[@stdlib/complex/float64/reim]: https://github.com/stdlib-js/complex/tree/main/float64/reim
 
-[@stdlib/complex/reimf]: https://github.com/stdlib-js/complex/tree/main/reimf
+[@stdlib/complex/float32/reim]: https://github.com/stdlib-js/complex/tree/main/float32/reim
 
 [@stdlib/complex/reviver]: https://github.com/stdlib-js/complex/tree/main/reviver
 

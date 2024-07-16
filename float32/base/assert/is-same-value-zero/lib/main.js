@@ -21,7 +21,7 @@
 // MODULES //
 
 var isSame = require( '@stdlib/number/float32/base/assert/is-same-value-zero' );
-var reimf = require( './../../../../../reimf' );
+var reimf = require( './../../../../../float32/reim' );
 
 
 // MAIN //

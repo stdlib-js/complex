@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var reim = require( './../../../../../reim' );
+var reim = require( './../../../../../float64/reim' );
 
 
 // MAIN //

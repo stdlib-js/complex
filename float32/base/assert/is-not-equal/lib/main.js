@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var reimf = require( './../../../../../reimf' );
+var reimf = require( './../../../../../float32/reim' );
 
 
 // MAIN //

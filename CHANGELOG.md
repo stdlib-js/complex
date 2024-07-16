@@ -674,6 +674,28 @@
 
 <!-- /.package -->
 
+<section class="package" id="complex-float32-reim-unreleased">
+
+#### [@stdlib/complex/float32/reim](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float32/reim)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`5325850`](https://github.com/stdlib-js/stdlib/commit/5325850f7954c973272d09973ab71ba112deb8e0) - add `complex/float32/reim`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="complex-float32-reviver-unreleased">
 
 #### [@stdlib/complex/float32/reviver](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float32/reviver)
@@ -922,6 +944,28 @@
 
 <!-- /.package -->
 
+<section class="package" id="complex-float64-reim-unreleased">
+
+#### [@stdlib/complex/float64/reim](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float64/reim)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`59aabc1`](https://github.com/stdlib-js/stdlib/commit/59aabc17b798bff37755488c930b9136ada18d40) - add `complex/float64/reim`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="complex-float64-reviver-unreleased">
 
 #### [@stdlib/complex/float64/reviver](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float64/reviver)
@@ -1108,6 +1152,20 @@ This release closes the following issue:
 
 <!-- /.bug-fixes -->
 
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`91256d0`](https://github.com/stdlib-js/stdlib/commit/91256d09c26b154c3144807dabd2e588823030d2): remove `complex/reim` 
+
+    -   To migrate, users should update their require/import paths to use
+    `@stdlib/complex/float64/reim` which provides the same API and
+    implementation.
+
+</section>
+
+<!-- /.breaking-changes -->
+
 </details>
 
 </section>
@@ -1129,6 +1187,20 @@ This release closes the following issue:
 </section>
 
 <!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`47530f7`](https://github.com/stdlib-js/stdlib/commit/47530f71e0b6f10b8289949516f12919d5031511): remove `complex/reimf` 
+
+    -   To migrate, users should update their require/import paths to use
+    `@stdlib/complex/float32/reim` which provides the same API and
+    implementation.
+
+</section>
+
+<!-- /.breaking-changes -->
 
 </details>
 
@@ -1227,6 +1299,18 @@ This release closes the following issue:
 <section class="breaking-changes">
 
 ### BREAKING CHANGES
+
+-   [`91256d0`](https://github.com/stdlib-js/stdlib/commit/91256d09c26b154c3144807dabd2e588823030d2): remove `complex/reim` 
+
+    -   To migrate, users should update their require/import paths to use
+    `@stdlib/complex/float64/reim` which provides the same API and
+    implementation.
+
+-   [`47530f7`](https://github.com/stdlib-js/stdlib/commit/47530f71e0b6f10b8289949516f12919d5031511): remove `complex/reimf` 
+
+    -   To migrate, users should update their require/import paths to use
+    `@stdlib/complex/float32/reim` which provides the same API and
+    implementation.
 
 -   [`146dc69`](https://github.com/stdlib-js/stdlib/commit/146dc694836012c9b7dff52c67c7e36f52bfbbce): remove `complex/conj` 
 
@@ -1356,6 +1440,12 @@ A total of 6 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`91256d0`](https://github.com/stdlib-js/stdlib/commit/91256d09c26b154c3144807dabd2e588823030d2) - **remove:** remove `complex/reim` _(by Athan Reines)_
+-   [`8908bda`](https://github.com/stdlib-js/stdlib/commit/8908bda11588f80edf375466ae9e84a3d70cf7d3) - **refactor:** update paths _(by Athan Reines)_
+-   [`59aabc1`](https://github.com/stdlib-js/stdlib/commit/59aabc17b798bff37755488c930b9136ada18d40) - **feat:** add `complex/float64/reim` _(by Athan Reines)_
+-   [`47530f7`](https://github.com/stdlib-js/stdlib/commit/47530f71e0b6f10b8289949516f12919d5031511) - **remove:** remove `complex/reimf` _(by Athan Reines)_
+-   [`ad760a9`](https://github.com/stdlib-js/stdlib/commit/ad760a922086631226d8f759a0d467c707fbc0fb) - **refactor:** update paths _(by Athan Reines)_
+-   [`5325850`](https://github.com/stdlib-js/stdlib/commit/5325850f7954c973272d09973ab71ba112deb8e0) - **feat:** add `complex/float32/reim` _(by Athan Reines)_
 -   [`146dc69`](https://github.com/stdlib-js/stdlib/commit/146dc694836012c9b7dff52c67c7e36f52bfbbce) - **remove:** remove `complex/conj` _(by Athan Reines)_
 -   [`87fdfa1`](https://github.com/stdlib-js/stdlib/commit/87fdfa106f4c75b60a3c79c7fb4ca08f5c172862) - **refactor:** update paths _(by Athan Reines)_
 -   [`76a2524`](https://github.com/stdlib-js/stdlib/commit/76a25248d272330b0ae2e0becd907216037b7a0a) - **feat:** add `complex/float64/conj` _(by Athan Reines)_
