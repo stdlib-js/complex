@@ -22,8 +22,8 @@
 
 import base = require( './../../base' );
 import complex = require( './../../cmplx' );
-import conj = require( './../../conj' );
-import conjf = require( './../../conjf' );
+import conj = require( './../../float64/conj' );
+import conjf = require( './../../float32/conj' );
 import complexCtors = require( './../../ctors' );
 import complexDataType = require( './../../dtype' );
 import complexDataTypes = require( './../../dtypes' );

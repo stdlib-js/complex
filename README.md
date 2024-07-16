@@ -109,8 +109,8 @@ In addition, the namespace contains the following functions:
 
 <div class="namespace-toc">
 
--   <span class="signature">[`conj( z )`][@stdlib/complex/conj]</span><span class="delimiter">: </span><span class="description">return the complex conjugate of a double-precision complex floating-point number.</span>
--   <span class="signature">[`conjf( z )`][@stdlib/complex/conjf]</span><span class="delimiter">: </span><span class="description">return the complex conjugate of a single-precision complex floating-point number.</span>
+-   <span class="signature">[`conj( z )`][@stdlib/complex/float64/conj]</span><span class="delimiter">: </span><span class="description">return the complex conjugate of a double-precision complex floating-point number.</span>
+-   <span class="signature">[`conjf( z )`][@stdlib/complex/float32/conj]</span><span class="delimiter">: </span><span class="description">return the complex conjugate of a single-precision complex floating-point number.</span>
 -   <span class="signature">[`imag( z )`][@stdlib/complex/imag]</span><span class="delimiter">: </span><span class="description">return the imaginary component of a double-precision complex floating-point number.</span>
 -   <span class="signature">[`imagf( z )`][@stdlib/complex/imagf]</span><span class="delimiter">: </span><span class="description">return the imaginary component of a single-precision complex floating-point number.</span>
 -   <span class="signature">[`real( z )`][@stdlib/complex/real]</span><span class="delimiter">: </span><span class="description">return the real component of a double-precision complex floating-point number.</span>
@@ -238,9 +238,9 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <toc-links> -->
 
-[@stdlib/complex/conj]: https://github.com/stdlib-js/complex/tree/main/conj
+[@stdlib/complex/float64/conj]: https://github.com/stdlib-js/complex/tree/main/float64/conj
 
-[@stdlib/complex/conjf]: https://github.com/stdlib-js/complex/tree/main/conjf
+[@stdlib/complex/float32/conj]: https://github.com/stdlib-js/complex/tree/main/float32/conj
 
 [@stdlib/complex/imag]: https://github.com/stdlib-js/complex/tree/main/imag
 

@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-07-07)
+## Unreleased (2024-07-16)
 
 <section class="packages">
 
@@ -420,6 +420,20 @@
 
 <!-- /.bug-fixes -->
 
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`146dc69`](https://github.com/stdlib-js/stdlib/commit/146dc694836012c9b7dff52c67c7e36f52bfbbce): remove `complex/conj` 
+
+    -   To migrate, users should update their require/import paths to use
+    `@stdlib/complex/float64/conj` which provides the same API and
+    implementation.
+
+</section>
+
+<!-- /.breaking-changes -->
+
 </details>
 
 </section>
@@ -441,6 +455,20 @@
 </section>
 
 <!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7444acc`](https://github.com/stdlib-js/stdlib/commit/7444acc6ab0866a6728a07346da45bbcfe4a898c): remove `complex/conjf` 
+
+    -   To migrate, users should update their require/import paths to use
+    `@stdlib/complex/float32/conj` which provides the same API and
+    implementation.
+
+</section>
+
+<!-- /.breaking-changes -->
 
 </details>
 
@@ -551,6 +579,28 @@
 ##### Features
 
 -   [`6e0db34`](https://github.com/stdlib-js/stdlib/commit/6e0db34815925043c2b92c2e984a6c7f064bce3f) - add `complex/float32/base/assert/is-same-value-zero`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="complex-float32-conj-unreleased">
+
+#### [@stdlib/complex/float32/conj](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float32/conj)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`cecc11a`](https://github.com/stdlib-js/stdlib/commit/cecc11af413b6065ed9a61d30d547fc07f656173) - add `complex/float32/conj`
 
 </section>
 
@@ -767,6 +817,28 @@
 ##### Features
 
 -   [`45cadfe`](https://github.com/stdlib-js/stdlib/commit/45cadfed2906835952b096ac0b5feab837a01bce) - add `complex/float64/base/assert/is-same-value-zero`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="complex-float64-conj-unreleased">
+
+#### [@stdlib/complex/float64/conj](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float64/conj)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`76a2524`](https://github.com/stdlib-js/stdlib/commit/76a25248d272330b0ae2e0becd907216037b7a0a) - add `complex/float64/conj`
 
 </section>
 
@@ -1156,6 +1228,18 @@ This release closes the following issue:
 
 ### BREAKING CHANGES
 
+-   [`146dc69`](https://github.com/stdlib-js/stdlib/commit/146dc694836012c9b7dff52c67c7e36f52bfbbce): remove `complex/conj` 
+
+    -   To migrate, users should update their require/import paths to use
+    `@stdlib/complex/float64/conj` which provides the same API and
+    implementation.
+
+-   [`7444acc`](https://github.com/stdlib-js/stdlib/commit/7444acc6ab0866a6728a07346da45bbcfe4a898c): remove `complex/conjf` 
+
+    -   To migrate, users should update their require/import paths to use
+    `@stdlib/complex/float32/conj` which provides the same API and
+    implementation.
+
 -   [`866b939`](https://github.com/stdlib-js/stdlib/commit/866b93963b9ba84407c36b19514aba6ab55489b8): remove `complex/base/assert/is-not-equal` 
 
     -   To migrate, users should update their require/import paths to use
@@ -1272,6 +1356,12 @@ A total of 6 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`146dc69`](https://github.com/stdlib-js/stdlib/commit/146dc694836012c9b7dff52c67c7e36f52bfbbce) - **remove:** remove `complex/conj` _(by Athan Reines)_
+-   [`87fdfa1`](https://github.com/stdlib-js/stdlib/commit/87fdfa106f4c75b60a3c79c7fb4ca08f5c172862) - **refactor:** update paths _(by Athan Reines)_
+-   [`76a2524`](https://github.com/stdlib-js/stdlib/commit/76a25248d272330b0ae2e0becd907216037b7a0a) - **feat:** add `complex/float64/conj` _(by Athan Reines)_
+-   [`7444acc`](https://github.com/stdlib-js/stdlib/commit/7444acc6ab0866a6728a07346da45bbcfe4a898c) - **remove:** remove `complex/conjf` _(by Athan Reines)_
+-   [`0ede1a5`](https://github.com/stdlib-js/stdlib/commit/0ede1a53e30a7a85d74481fbcdfb44e28016fa55) - **refactor:** update paths _(by Athan Reines)_
+-   [`cecc11a`](https://github.com/stdlib-js/stdlib/commit/cecc11af413b6065ed9a61d30d547fc07f656173) - **feat:** add `complex/float32/conj` _(by Athan Reines)_
 -   [`659f752`](https://github.com/stdlib-js/stdlib/commit/659f752db18317bf5fc237fdbcad0d74b61e1ed9) - **style:** add missing spaces _(by Philipp Burckhardt)_
 -   [`c3ebfa8`](https://github.com/stdlib-js/stdlib/commit/c3ebfa80e311db338b171ebf8eb5f46bc66e9bf6) - **docs:** update namespace table of contents and address spelling errors _(by Philipp Burckhardt)_
 -   [`3edcfe5`](https://github.com/stdlib-js/stdlib/commit/3edcfe5d814fd12a56dbe492ddc78663721f5acd) - **feat:** update namespace TypeScript declarations [(#2303)](https://github.com/stdlib-js/stdlib/pull/2303) _(by stdlib-bot, Athan Reines)_
