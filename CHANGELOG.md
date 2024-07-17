@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-07-16)
+## Unreleased (2024-07-17)
 
 <section class="packages">
 
@@ -648,6 +648,28 @@
 
 <!-- /.package -->
 
+<section class="package" id="complex-float32-imag-unreleased">
+
+#### [@stdlib/complex/float32/imag](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float32/imag)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`afca2df`](https://github.com/stdlib-js/stdlib/commit/afca2df7a738d071274a8acbec2683df668b9cde) - add `complex/float32/imag`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="complex-float32-parse-unreleased">
 
 #### [@stdlib/complex/float32/parse](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float32/parse)
@@ -667,6 +689,28 @@
 </section>
 
 <!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="complex-float32-real-unreleased">
+
+#### [@stdlib/complex/float32/real](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float32/real)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`b95c785`](https://github.com/stdlib-js/stdlib/commit/b95c785e7de34adc2e5baa82ddfc460f2052ae4c) - add `complex/float32/real`
+
+</section>
+
+<!-- /.features -->
 
 </details>
 
@@ -918,6 +962,28 @@
 
 <!-- /.package -->
 
+<section class="package" id="complex-float64-imag-unreleased">
+
+#### [@stdlib/complex/float64/imag](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float64/imag)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`3e956ce`](https://github.com/stdlib-js/stdlib/commit/3e956ce6a89d9055ffaa3eeb5fcbd9d9cff2e4dd) - add `complex/float64/imag`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="complex-float64-parse-unreleased">
 
 #### [@stdlib/complex/float64/parse](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float64/parse)
@@ -1008,6 +1074,20 @@
 
 <!-- /.bug-fixes -->
 
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`42c94d5`](https://github.com/stdlib-js/stdlib/commit/42c94d51660e57dedf2a3fb2b59c1eb07fca2975): remove `complex/imag` 
+
+    -   To migrate, users should update their require/import paths to use
+    `@stdlib/complex/float64/imag` which provides the same API and
+    implementation.
+
+</section>
+
+<!-- /.breaking-changes -->
+
 </details>
 
 </section>
@@ -1029,6 +1109,20 @@
 </section>
 
 <!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`1ab834c`](https://github.com/stdlib-js/stdlib/commit/1ab834ceefeb9dcfb1b09a9bd8aa3b0468f3ab9b): remove `complex/imagf` 
+
+    -   To migrate, users should update their require/import paths to use
+    `@stdlib/complex/float32/imag` which provides the same API and
+    implementation.
+
+</section>
+
+<!-- /.breaking-changes -->
 
 </details>
 
@@ -1129,6 +1223,20 @@ This release closes the following issue:
 </section>
 
 <!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`cc6e633`](https://github.com/stdlib-js/stdlib/commit/cc6e633a921b16310fedf0d0cbb2335b36d539f2): remove `complex/realf` 
+
+    -   To migrate, users should update their require/import paths to use
+    `@stdlib/complex/float32/real` which provides the same API and
+    implementation.
+
+</section>
+
+<!-- /.breaking-changes -->
 
 </details>
 
@@ -1300,6 +1408,24 @@ This release closes the following issue:
 
 ### BREAKING CHANGES
 
+-   [`cc6e633`](https://github.com/stdlib-js/stdlib/commit/cc6e633a921b16310fedf0d0cbb2335b36d539f2): remove `complex/realf` 
+
+    -   To migrate, users should update their require/import paths to use
+    `@stdlib/complex/float32/real` which provides the same API and
+    implementation.
+
+-   [`42c94d5`](https://github.com/stdlib-js/stdlib/commit/42c94d51660e57dedf2a3fb2b59c1eb07fca2975): remove `complex/imag` 
+
+    -   To migrate, users should update their require/import paths to use
+    `@stdlib/complex/float64/imag` which provides the same API and
+    implementation.
+
+-   [`1ab834c`](https://github.com/stdlib-js/stdlib/commit/1ab834ceefeb9dcfb1b09a9bd8aa3b0468f3ab9b): remove `complex/imagf` 
+
+    -   To migrate, users should update their require/import paths to use
+    `@stdlib/complex/float32/imag` which provides the same API and
+    implementation.
+
 -   [`91256d0`](https://github.com/stdlib-js/stdlib/commit/91256d09c26b154c3144807dabd2e588823030d2): remove `complex/reim` 
 
     -   To migrate, users should update their require/import paths to use
@@ -1440,6 +1566,15 @@ A total of 6 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`cc6e633`](https://github.com/stdlib-js/stdlib/commit/cc6e633a921b16310fedf0d0cbb2335b36d539f2) - **remove:** remove `complex/realf` _(by Athan Reines)_
+-   [`8d4c46b`](https://github.com/stdlib-js/stdlib/commit/8d4c46b10ca912401e0ff0caa37a17cd3c443c2f) - **refactor:** update paths _(by Athan Reines)_
+-   [`b95c785`](https://github.com/stdlib-js/stdlib/commit/b95c785e7de34adc2e5baa82ddfc460f2052ae4c) - **feat:** add `complex/float32/real` _(by Athan Reines)_
+-   [`42c94d5`](https://github.com/stdlib-js/stdlib/commit/42c94d51660e57dedf2a3fb2b59c1eb07fca2975) - **remove:** remove `complex/imag` _(by Athan Reines)_
+-   [`ed9c0a5`](https://github.com/stdlib-js/stdlib/commit/ed9c0a5e55ff09af3dd6af8c38615480e2c1828e) - **refactor:** update paths _(by Athan Reines)_
+-   [`3e956ce`](https://github.com/stdlib-js/stdlib/commit/3e956ce6a89d9055ffaa3eeb5fcbd9d9cff2e4dd) - **feat:** add `complex/float64/imag` _(by Athan Reines)_
+-   [`1ab834c`](https://github.com/stdlib-js/stdlib/commit/1ab834ceefeb9dcfb1b09a9bd8aa3b0468f3ab9b) - **remove:** remove `complex/imagf` _(by Athan Reines)_
+-   [`18b3c79`](https://github.com/stdlib-js/stdlib/commit/18b3c79c5035c7082618b7379cd6576e64393a96) - **refactor:** update paths _(by Athan Reines)_
+-   [`afca2df`](https://github.com/stdlib-js/stdlib/commit/afca2df7a738d071274a8acbec2683df668b9cde) - **feat:** add `complex/float32/imag` _(by Athan Reines)_
 -   [`91256d0`](https://github.com/stdlib-js/stdlib/commit/91256d09c26b154c3144807dabd2e588823030d2) - **remove:** remove `complex/reim` _(by Athan Reines)_
 -   [`8908bda`](https://github.com/stdlib-js/stdlib/commit/8908bda11588f80edf375466ae9e84a3d70cf7d3) - **refactor:** update paths _(by Athan Reines)_
 -   [`59aabc1`](https://github.com/stdlib-js/stdlib/commit/59aabc17b798bff37755488c930b9136ada18d40) - **feat:** add `complex/float64/reim` _(by Athan Reines)_

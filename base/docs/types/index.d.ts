@@ -43,8 +43,8 @@ interface Namespace {
 	*
 	* @example
 	* var Complex64 = require( './../../../float32/ctor' );
-	* var realf = require( './../../../realf' );
-	* var imagf = require( './../../../imagf' );
+	* var realf = require( './../../../float32/real' );
+	* var imagf = require( './../../../float32/imag' );
 	*
 	* function add( x, y, z, w, v, t ) {
 	*     return x + y + z + w + v + t;
@@ -81,8 +81,8 @@ interface Namespace {
 	*
 	* @example
 	* var Complex64 = require( './../../../float32/ctor' );
-	* var realf = require( './../../../realf' );
-	* var imagf = require( './../../../imagf' );
+	* var realf = require( './../../../float32/real' );
+	* var imagf = require( './../../../float32/imag' );
 	*
 	* function add( x, y, z, w, v, t ) {
 	*     var re = realf( x ) + realf( y ) + realf( z ) + realf( w ) + realf( v ) + realf( t );

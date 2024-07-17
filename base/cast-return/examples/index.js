@@ -20,8 +20,8 @@
 
 var Complex64 = require( './../../../float32/ctor' );
 var addf = require( '@stdlib/math/base/ops/addf' );
-var realf = require( './../../../realf' );
-var imagf = require( './../../../imagf' );
+var realf = require( './../../../float32/real' );
+var imagf = require( './../../../float32/imag' );
 var castReturn = require( './../lib' );
 
 var f = castReturn( addf, 2, Complex64 );

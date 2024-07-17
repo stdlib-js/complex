@@ -28,7 +28,7 @@ var isComplex128 = require( '@stdlib/assert/is-complex128' );
 var isSameComplex128 = require( '@stdlib/assert/is-same-complex128' );
 var isNan = require( '@stdlib/math/base/assert/is-nan' );
 var real = require( './../../../real' );
-var imag = require( './../../../imag' );
+var imag = require( './../../../float64/imag' );
 var parseComplex128 = require( './../lib' );
 
 

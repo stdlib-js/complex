@@ -19,8 +19,8 @@
 'use strict';
 
 var isComplex64 = require( '@stdlib/assert/is-complex64' );
-var real = require( './../../../real' );
-var imag = require( './../../../imag' );
+var real = require( './../../../float32/real' );
+var imag = require( './../../../float32/imag' );
 var parseComplex64 = require( './../lib' );
 
 var str = '-0.5 + 1.25i';

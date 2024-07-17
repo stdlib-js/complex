@@ -111,10 +111,10 @@ In addition, the namespace contains the following functions:
 
 -   <span class="signature">[`conj( z )`][@stdlib/complex/float64/conj]</span><span class="delimiter">: </span><span class="description">return the complex conjugate of a double-precision complex floating-point number.</span>
 -   <span class="signature">[`conjf( z )`][@stdlib/complex/float32/conj]</span><span class="delimiter">: </span><span class="description">return the complex conjugate of a single-precision complex floating-point number.</span>
--   <span class="signature">[`imag( z )`][@stdlib/complex/imag]</span><span class="delimiter">: </span><span class="description">return the imaginary component of a double-precision complex floating-point number.</span>
--   <span class="signature">[`imagf( z )`][@stdlib/complex/imagf]</span><span class="delimiter">: </span><span class="description">return the imaginary component of a single-precision complex floating-point number.</span>
+-   <span class="signature">[`imag( z )`][@stdlib/complex/float64/imag]</span><span class="delimiter">: </span><span class="description">return the imaginary component of a double-precision complex floating-point number.</span>
+-   <span class="signature">[`imagf( z )`][@stdlib/complex/float32/imag]</span><span class="delimiter">: </span><span class="description">return the imaginary component of a single-precision complex floating-point number.</span>
 -   <span class="signature">[`real( z )`][@stdlib/complex/real]</span><span class="delimiter">: </span><span class="description">return the real component of a double-precision complex floating-point number.</span>
--   <span class="signature">[`realf( z )`][@stdlib/complex/realf]</span><span class="delimiter">: </span><span class="description">return the real component of a single-precision complex floating-point number.</span>
+-   <span class="signature">[`realf( z )`][@stdlib/complex/float32/real]</span><span class="delimiter">: </span><span class="description">return the real component of a single-precision complex floating-point number.</span>
 -   <span class="signature">[`reim( z )`][@stdlib/complex/float64/reim]</span><span class="delimiter">: </span><span class="description">return the real and imaginary components of a double-precision complex floating-point number.</span>
 -   <span class="signature">[`reimf( z )`][@stdlib/complex/float32/reim]</span><span class="delimiter">: </span><span class="description">return the real and imaginary components of a single-precision complex floating-point number.</span>
 -   <span class="signature">[`reviveComplex( key, value )`][@stdlib/complex/reviver]</span><span class="delimiter">: </span><span class="description">revive a JSON-serialized complex number.</span>
@@ -242,13 +242,13 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/complex/float32/conj]: https://github.com/stdlib-js/complex/tree/main/float32/conj
 
-[@stdlib/complex/imag]: https://github.com/stdlib-js/complex/tree/main/imag
+[@stdlib/complex/float64/imag]: https://github.com/stdlib-js/complex/tree/main/float64/imag
 
-[@stdlib/complex/imagf]: https://github.com/stdlib-js/complex/tree/main/imagf
+[@stdlib/complex/float32/imag]: https://github.com/stdlib-js/complex/tree/main/float32/imag
 
 [@stdlib/complex/real]: https://github.com/stdlib-js/complex/tree/main/real
 
-[@stdlib/complex/realf]: https://github.com/stdlib-js/complex/tree/main/realf
+[@stdlib/complex/float32/real]: https://github.com/stdlib-js/complex/tree/main/float32/real
 
 [@stdlib/complex/float64/reim]: https://github.com/stdlib-js/complex/tree/main/float64/reim
 

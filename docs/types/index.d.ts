@@ -29,11 +29,11 @@ import complexDataType = require( './../../dtype' );
 import complexDataTypes = require( './../../dtypes' );
 import Complex64 = require( './../../float32/ctor' );
 import Complex128 = require( './../../float64/ctor' );
-import imag = require( './../../imag' );
-import imagf = require( './../../imagf' );
+import imag = require( './../../float64/imag' );
+import imagf = require( './../../float32/imag' );
 import complexPromotionRules = require( './../../promotion-rules' );
 import real = require( './../../real' );
-import realf = require( './../../realf' );
+import realf = require( './../../float32/real' );
 import reim = require( './../../float64/reim' );
 import reimf = require( './../../float32/reim' );
 import reviveComplex = require( './../../reviver' );
@@ -72,7 +72,7 @@ interface Namespace {
 	* @example
 	* var Complex128 = require( './../../float64/ctor' );
 	* var real = require( './../../real' );
-	* var imag = require( './../../imag' );
+	* var imag = require( './../../float64/imag' );
 	*
 	* var z = new Complex128( 5.0, 3.0 );
 	*
@@ -95,8 +95,8 @@ interface Namespace {
 	*
 	* @example
 	* var Complex64 = require( './../../float32/ctor' );
-	* var realf = require( './../../realf' );
-	* var imagf = require( './../../imagf' );
+	* var realf = require( './../../float32/real' );
+	* var imagf = require( './../../float32/imag' );
 	*
 	* var z = new Complex64( 5.0, 3.0 );
 	*

@@ -22,8 +22,8 @@
 
 var tape = require( 'tape' );
 var Complex64 = require( './../../../float32/ctor' );
-var realf = require( './../../../realf' );
-var imagf = require( './../../../imagf' );
+var realf = require( './../../../float32/real' );
+var imagf = require( './../../../float32/imag' );
 var castReturn = require( './../lib' );
 
 

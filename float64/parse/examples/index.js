@@ -20,7 +20,7 @@
 
 var isComplex128 = require( '@stdlib/assert/is-complex128' );
 var real = require( './../../../real' );
-var imag = require( './../../../imag' );
+var imag = require( './../../../float64/imag' );
 var parseComplex128 = require( './../lib' );
 
 var str = '-0.5 + 1.25i';

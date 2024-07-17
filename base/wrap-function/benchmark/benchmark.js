@@ -22,8 +22,8 @@
 
 var bench = require( '@stdlib/bench' );
 var Complex64 = require( './../../../float32/ctor' );
-var realf = require( './../../../realf' );
-var imagf = require( './../../../imagf' );
+var realf = require( './../../../float32/real' );
+var imagf = require( './../../../float32/imag' );
 var isnanf = require( '@stdlib/math/base/assert/is-nanf' );
 var isFunction = require( '@stdlib/assert/is-function' );
 var pkg = require( './../package.json' ).name;
