@@ -1,5 +1,5 @@
 {
-  "name": "@stdlib/complex/real",
+  "name": "@stdlib/complex/float64/real",
   "version": "0.0.0",
   "description": "Return the real component of a double-precision complex floating-point number.",
   "license": "Apache-2.0",

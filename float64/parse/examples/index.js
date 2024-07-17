@@ -19,7 +19,7 @@
 'use strict';
 
 var isComplex128 = require( '@stdlib/assert/is-complex128' );
-var real = require( './../../../real' );
+var real = require( './../../../float64/real' );
 var imag = require( './../../../float64/imag' );
 var parseComplex128 = require( './../lib' );
 

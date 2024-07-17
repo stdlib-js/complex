@@ -16,27 +16,25 @@
 * limitations under the License.
 */
 
-#include "stdlib/complex/real.h"
+#ifndef STDLIB_COMPLEX_FLOAT64_REAL_H
+#define STDLIB_COMPLEX_FLOAT64_REAL_H
+
 #include "stdlib/complex/float64/ctor.h"
+
+/*
+* If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
+*/
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 /**
 * Returns the real component of a double-precision complex floating-point number.
-*
-* @param z     double-precision complex floating-point number
-* @return      real component
-*
-* @example
-* #include "stdlib/complex/float64/ctor.h"
-*
-* stdlib_complex128_t z = stdlib_complex128( 5.0, 2.0 );
-*
-* // ...
-*
-* double re = stdlib_real( z );
-* // returns 5.0
 */
-double stdlib_real( const stdlib_complex128_t z ) {
-	stdlib_complex128_parts_t v;
-	v.value = z; // cppcheck-suppress unreadVariable
-	return v.parts[ 0 ];
+double stdlib_complex128_real( const stdlib_complex128_t z );
+
+#ifdef __cplusplus
 }
+#endif
+
+#endif // !STDLIB_COMPLEX_FLOAT64_REAL_H

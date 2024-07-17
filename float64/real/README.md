@@ -37,7 +37,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var real = require( '@stdlib/complex/real' );
+var real = require( '@stdlib/complex/float64/real' );
 ```
 
 #### real( z )
@@ -70,23 +70,29 @@ var re = real( z );
 
 ## Examples
 
+<!-- eslint-disable max-len -->
+
 <!-- eslint no-undef: "error" -->
 
 ```javascript
 var Complex128 = require( '@stdlib/complex/float64/ctor' );
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
-var real = require( '@stdlib/complex/real' );
+var discreteUniform = require( '@stdlib/random/base/discrete-uniform' );
+var filledarrayBy = require( '@stdlib/array/filled-by' );
+var real = require( '@stdlib/complex/float64/real' );
 
-var re;
-var im;
+function random() {
+    return new Complex128( discreteUniform( -10, 10 ), discreteUniform( -10, 10 ) ); // eslint-disable-line max-len
+}
+
+// Generate an array of random complex numbers:
+var x = filledarrayBy( 100, 'complex128', random );
+// returns <Complex128Array>
+
+// Retrieve the real component of each complex number...
 var z;
 var i;
-
-for ( i = 0; i < 100; i++ ) {
-    re = round( (randu()*100.0) - 50.0 );
-    im = round( (randu()*50.0) - 25.0 );
-    z = new Complex128( re, im );
+for ( i = 0; i < x.length; i++ ) {
+    z = x.get( i );
     console.log( 'real(%s) = %d', z.toString(), real( z ) );
 }
 ```
@@ -118,10 +124,10 @@ for ( i = 0; i < 100; i++ ) {
 ### Usage
 
 ```c
-#include "stdlib/complex/real.h"
+#include "stdlib/complex/float64/real.h"
 ```
 
-#### stdlib_real( z )
+#### stdlib_complex128_real( z )
 
 Returns the real component of a double-precision complex floating-point number.
 
@@ -132,7 +138,7 @@ stdlib_complex128_t z = stdlib_complex128( 5.0, 2.0 );
 
 // ...
 
-double re = stdlib_real( z );
+double re = stdlib_complex128_real( z );
 // returns 5.0
 ```
 
@@ -141,7 +147,7 @@ The function accepts the following arguments:
 -   **z**: `[in] stdlib_complex128_t` double-precision complex floating-point number.
 
 ```c
-double stdlib_real( const stdlib_complex128_t z );
+double stdlib_complex128_real( const stdlib_complex128_t z );
 ```
 
 </section>
@@ -163,7 +169,7 @@ double stdlib_real( const stdlib_complex128_t z );
 ### Examples
 
 ```c
-#include "stdlib/complex/real.h"
+#include "stdlib/complex/float64/real.h"
 #include "stdlib/complex/float64/ctor.h"
 #include <stdio.h>
 
@@ -177,7 +183,7 @@ int main( void ) {
 
     int i;
     for ( i = 0; i < 4; i++ ) {
-        printf( "real(v) = %lf\n", stdlib_real( x[ i ] ) );
+        printf( "real(v) = %lf\n", stdlib_complex128_real( x[ i ] ) );
     }
 }
 ```

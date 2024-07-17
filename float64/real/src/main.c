@@ -16,20 +16,27 @@
 * limitations under the License.
 */
 
-#include "stdlib/complex/real.h"
+#include "stdlib/complex/float64/real.h"
 #include "stdlib/complex/float64/ctor.h"
-#include <stdio.h>
 
-int main( void ) {
-	const stdlib_complex128_t x[] = {
-		stdlib_complex128( 5.0, 2.0 ),
-		stdlib_complex128( -2.0, 1.0 ),
-		stdlib_complex128( 0.0, -0.0 ),
-		stdlib_complex128( 0.0/0.0, 0.0/0.0 )
-	};
-
-	int i;
-	for ( i = 0; i < 4; i++ ) {
-		printf( "real(v) = %lf\n", stdlib_real( x[ i ] ) );
-	}
+/**
+* Returns the real component of a double-precision complex floating-point number.
+*
+* @param z     double-precision complex floating-point number
+* @return      real component
+*
+* @example
+* #include "stdlib/complex/float64/ctor.h"
+*
+* stdlib_complex128_t z = stdlib_complex128( 5.0, 2.0 );
+*
+* // ...
+*
+* double re = stdlib_complex128_real( z );
+* // returns 5.0
+*/
+double stdlib_complex128_real( const stdlib_complex128_t z ) {
+	stdlib_complex128_parts_t v;
+	v.value = z; // cppcheck-suppress unreadVariable
+	return v.parts[ 0 ];
 }

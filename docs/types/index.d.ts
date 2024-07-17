@@ -32,7 +32,7 @@ import Complex128 = require( './../../float64/ctor' );
 import imag = require( './../../float64/imag' );
 import imagf = require( './../../float32/imag' );
 import complexPromotionRules = require( './../../promotion-rules' );
-import real = require( './../../real' );
+import real = require( './../../float64/real' );
 import realf = require( './../../float32/real' );
 import reim = require( './../../float64/reim' );
 import reimf = require( './../../float32/reim' );
@@ -71,7 +71,7 @@ interface Namespace {
 	*
 	* @example
 	* var Complex128 = require( './../../float64/ctor' );
-	* var real = require( './../../real' );
+	* var real = require( './../../float64/real' );
 	* var imag = require( './../../float64/imag' );
 	*
 	* var z = new Complex128( 5.0, 3.0 );

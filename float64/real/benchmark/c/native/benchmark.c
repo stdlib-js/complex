@@ -16,10 +16,7 @@
 * limitations under the License.
 */
 
-/**
-* Benchmark `real`.
-*/
-#include "stdlib/complex/real.h"
+#include "stdlib/complex/float64/real.h"
 #include "stdlib/complex/float64/ctor.h"
 #include <stdlib.h>
 #include <stdio.h>
@@ -108,7 +105,7 @@ double benchmark() {
 		re = rand_double();
 		im = rand_double();
 		z = stdlib_complex128( re, im );
-		v = stdlib_real( z );
+		v = stdlib_complex128_real( z );
 		if ( v != v ) {
 			printf( "should not return NaN\n" );
 			break;

@@ -21,7 +21,7 @@
 // MODULES //
 
 var bench = require( '@stdlib/bench' );
-var Complex128 = require( './../../float64/ctor' );
+var Complex128 = require( './../../../float64/ctor' );
 var randu = require( '@stdlib/random/base/randu' );
 var isnan = require( '@stdlib/math/base/assert/is-nan' );
 var pkg = require( './../package.json' ).name;
@@ -31,14 +31,19 @@ var real = require( './../lib' );
 // MAIN //
 
 bench( pkg, function benchmark( b ) {
+	var values;
 	var re;
-	var z;
 	var i;
+
+	values = [
+		new Complex128( randu(), randu() ),
+		new Complex128( randu(), randu() ),
+		new Complex128( randu(), randu() )
+	];
 
 	b.tic();
 	for ( i = 0; i < b.iterations; i++ ) {
-		z = new Complex128( randu(), randu() );
-		re = real( z );
+		re = real( values[ i%values.length ] );
 		if ( isnan( re ) ) {
 			b.fail( 'should not return NaN' );
 		}

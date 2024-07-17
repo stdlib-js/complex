@@ -16,16 +16,13 @@
 * limitations under the License.
 */
 
-/**
-* Benchmark `creal`.
-*/
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
 #include <complex.h>
 #include <sys/time.h>
 
-#define NAME "real"
+#define NAME "creal"
 #define ITERATIONS 1000000
 #define REPEATS 3
 

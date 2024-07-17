@@ -1010,6 +1010,28 @@
 
 <!-- /.package -->
 
+<section class="package" id="complex-float64-real-unreleased">
+
+#### [@stdlib/complex/float64/real](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float64/real)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`2495723`](https://github.com/stdlib-js/stdlib/commit/2495723f5cf688903d52fddf05912a6e03d5cdeb) - add `complex/float64/real`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="complex-float64-reim-unreleased">
 
 #### [@stdlib/complex/float64/reim](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float64/reim)
@@ -1201,6 +1223,20 @@ This release closes the following issue:
 </section>
 
 <!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`41fe604`](https://github.com/stdlib-js/stdlib/commit/41fe6043d813771c445a2f685a72b22bee14c748): remove `complex/real` 
+
+    -   To migrate, users should update their require/import paths to use
+    `@stdlib/complex/float64/real` which provides the same API and
+    implementation.
+
+</section>
+
+<!-- /.breaking-changes -->
 
 </details>
 
@@ -1408,6 +1444,12 @@ This release closes the following issue:
 
 ### BREAKING CHANGES
 
+-   [`41fe604`](https://github.com/stdlib-js/stdlib/commit/41fe6043d813771c445a2f685a72b22bee14c748): remove `complex/real` 
+
+    -   To migrate, users should update their require/import paths to use
+    `@stdlib/complex/float64/real` which provides the same API and
+    implementation.
+
 -   [`cc6e633`](https://github.com/stdlib-js/stdlib/commit/cc6e633a921b16310fedf0d0cbb2335b36d539f2): remove `complex/realf` 
 
     -   To migrate, users should update their require/import paths to use
@@ -1566,6 +1608,9 @@ A total of 6 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`41fe604`](https://github.com/stdlib-js/stdlib/commit/41fe6043d813771c445a2f685a72b22bee14c748) - **remove:** remove `complex/real` _(by Athan Reines)_
+-   [`32bbcb3`](https://github.com/stdlib-js/stdlib/commit/32bbcb3b3dae1f028fd18166ee7875a93d44d0ee) - **refactor:** update paths _(by Athan Reines)_
+-   [`2495723`](https://github.com/stdlib-js/stdlib/commit/2495723f5cf688903d52fddf05912a6e03d5cdeb) - **feat:** add `complex/float64/real` _(by Athan Reines)_
 -   [`cc6e633`](https://github.com/stdlib-js/stdlib/commit/cc6e633a921b16310fedf0d0cbb2335b36d539f2) - **remove:** remove `complex/realf` _(by Athan Reines)_
 -   [`8d4c46b`](https://github.com/stdlib-js/stdlib/commit/8d4c46b10ca912401e0ff0caa37a17cd3c443c2f) - **refactor:** update paths _(by Athan Reines)_
 -   [`b95c785`](https://github.com/stdlib-js/stdlib/commit/b95c785e7de34adc2e5baa82ddfc460f2052ae4c) - **feat:** add `complex/float32/real` _(by Athan Reines)_

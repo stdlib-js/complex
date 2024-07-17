@@ -18,19 +18,26 @@
 
 'use strict';
 
-var Complex128 = require( './../../float64/ctor' );
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
-var real = require( './../lib' );
+/**
+* Return the real component of a double-precision complex floating-point number.
+*
+* @module @stdlib/complex/float64/real
+*
+* @example
+* var Complex128 = require( '@stdlib/complex/float64/ctor' );
+* var real = require( '@stdlib/complex/float64/real' );
+*
+* var z = new Complex128( 5.0, 3.0 );
+*
+* var re = real( z );
+* // returns 5.0
+*/
 
-var re;
-var im;
-var z;
-var i;
+// MODULES //
 
-for ( i = 0; i < 100; i++ ) {
-	re = round( (randu()*100.0) - 50.0 );
-	im = round( (randu()*50.0) - 25.0 );
-	z = new Complex128( re, im );
-	console.log( 'real(%s) = %d', z.toString(), real( z ) );
-}
+var main = require( './main.js' );
+
+
+// EXPORTS //
+
+module.exports = main;

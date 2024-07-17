@@ -16,25 +16,20 @@
 * limitations under the License.
 */
 
-#ifndef STDLIB_COMPLEX_REAL_H
-#define STDLIB_COMPLEX_REAL_H
-
+#include "stdlib/complex/float64/real.h"
 #include "stdlib/complex/float64/ctor.h"
+#include <stdio.h>
 
-/*
-* If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
-*/
-#ifdef __cplusplus
-extern "C" {
-#endif
+int main( void ) {
+	const stdlib_complex128_t x[] = {
+		stdlib_complex128( 5.0, 2.0 ),
+		stdlib_complex128( -2.0, 1.0 ),
+		stdlib_complex128( 0.0, -0.0 ),
+		stdlib_complex128( 0.0/0.0, 0.0/0.0 )
+	};
 
-/**
-* Returns the real component of a double-precision complex floating-point number.
-*/
-double stdlib_real( const stdlib_complex128_t z );
-
-#ifdef __cplusplus
+	int i;
+	for ( i = 0; i < 4; i++ ) {
+		printf( "real(v) = %lf\n", stdlib_complex128_real( x[ i ] ) );
+	}
 }
-#endif
-
-#endif // !STDLIB_COMPLEX_REAL_H
