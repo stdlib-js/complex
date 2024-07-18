@@ -512,6 +512,28 @@
 
 <!-- /.package -->
 
+<section class="package" id="complex-float32-base-add-unreleased">
+
+#### [@stdlib/complex/float32/base/add](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float32/base/add)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`10ef39d`](https://github.com/stdlib-js/stdlib/commit/10ef39d7b94513bf84f70eef5a673725f155e3d5) - add `complex/float32/base/add`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="complex-float32-base-assert-is-equal-unreleased">
 
 #### [@stdlib/complex/float32/base/assert/is-equal](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float32/base/assert/is-equal)
@@ -805,6 +827,28 @@
 </section>
 
 <!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="complex-float64-base-add-unreleased">
+
+#### [@stdlib/complex/float64/base/add](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float64/base/add)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`9fd67fc`](https://github.com/stdlib-js/stdlib/commit/9fd67fc9f2f7195f084541bcbf40d24c9b77261c) - add `complex/float64/base/add`
+
+</section>
+
+<!-- /.features -->
 
 </details>
 
@@ -1619,6 +1663,10 @@ A total of 6 people contributed to this release. Thank you to the following cont
 <details>
 
 -   [`81b48ae`](https://github.com/stdlib-js/stdlib/commit/81b48aeb9d5d2b16fe039f9db7e710c95a35585f) - **feat:** update namespace TypeScript declarations [(##2621)](#2621) _(by stdlib-bot, Philipp Burckhardt)_
+-   [`0406147`](https://github.com/stdlib-js/stdlib/commit/04061476d1036e1b8b786736b1ba1653eddff1ef) - **refactor:** update paths _(by Athan Reines)_
+-   [`b9703b5`](https://github.com/stdlib-js/stdlib/commit/b9703b569dc2f0a67e604e388a0d188b08138b48) - **refactor:** update paths _(by Athan Reines)_
+-   [`10ef39d`](https://github.com/stdlib-js/stdlib/commit/10ef39d7b94513bf84f70eef5a673725f155e3d5) - **feat:** add `complex/float32/base/add` _(by Athan Reines)_
+-   [`9fd67fc`](https://github.com/stdlib-js/stdlib/commit/9fd67fc9f2f7195f084541bcbf40d24c9b77261c) - **feat:** add `complex/float64/base/add` _(by Athan Reines)_
 -   [`41fe604`](https://github.com/stdlib-js/stdlib/commit/41fe6043d813771c445a2f685a72b22bee14c748) - **remove:** remove `complex/real` _(by Athan Reines)_
 -   [`32bbcb3`](https://github.com/stdlib-js/stdlib/commit/32bbcb3b3dae1f028fd18166ee7875a93d44d0ee) - **refactor:** update paths _(by Athan Reines)_
 -   [`2495723`](https://github.com/stdlib-js/stdlib/commit/2495723f5cf688903d52fddf05912a6e03d5cdeb) - **feat:** add `complex/float64/real` _(by Athan Reines)_

@@ -19,29 +19,27 @@
 'use strict';
 
 /**
-* Wrap a function accepting complex number arguments to support providing both real and complex numbers.
+* Add two single-precision complex floating-point numbers.
 *
-* @module @stdlib/complex/base/wrap-function
+* @module @stdlib/complex/float32/base/add
 *
 * @example
 * var Complex64 = require( '@stdlib/complex/float32/ctor' );
-* var caddf = require( '@stdlib/complex/float32/base/add' );
 * var realf = require( '@stdlib/complex/float32/real' );
 * var imagf = require( '@stdlib/complex/float32/imag' );
-* var wrap = require( '@stdlib/complex/base/wrap-function' );
+* var add = require( '@stdlib/complex/float32/base/add' );
 *
-* var f = wrap( caddf, 2, Complex64 );
-*
-* // ...
-*
-* var z = f( 3.0, 4.0 );
+* var z = new Complex64( 5.0, 3.0 );
 * // returns <Complex64>
 *
-* var re = realf( z );
-* // returns 7.0
+* var out = add( z, z );
+* // returns <Complex64>
 *
-* var im = imagf( z );
-* // returns 0.0
+* var re = realf( out );
+* // returns 10.0
+*
+* var im = imagf( out );
+* // returns 6.0
 */
 
 // MODULES //

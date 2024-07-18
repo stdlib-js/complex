@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2021 The Stdlib Authors.
+* Copyright (c) 2018 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -18,24 +18,19 @@
 
 'use strict';
 
-var Complex64 = require( './../../../float32/ctor' );
-var caddf = require( './../../../float32/base/add' );
-var realf = require( './../../../float32/real' );
-var imagf = require( './../../../float32/imag' );
-var wrap = require( './../lib' );
+var Complex128 = require( './../../../../float64/ctor' );
+var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
+var add = require( './../lib' );
 
-var f = wrap( caddf, 2, Complex64 );
+var rand = discreteUniform( -50, 50 );
 
-// ...
-
-var z = f( 3.0, 4.0 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns 7.0
-
-var im = imagf( z );
-// returns 0.0
-
-console.log( '%d + %di', re, im );
-// => '7 + 0i'
+var z1;
+var z2;
+var z3;
+var i;
+for ( i = 0; i < 100; i++ ) {
+	z1 = new Complex128( rand(), rand() );
+	z2 = new Complex128( rand(), rand() );
+	z3 = add( z1, z2 );
+	console.log( '(%s) + (%s) = %s', z1.toString(), z2.toString(), z3.toString() );
+}

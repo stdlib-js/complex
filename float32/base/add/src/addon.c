@@ -16,26 +16,8 @@
 * limitations under the License.
 */
 
-'use strict';
+#include "stdlib/complex/float32/base/add.h"
+#include "stdlib/math/base/napi/binary.h"
 
-var Complex64 = require( './../../../float32/ctor' );
-var caddf = require( './../../../float32/base/add' );
-var realf = require( './../../../float32/real' );
-var imagf = require( './../../../float32/imag' );
-var wrap = require( './../lib' );
-
-var f = wrap( caddf, 2, Complex64 );
-
-// ...
-
-var z = f( 3.0, 4.0 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns 7.0
-
-var im = imagf( z );
-// returns 0.0
-
-console.log( '%d + %di', re, im );
-// => '7 + 0i'
+// cppcheck-suppress shadowFunction
+STDLIB_MATH_BASE_NAPI_MODULE_CC_C( stdlib_base_complex64_add )

@@ -16,26 +16,25 @@
 * limitations under the License.
 */
 
-'use strict';
+#ifndef STDLIB_COMPLEX_FLOAT64_BASE_ADD_H
+#define STDLIB_COMPLEX_FLOAT64_BASE_ADD_H
 
-var Complex64 = require( './../../../float32/ctor' );
-var caddf = require( './../../../float32/base/add' );
-var realf = require( './../../../float32/real' );
-var imagf = require( './../../../float32/imag' );
-var wrap = require( './../lib' );
+#include "stdlib/complex/float64/ctor.h"
 
-var f = wrap( caddf, 2, Complex64 );
+/*
+* If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
+*/
+#ifdef __cplusplus
+extern "C" {
+#endif
 
-// ...
+/**
+* Adds two double-precision complex floating-point numbers.
+*/
+stdlib_complex128_t stdlib_base_complex128_add( const stdlib_complex128_t z1, const stdlib_complex128_t z2 );
 
-var z = f( 3.0, 4.0 );
-// returns <Complex64>
+#ifdef __cplusplus
+}
+#endif
 
-var re = realf( z );
-// returns 7.0
-
-var im = imagf( z );
-// returns 0.0
-
-console.log( '%d + %di', re, im );
-// => '7 + 0i'
+#endif // !STDLIB_COMPLEX_FLOAT64_BASE_ADD_H
