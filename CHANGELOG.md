@@ -20,6 +20,7 @@
 
 ##### Features
 
+-   [`565a2ff`](https://github.com/stdlib-js/stdlib/commit/565a2ffe3aa2c7260109cbacf85bf6029c12e305) - refactor namespace to export subnamespaces
 -   [`81b48ae`](https://github.com/stdlib-js/stdlib/commit/81b48aeb9d5d2b16fe039f9db7e710c95a35585f) - update namespace TypeScript declarations [(##2621)](#2621)
 
 </section>
@@ -29,6 +30,18 @@
 <section class="breaking-changes">
 
 ##### BREAKING CHANGES
+
+-   [`565a2ff`](https://github.com/stdlib-js/stdlib/commit/565a2ffe3aa2c7260109cbacf85bf6029c12e305): refactor namespace to export subnamespaces
+-   [`565a2ff`](https://github.com/stdlib-js/stdlib/commit/565a2ffe3aa2c7260109cbacf85bf6029c12e305): APIs renamed and/or moved to subnamespaces 
+
+    -   To migrate, users should consult the list of exports to determine
+    which properties moved where. Double-precision APIs moved to the
+    `float64` namespace and single-precision APIs moved to the `float32`
+    namespace. The following properties were renamed:
+    - complexCtors => ctors
+    - complexDataType => dtype
+    - complexDataTypes => dtypes
+    - complexPromotionRules => promotionRules
 
 -   [`7381394`](https://github.com/stdlib-js/stdlib/commit/738139479cf29cbe123d7c5028024983ba11b3bd): remove `complex/reviver-float64` 
 
@@ -1671,6 +1684,18 @@ This release closes the following issue:
 
 ### BREAKING CHANGES
 
+-   [`565a2ff`](https://github.com/stdlib-js/stdlib/commit/565a2ffe3aa2c7260109cbacf85bf6029c12e305): refactor namespace to export subnamespaces
+-   [`565a2ff`](https://github.com/stdlib-js/stdlib/commit/565a2ffe3aa2c7260109cbacf85bf6029c12e305): APIs renamed and/or moved to subnamespaces 
+
+    -   To migrate, users should consult the list of exports to determine
+    which properties moved where. Double-precision APIs moved to the
+    `float64` namespace and single-precision APIs moved to the `float32`
+    namespace. The following properties were renamed:
+    - complexCtors => ctors
+    - complexDataType => dtype
+    - complexDataTypes => dtypes
+    - complexPromotionRules => promotionRules
+
 -   [`d9edc48`](https://github.com/stdlib-js/stdlib/commit/d9edc482b619ce39d6d2b0ed172e85e7cb295ba4): convert `complex/float64` to a namespace
 -   [`d9edc48`](https://github.com/stdlib-js/stdlib/commit/d9edc482b619ce39d6d2b0ed172e85e7cb295ba4): `complex/float64` converted to a namespace 
 
@@ -1851,6 +1876,7 @@ A total of 6 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`565a2ff`](https://github.com/stdlib-js/stdlib/commit/565a2ffe3aa2c7260109cbacf85bf6029c12e305) - **feat:** refactor namespace to export subnamespaces _(by Athan Reines)_
 -   [`ea241a3`](https://github.com/stdlib-js/stdlib/commit/ea241a32e7bbd7f346ff993d932adbd1857108e1) - **feat:** add `assert` to namespace _(by Athan Reines)_
 -   [`69eecad`](https://github.com/stdlib-js/stdlib/commit/69eecadd785a9ba5732e2d136b8755cad6341fd0) - **feat:** add `complex/float32/base/assert` namespace _(by Athan Reines)_
 -   [`c89d08c`](https://github.com/stdlib-js/stdlib/commit/c89d08c3733ca6b6f1fab8d8ebc95663b8190b5e) - **feat:** add `assert` to namespace _(by Athan Reines)_
