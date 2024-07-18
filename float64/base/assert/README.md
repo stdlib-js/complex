@@ -18,24 +18,24 @@ limitations under the License.
 
 -->
 
-# Complex64
+# Assert
 
-> Single-precision complex floating-point number functions.
+> Base (i.e., lower-level) double-precision complex floating-point number assertion functions.
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var complex = require( '@stdlib/complex/float32' );
+var assert = require( '@stdlib/complex/float64/base/assert' );
 ```
 
-#### complex
+#### assert
 
-Namespace containing single-precision complex floating-point number functions.
+Namespace containing base (i.e., lower-level) double-precision complex floating-point number assertion functions.
 
 ```javascript
-var ns = complex;
+var ns = assert;
 // returns {...}
 ```
 
@@ -67,7 +67,7 @@ The namespace contains the following functions:
 
 ```javascript
 var objectKeys = require( '@stdlib/utils/keys' );
-var ns = require( '@stdlib/complex/float32' );
+var ns = require( '@stdlib/complex/float64/base/assert' );
 
 console.log( objectKeys( ns ) );
 ```

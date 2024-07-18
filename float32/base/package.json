@@ -1,7 +1,7 @@
 {
-  "name": "@stdlib/complex/float64",
+  "name": "@stdlib/complex/float32/base",
   "version": "0.0.0",
-  "description": "Double-precision complex number functions.",
+  "description": "Base (i.e., lower-level) single-precision complex number functions.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
@@ -56,6 +56,7 @@
     "number",
     "namespace",
     "ns",
-    "float64"
+    "float32",
+    "base"
   ]
 }

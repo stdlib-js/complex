@@ -492,9 +492,29 @@
 
 <details>
 
+<section class="features">
+
+##### Features
+
+-   [`332a9ba`](https://github.com/stdlib-js/stdlib/commit/332a9ba0a364ca81eabc0d73ab8fa5b28f969074) - add `base` to namespace
+-   [`69cbd2b`](https://github.com/stdlib-js/stdlib/commit/69cbd2b280adece30d0ecb190787521e4b013be9) - add `parseComplex64` to namespace
+-   [`a0516b7`](https://github.com/stdlib-js/stdlib/commit/a0516b707ec22a182856d3bed344b7f5e241e01f) - convert `complex/float32` to a namespace
+
+</section>
+
+<!-- /.features -->
+
 <section class="breaking-changes">
 
 ##### BREAKING CHANGES
+
+-   [`a0516b7`](https://github.com/stdlib-js/stdlib/commit/a0516b707ec22a182856d3bed344b7f5e241e01f): convert `complex/float32` to a namespace
+-   [`a0516b7`](https://github.com/stdlib-js/stdlib/commit/a0516b707ec22a182856d3bed344b7f5e241e01f): `complex/float32` converted to a namespace 
+
+    -   This commit refactors `complex/float32` to be a namespace. The
+    constructor is now the `complex/float32/ctor`. To migrate, users
+    should update their import paths to `complex/float32/ctor` which
+    provides the same API and implementation.
 
 -   [`00d0530`](https://github.com/stdlib-js/stdlib/commit/00d0530d0daabe872c5bc9559abae76b2024dfe3): remove `complex/reviver-float32` 
 
@@ -505,6 +525,29 @@
 </section>
 
 <!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="complex-float32-base-unreleased">
+
+#### [@stdlib/complex/float32/base](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float32/base)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`ea241a3`](https://github.com/stdlib-js/stdlib/commit/ea241a32e7bbd7f346ff993d932adbd1857108e1) - add `assert` to namespace
+-   [`21604d0`](https://github.com/stdlib-js/stdlib/commit/21604d0a1efaa60b3e2f477d36cdcb967312904d) - add `complex/float32/base` namespace
+
+</section>
+
+<!-- /.features -->
 
 </details>
 
@@ -523,6 +566,28 @@
 ##### Features
 
 -   [`10ef39d`](https://github.com/stdlib-js/stdlib/commit/10ef39d7b94513bf84f70eef5a673725f155e3d5) - add `complex/float32/base/add`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="complex-float32-base-assert-unreleased">
+
+#### [@stdlib/complex/float32/base/assert](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float32/base/assert)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`69eecad`](https://github.com/stdlib-js/stdlib/commit/69eecadd785a9ba5732e2d136b8755cad6341fd0) - add `complex/float32/base/assert` namespace
 
 </section>
 
@@ -836,9 +901,28 @@
 
 <details>
 
+<section class="features">
+
+##### Features
+
+-   [`e797f05`](https://github.com/stdlib-js/stdlib/commit/e797f0544c2b5a8415c230350d8dfa4917691d33) - add `base` to namespace
+-   [`d9edc48`](https://github.com/stdlib-js/stdlib/commit/d9edc482b619ce39d6d2b0ed172e85e7cb295ba4) - convert `complex/float64` to a namespace
+
+</section>
+
+<!-- /.features -->
+
 <section class="breaking-changes">
 
 ##### BREAKING CHANGES
+
+-   [`d9edc48`](https://github.com/stdlib-js/stdlib/commit/d9edc482b619ce39d6d2b0ed172e85e7cb295ba4): convert `complex/float64` to a namespace
+-   [`d9edc48`](https://github.com/stdlib-js/stdlib/commit/d9edc482b619ce39d6d2b0ed172e85e7cb295ba4): `complex/float64` converted to a namespace 
+
+    -   This commit refactors `complex/float64` to be a namespace. The
+    constructor is now the `complex/float64/ctor`. To migrate, users
+    should update their import paths to `complex/float64/ctor` which
+    provides the same API and implementation.
 
 -   [`7381394`](https://github.com/stdlib-js/stdlib/commit/738139479cf29cbe123d7c5028024983ba11b3bd): remove `complex/reviver-float64` 
 
@@ -849,6 +933,29 @@
 </section>
 
 <!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="complex-float64-base-unreleased">
+
+#### [@stdlib/complex/float64/base](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float64/base)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`c89d08c`](https://github.com/stdlib-js/stdlib/commit/c89d08c3733ca6b6f1fab8d8ebc95663b8190b5e) - add `assert` to namespace
+-   [`12e3d27`](https://github.com/stdlib-js/stdlib/commit/12e3d27221fea685a32218d5bd7255bba1c3b4a3) - add `complex/float64/base` namespace
+
+</section>
+
+<!-- /.features -->
 
 </details>
 
@@ -867,6 +974,28 @@
 ##### Features
 
 -   [`9fd67fc`](https://github.com/stdlib-js/stdlib/commit/9fd67fc9f2f7195f084541bcbf40d24c9b77261c) - add `complex/float64/base/add`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="complex-float64-base-assert-unreleased">
+
+#### [@stdlib/complex/float64/base/assert](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float64/base/assert)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`5bb602e`](https://github.com/stdlib-js/stdlib/commit/5bb602e63ab9d543d6f2702a556e7569d01277bb) - add `complex/float64/base/assert` namespace
 
 </section>
 
@@ -1542,6 +1671,22 @@ This release closes the following issue:
 
 ### BREAKING CHANGES
 
+-   [`d9edc48`](https://github.com/stdlib-js/stdlib/commit/d9edc482b619ce39d6d2b0ed172e85e7cb295ba4): convert `complex/float64` to a namespace
+-   [`d9edc48`](https://github.com/stdlib-js/stdlib/commit/d9edc482b619ce39d6d2b0ed172e85e7cb295ba4): `complex/float64` converted to a namespace 
+
+    -   This commit refactors `complex/float64` to be a namespace. The
+    constructor is now the `complex/float64/ctor`. To migrate, users
+    should update their import paths to `complex/float64/ctor` which
+    provides the same API and implementation.
+
+-   [`a0516b7`](https://github.com/stdlib-js/stdlib/commit/a0516b707ec22a182856d3bed344b7f5e241e01f): convert `complex/float32` to a namespace
+-   [`a0516b7`](https://github.com/stdlib-js/stdlib/commit/a0516b707ec22a182856d3bed344b7f5e241e01f): `complex/float32` converted to a namespace 
+
+    -   This commit refactors `complex/float32` to be a namespace. The
+    constructor is now the `complex/float32/ctor`. To migrate, users
+    should update their import paths to `complex/float32/ctor` which
+    provides the same API and implementation.
+
 -   [`41fe604`](https://github.com/stdlib-js/stdlib/commit/41fe6043d813771c445a2f685a72b22bee14c748): remove `complex/real` 
 
     -   To migrate, users should update their require/import paths to use
@@ -1706,6 +1851,17 @@ A total of 6 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`ea241a3`](https://github.com/stdlib-js/stdlib/commit/ea241a32e7bbd7f346ff993d932adbd1857108e1) - **feat:** add `assert` to namespace _(by Athan Reines)_
+-   [`69eecad`](https://github.com/stdlib-js/stdlib/commit/69eecadd785a9ba5732e2d136b8755cad6341fd0) - **feat:** add `complex/float32/base/assert` namespace _(by Athan Reines)_
+-   [`c89d08c`](https://github.com/stdlib-js/stdlib/commit/c89d08c3733ca6b6f1fab8d8ebc95663b8190b5e) - **feat:** add `assert` to namespace _(by Athan Reines)_
+-   [`5bb602e`](https://github.com/stdlib-js/stdlib/commit/5bb602e63ab9d543d6f2702a556e7569d01277bb) - **feat:** add `complex/float64/base/assert` namespace _(by Athan Reines)_
+-   [`e797f05`](https://github.com/stdlib-js/stdlib/commit/e797f0544c2b5a8415c230350d8dfa4917691d33) - **feat:** add `base` to namespace _(by Athan Reines)_
+-   [`12e3d27`](https://github.com/stdlib-js/stdlib/commit/12e3d27221fea685a32218d5bd7255bba1c3b4a3) - **feat:** add `complex/float64/base` namespace _(by Athan Reines)_
+-   [`332a9ba`](https://github.com/stdlib-js/stdlib/commit/332a9ba0a364ca81eabc0d73ab8fa5b28f969074) - **feat:** add `base` to namespace _(by Athan Reines)_
+-   [`21604d0`](https://github.com/stdlib-js/stdlib/commit/21604d0a1efaa60b3e2f477d36cdcb967312904d) - **feat:** add `complex/float32/base` namespace _(by Athan Reines)_
+-   [`d9edc48`](https://github.com/stdlib-js/stdlib/commit/d9edc482b619ce39d6d2b0ed172e85e7cb295ba4) - **feat:** convert `complex/float64` to a namespace _(by Athan Reines)_
+-   [`69cbd2b`](https://github.com/stdlib-js/stdlib/commit/69cbd2b280adece30d0ecb190787521e4b013be9) - **feat:** add `parseComplex64` to namespace _(by Athan Reines)_
+-   [`a0516b7`](https://github.com/stdlib-js/stdlib/commit/a0516b707ec22a182856d3bed344b7f5e241e01f) - **feat:** convert `complex/float32` to a namespace _(by Athan Reines)_
 -   [`e3a3679`](https://github.com/stdlib-js/stdlib/commit/e3a3679f1e733cf02ce47cdc4bd0137bd37bef41) - **refactor:** update paths _(by Athan Reines)_
 -   [`f1e8ae1`](https://github.com/stdlib-js/stdlib/commit/f1e8ae135a2f8d1d04c11e6a5f93cb639c3f8554) - **feat:** add `complex/float64/base/mul` _(by Athan Reines)_
 -   [`ddd4403`](https://github.com/stdlib-js/stdlib/commit/ddd44032f9d8a6d318c80e3b239ff72280ffc599) - **refactor:** update paths _(by Athan Reines)_

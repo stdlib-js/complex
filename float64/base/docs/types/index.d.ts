@@ -16,14 +16,28 @@
 * limitations under the License.
 */
 
-/* eslint-disable @typescript-eslint/no-unused-expressions */
+// TypeScript Version: 4.1
 
-import ns = require( './index' );
+/* eslint-disable max-lines */
 
+import add = require( './../../../../float64/base/add' );
 
-// TESTS //
-
-// The exported value is the expected interface...
-{
-	ns; // $ExpectType Namespace
+/**
+* Interface describing the namespace.
+*/
+interface Namespace {
+	/**
+	* TODO
+	*/
+	add: typeof add;
 }
+
+/**
+* Base (i.e., lower-level) double-precision complex floating-point number functions.
+*/
+declare var ns: Namespace;
+
+
+// EXPORTS //
+
+export = ns;
