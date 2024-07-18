@@ -622,6 +622,28 @@
 
 <!-- /.package -->
 
+<section class="package" id="complex-float32-base-mul-unreleased">
+
+#### [@stdlib/complex/float32/base/mul](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float32/base/mul)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`d6bba38`](https://github.com/stdlib-js/stdlib/commit/d6bba3883b442a2338fb2dbc6a97c6fe6b69edd5) - add `complex/float32/base/mul`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="complex-float32-conj-unreleased">
 
 #### [@stdlib/complex/float32/conj](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float32/conj)
@@ -937,6 +959,28 @@
 ##### Features
 
 -   [`45cadfe`](https://github.com/stdlib-js/stdlib/commit/45cadfed2906835952b096ac0b5feab837a01bce) - add `complex/float64/base/assert/is-same-value-zero`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="complex-float64-base-mul-unreleased">
+
+#### [@stdlib/complex/float64/base/mul](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float64/base/mul)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`f1e8ae1`](https://github.com/stdlib-js/stdlib/commit/f1e8ae135a2f8d1d04c11e6a5f93cb639c3f8554) - add `complex/float64/base/mul`
 
 </section>
 
@@ -1662,6 +1706,11 @@ A total of 6 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`e3a3679`](https://github.com/stdlib-js/stdlib/commit/e3a3679f1e733cf02ce47cdc4bd0137bd37bef41) - **refactor:** update paths _(by Athan Reines)_
+-   [`f1e8ae1`](https://github.com/stdlib-js/stdlib/commit/f1e8ae135a2f8d1d04c11e6a5f93cb639c3f8554) - **feat:** add `complex/float64/base/mul` _(by Athan Reines)_
+-   [`ddd4403`](https://github.com/stdlib-js/stdlib/commit/ddd44032f9d8a6d318c80e3b239ff72280ffc599) - **refactor:** update paths _(by Athan Reines)_
+-   [`d6bba38`](https://github.com/stdlib-js/stdlib/commit/d6bba3883b442a2338fb2dbc6a97c6fe6b69edd5) - **feat:** add `complex/float32/base/mul` _(by Athan Reines)_
+-   [`aee4bd7`](https://github.com/stdlib-js/stdlib/commit/aee4bd7d4fdb43ce009ef03a573a0fe2e6f78625) - **bench:** update mode _(by Athan Reines)_
 -   [`81b48ae`](https://github.com/stdlib-js/stdlib/commit/81b48aeb9d5d2b16fe039f9db7e710c95a35585f) - **feat:** update namespace TypeScript declarations [(##2621)](#2621) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`0406147`](https://github.com/stdlib-js/stdlib/commit/04061476d1036e1b8b786736b1ba1653eddff1ef) - **refactor:** update paths _(by Athan Reines)_
 -   [`b9703b5`](https://github.com/stdlib-js/stdlib/commit/b9703b569dc2f0a67e604e388a0d188b08138b48) - **refactor:** update paths _(by Athan Reines)_
