@@ -2,9 +2,9 @@
 
 > Package changelog.
 
-<section class="release" id="unreleased">
+<section class="release" id="v0.3.0">
 
-## Unreleased (2024-08-03)
+## 0.3.0 (2024-08-17)
 
 <section class="packages">
 
@@ -32,22 +32,20 @@
 
 ##### BREAKING CHANGES
 
--   [`bd258a3`](https://github.com/stdlib-js/stdlib/commit/bd258a3c2803d841658c7465505966149845a6fb): update namespace TypeScript declarations
--   [`bd258a3`](https://github.com/stdlib-js/stdlib/commit/bd258a3c2803d841658c7465505966149845a6fb): update namespace declarations 
+-   [`bd258a3`](https://github.com/stdlib-js/stdlib/commit/bd258a3c2803d841658c7465505966149845a6fb): update namespace declarations
 
     -   To migrate, users should see the guidance found in the relevant commits for namespace refactoring. See issue #2260.
 
--   [`565a2ff`](https://github.com/stdlib-js/stdlib/commit/565a2ffe3aa2c7260109cbacf85bf6029c12e305): refactor namespace to export subnamespaces
--   [`565a2ff`](https://github.com/stdlib-js/stdlib/commit/565a2ffe3aa2c7260109cbacf85bf6029c12e305): APIs renamed and/or moved to subnamespaces 
+-   [`565a2ff`](https://github.com/stdlib-js/stdlib/commit/565a2ffe3aa2c7260109cbacf85bf6029c12e305): APIs renamed and/or moved to subnamespaces
 
     -   To migrate, users should consult the list of exports to determine
-    which properties moved where. Double-precision APIs moved to the
-    `float64` namespace and single-precision APIs moved to the `float32`
-    namespace. The following properties were renamed:
-    - complexCtors => ctors
-    - complexDataType => dtype
-    - complexDataTypes => dtypes
-    - complexPromotionRules => promotionRules
+        which properties moved where. Double-precision APIs moved to the
+        `float64` namespace and single-precision APIs moved to the `float32`
+        namespace. The following properties were renamed:
+        - complexCtors => ctors
+        - complexDataType => dtype
+        - complexDataTypes => dtypes
+        - complexPromotionRules => promotionRules
 
 </section>
 
@@ -79,10 +77,10 @@
 
 ##### BREAKING CHANGES
 
--   [`de703af`](https://github.com/stdlib-js/stdlib/commit/de703afc520c9bae446c5b9de9357dc23e047647): remove `complex/base/assert` namespace 
+-   [`de703af`](https://github.com/stdlib-js/stdlib/commit/de703afc520c9bae446c5b9de9357dc23e047647): remove `complex/base/assert` namespace
 
     -   To migrate, users should use the `complex/float32/base/assert` and
-    `complex/float64/base/assert` namespaces.
+        `complex/float64/base/assert` namespaces.
 
 </section>
 
@@ -104,10 +102,10 @@
 
 ##### BREAKING CHANGES
 
--   [`de703af`](https://github.com/stdlib-js/stdlib/commit/de703afc520c9bae446c5b9de9357dc23e047647): remove `complex/base/assert` namespace 
+-   [`de703af`](https://github.com/stdlib-js/stdlib/commit/de703afc520c9bae446c5b9de9357dc23e047647): remove `complex/base/assert` namespace
 
     -   To migrate, users should use the `complex/float32/base/assert` and
-    `complex/float64/base/assert` namespaces.
+        `complex/float64/base/assert` namespaces.
 
 </section>
 
@@ -161,11 +159,11 @@
 
 ##### BREAKING CHANGES
 
--   [`f6c3671`](https://github.com/stdlib-js/stdlib/commit/f6c3671093e29616c7da3347bb311ff8007daba4): remove `complex/base/assert/is-equalf` 
+-   [`f6c3671`](https://github.com/stdlib-js/stdlib/commit/f6c3671093e29616c7da3347bb311ff8007daba4): remove `complex/base/assert/is-equalf`
 
     -   To migrate, users should update their require/import paths to use
-    `@stdlib/complex/float32/base/assert/is-equal` which provides the
-    same API and implementation.
+        `@stdlib/complex/float32/base/assert/is-equal` which provides the
+        same API and implementation.
 
 </section>
 
@@ -197,11 +195,11 @@
 
 ##### BREAKING CHANGES
 
--   [`866b939`](https://github.com/stdlib-js/stdlib/commit/866b93963b9ba84407c36b19514aba6ab55489b8): remove `complex/base/assert/is-not-equal` 
+-   [`866b939`](https://github.com/stdlib-js/stdlib/commit/866b93963b9ba84407c36b19514aba6ab55489b8): remove `complex/base/assert/is-not-equal`
 
     -   To migrate, users should update their require/import paths to use
-    `@stdlib/complex/float64/base/assert/is-not-equal` which provides the
-    same API and implementation.
+        `@stdlib/complex/float64/base/assert/is-not-equal` which provides the
+        same API and implementation.
 
 </section>
 
@@ -233,11 +231,11 @@
 
 ##### BREAKING CHANGES
 
--   [`33db937`](https://github.com/stdlib-js/stdlib/commit/33db9374d77760cc20b4f025b6582af7138eda33): remove `complex/base/assert/is-not-equalf` 
+-   [`33db937`](https://github.com/stdlib-js/stdlib/commit/33db9374d77760cc20b4f025b6582af7138eda33): remove `complex/base/assert/is-not-equalf`
 
     -   To migrate, users should update their require/import paths to use
-    `@stdlib/complex/float32/base/assert/is-not-equal` which provides the
-    same API and implementation.
+        `@stdlib/complex/float32/base/assert/is-not-equal` which provides the
+        same API and implementation.
 
 </section>
 
@@ -269,11 +267,11 @@
 
 ##### BREAKING CHANGES
 
--   [`155251c`](https://github.com/stdlib-js/stdlib/commit/155251c40cd609f0f667b98834ef3244c9621405): remove `complex/base/assert/is-same-value` 
+-   [`155251c`](https://github.com/stdlib-js/stdlib/commit/155251c40cd609f0f667b98834ef3244c9621405): remove `complex/base/assert/is-same-value`
 
     -   To migrate, users should update their require/import paths to use
-    `@stdlib/complex/float64/base/assert/is-same-value` which provides the
-    same API and implementation.
+        `@stdlib/complex/float64/base/assert/is-same-value` which provides the
+        same API and implementation.
 
 </section>
 
@@ -305,11 +303,11 @@
 
 ##### BREAKING CHANGES
 
--   [`fd52b0d`](https://github.com/stdlib-js/stdlib/commit/fd52b0da91cb5aa49d287b0ee984fd1e0063e6ab): remove `complex/base/assert/is-same-value-zero` 
+-   [`fd52b0d`](https://github.com/stdlib-js/stdlib/commit/fd52b0da91cb5aa49d287b0ee984fd1e0063e6ab): remove `complex/base/assert/is-same-value-zero`
 
     -   To migrate, users should update their require/import paths to use
-    `@stdlib/complex/float64/base/assert/is-same-value-zero` which provides the
-    same API and implementation.
+        `@stdlib/complex/float64/base/assert/is-same-value-zero` which provides the
+        same API and implementation.
 
 </section>
 
@@ -341,11 +339,11 @@
 
 ##### BREAKING CHANGES
 
--   [`a391a4c`](https://github.com/stdlib-js/stdlib/commit/a391a4c422edfa112a686ccfee71390ae32f9edd): remove `complex/base/assert/is-same-value-zerof` 
+-   [`a391a4c`](https://github.com/stdlib-js/stdlib/commit/a391a4c422edfa112a686ccfee71390ae32f9edd): remove `complex/base/assert/is-same-value-zerof`
 
     -   To migrate, users should update their require/import paths to use
-    `@stdlib/complex/float32/base/assert/is-same-value` which provides the
-    same API and implementation.
+        `@stdlib/complex/float32/base/assert/is-same-value` which provides the
+        same API and implementation.
 
 </section>
 
@@ -377,11 +375,11 @@
 
 ##### BREAKING CHANGES
 
--   [`91ac840`](https://github.com/stdlib-js/stdlib/commit/91ac840a8f3afd034c16b44ecc441949f70f422b): remove `complex/base/assert/is-same-valuef` 
+-   [`91ac840`](https://github.com/stdlib-js/stdlib/commit/91ac840a8f3afd034c16b44ecc441949f70f422b): remove `complex/base/assert/is-same-valuef`
 
     -   To migrate, users should update their require/import paths to use
-    `@stdlib/complex/float32/base/assert/is-same-value` which provides the
-    same API and implementation.
+        `@stdlib/complex/float32/base/assert/is-same-value` which provides the
+        same API and implementation.
 
 </section>
 
@@ -435,11 +433,11 @@
 
 ##### BREAKING CHANGES
 
--   [`146dc69`](https://github.com/stdlib-js/stdlib/commit/146dc694836012c9b7dff52c67c7e36f52bfbbce): remove `complex/conj` 
+-   [`146dc69`](https://github.com/stdlib-js/stdlib/commit/146dc694836012c9b7dff52c67c7e36f52bfbbce): remove `complex/conj`
 
     -   To migrate, users should update their require/import paths to use
-    `@stdlib/complex/float64/conj` which provides the same API and
-    implementation.
+        `@stdlib/complex/float64/conj` which provides the same API and
+        implementation.
 
 </section>
 
@@ -471,11 +469,11 @@
 
 ##### BREAKING CHANGES
 
--   [`7444acc`](https://github.com/stdlib-js/stdlib/commit/7444acc6ab0866a6728a07346da45bbcfe4a898c): remove `complex/conjf` 
+-   [`7444acc`](https://github.com/stdlib-js/stdlib/commit/7444acc6ab0866a6728a07346da45bbcfe4a898c): remove `complex/conjf`
 
     -   To migrate, users should update their require/import paths to use
-    `@stdlib/complex/float32/conj` which provides the same API and
-    implementation.
+        `@stdlib/complex/float32/conj` which provides the same API and
+        implementation.
 
 </section>
 
@@ -510,18 +508,16 @@
 
 ##### BREAKING CHANGES
 
--   [`bd258a3`](https://github.com/stdlib-js/stdlib/commit/bd258a3c2803d841658c7465505966149845a6fb): update namespace TypeScript declarations
--   [`bd258a3`](https://github.com/stdlib-js/stdlib/commit/bd258a3c2803d841658c7465505966149845a6fb): update namespace declarations 
+-   [`bd258a3`](https://github.com/stdlib-js/stdlib/commit/bd258a3c2803d841658c7465505966149845a6fb): update namespace declarations
 
     -   To migrate, users should see the guidance found in the relevant commits for namespace refactoring. See issue #2260.
 
--   [`a0516b7`](https://github.com/stdlib-js/stdlib/commit/a0516b707ec22a182856d3bed344b7f5e241e01f): convert `complex/float32` to a namespace
--   [`a0516b7`](https://github.com/stdlib-js/stdlib/commit/a0516b707ec22a182856d3bed344b7f5e241e01f): `complex/float32` converted to a namespace 
+-   [`a0516b7`](https://github.com/stdlib-js/stdlib/commit/a0516b707ec22a182856d3bed344b7f5e241e01f): `complex/float32` converted to a namespace
 
     -   This commit refactors `complex/float32` to be a namespace. The
-    constructor is now the `complex/float32/ctor`. To migrate, users
-    should update their import paths to `complex/float32/ctor` which
-    provides the same API and implementation.
+        constructor is now the `complex/float32/ctor`. To migrate, users
+        should update their import paths to `complex/float32/ctor` which
+        provides the same API and implementation.
 
 </section>
 
@@ -555,8 +551,7 @@
 
 ##### BREAKING CHANGES
 
--   [`bd258a3`](https://github.com/stdlib-js/stdlib/commit/bd258a3c2803d841658c7465505966149845a6fb): update namespace TypeScript declarations
--   [`bd258a3`](https://github.com/stdlib-js/stdlib/commit/bd258a3c2803d841658c7465505966149845a6fb): update namespace declarations 
+-   [`bd258a3`](https://github.com/stdlib-js/stdlib/commit/bd258a3c2803d841658c7465505966149845a6fb): update namespace declarations
 
     -   To migrate, users should see the guidance found in the relevant commits for namespace refactoring. See issue #2260.
 
@@ -613,8 +608,7 @@
 
 ##### BREAKING CHANGES
 
--   [`bd258a3`](https://github.com/stdlib-js/stdlib/commit/bd258a3c2803d841658c7465505966149845a6fb): update namespace TypeScript declarations
--   [`bd258a3`](https://github.com/stdlib-js/stdlib/commit/bd258a3c2803d841658c7465505966149845a6fb): update namespace declarations 
+-   [`bd258a3`](https://github.com/stdlib-js/stdlib/commit/bd258a3c2803d841658c7465505966149845a6fb): update namespace declarations
 
     -   To migrate, users should see the guidance found in the relevant commits for namespace refactoring. See issue #2260.
 
@@ -892,18 +886,16 @@
 
 ##### BREAKING CHANGES
 
--   [`bd258a3`](https://github.com/stdlib-js/stdlib/commit/bd258a3c2803d841658c7465505966149845a6fb): update namespace TypeScript declarations
--   [`bd258a3`](https://github.com/stdlib-js/stdlib/commit/bd258a3c2803d841658c7465505966149845a6fb): update namespace declarations 
+-   [`bd258a3`](https://github.com/stdlib-js/stdlib/commit/bd258a3c2803d841658c7465505966149845a6fb): update namespace declarations
 
     -   To migrate, users should see the guidance found in the relevant commits for namespace refactoring. See issue #2260.
 
--   [`d9edc48`](https://github.com/stdlib-js/stdlib/commit/d9edc482b619ce39d6d2b0ed172e85e7cb295ba4): convert `complex/float64` to a namespace
--   [`d9edc48`](https://github.com/stdlib-js/stdlib/commit/d9edc482b619ce39d6d2b0ed172e85e7cb295ba4): `complex/float64` converted to a namespace 
+-   [`d9edc48`](https://github.com/stdlib-js/stdlib/commit/d9edc482b619ce39d6d2b0ed172e85e7cb295ba4): `complex/float64` converted to a namespace
 
     -   This commit refactors `complex/float64` to be a namespace. The
-    constructor is now the `complex/float64/ctor`. To migrate, users
-    should update their import paths to `complex/float64/ctor` which
-    provides the same API and implementation.
+        constructor is now the `complex/float64/ctor`. To migrate, users
+        should update their import paths to `complex/float64/ctor` which
+        provides the same API and implementation.
 
 </section>
 
@@ -937,8 +929,7 @@
 
 ##### BREAKING CHANGES
 
--   [`bd258a3`](https://github.com/stdlib-js/stdlib/commit/bd258a3c2803d841658c7465505966149845a6fb): update namespace TypeScript declarations
--   [`bd258a3`](https://github.com/stdlib-js/stdlib/commit/bd258a3c2803d841658c7465505966149845a6fb): update namespace declarations 
+-   [`bd258a3`](https://github.com/stdlib-js/stdlib/commit/bd258a3c2803d841658c7465505966149845a6fb): update namespace declarations
 
     -   To migrate, users should see the guidance found in the relevant commits for namespace refactoring. See issue #2260.
 
@@ -995,8 +986,7 @@
 
 ##### BREAKING CHANGES
 
--   [`bd258a3`](https://github.com/stdlib-js/stdlib/commit/bd258a3c2803d841658c7465505966149845a6fb): update namespace TypeScript declarations
--   [`bd258a3`](https://github.com/stdlib-js/stdlib/commit/bd258a3c2803d841658c7465505966149845a6fb): update namespace declarations 
+-   [`bd258a3`](https://github.com/stdlib-js/stdlib/commit/bd258a3c2803d841658c7465505966149845a6fb): update namespace declarations
 
     -   To migrate, users should see the guidance found in the relevant commits for namespace refactoring. See issue #2260.
 
@@ -1238,11 +1228,11 @@
 
 ##### BREAKING CHANGES
 
--   [`42c94d5`](https://github.com/stdlib-js/stdlib/commit/42c94d51660e57dedf2a3fb2b59c1eb07fca2975): remove `complex/imag` 
+-   [`42c94d5`](https://github.com/stdlib-js/stdlib/commit/42c94d51660e57dedf2a3fb2b59c1eb07fca2975): remove `complex/imag`
 
     -   To migrate, users should update their require/import paths to use
-    `@stdlib/complex/float64/imag` which provides the same API and
-    implementation.
+        `@stdlib/complex/float64/imag` which provides the same API and
+        implementation.
 
 </section>
 
@@ -1274,11 +1264,11 @@
 
 ##### BREAKING CHANGES
 
--   [`1ab834c`](https://github.com/stdlib-js/stdlib/commit/1ab834ceefeb9dcfb1b09a9bd8aa3b0468f3ab9b): remove `complex/imagf` 
+-   [`1ab834c`](https://github.com/stdlib-js/stdlib/commit/1ab834ceefeb9dcfb1b09a9bd8aa3b0468f3ab9b): remove `complex/imagf`
 
     -   To migrate, users should update their require/import paths to use
-    `@stdlib/complex/float32/imag` which provides the same API and
-    implementation.
+        `@stdlib/complex/float32/imag` which provides the same API and
+        implementation.
 
 </section>
 
@@ -1328,18 +1318,6 @@
 
 <!-- /.features -->
 
-<section class="issues">
-
-##### Closed Issues
-
-This release closes the following issue:
-
-[#1333 ](https://github.com/stdlib-js/stdlib/issues/1333 )
-
-</section>
-
-<!-- /.issues -->
-
 </details>
 
 </section>
@@ -1366,11 +1344,11 @@ This release closes the following issue:
 
 ##### BREAKING CHANGES
 
--   [`41fe604`](https://github.com/stdlib-js/stdlib/commit/41fe6043d813771c445a2f685a72b22bee14c748): remove `complex/real` 
+-   [`41fe604`](https://github.com/stdlib-js/stdlib/commit/41fe6043d813771c445a2f685a72b22bee14c748): remove `complex/real`
 
     -   To migrate, users should update their require/import paths to use
-    `@stdlib/complex/float64/real` which provides the same API and
-    implementation.
+        `@stdlib/complex/float64/real` which provides the same API and
+        implementation.
 
 </section>
 
@@ -1402,11 +1380,11 @@ This release closes the following issue:
 
 ##### BREAKING CHANGES
 
--   [`cc6e633`](https://github.com/stdlib-js/stdlib/commit/cc6e633a921b16310fedf0d0cbb2335b36d539f2): remove `complex/realf` 
+-   [`cc6e633`](https://github.com/stdlib-js/stdlib/commit/cc6e633a921b16310fedf0d0cbb2335b36d539f2): remove `complex/realf`
 
     -   To migrate, users should update their require/import paths to use
-    `@stdlib/complex/float32/real` which provides the same API and
-    implementation.
+        `@stdlib/complex/float32/real` which provides the same API and
+        implementation.
 
 </section>
 
@@ -1438,11 +1416,11 @@ This release closes the following issue:
 
 ##### BREAKING CHANGES
 
--   [`91256d0`](https://github.com/stdlib-js/stdlib/commit/91256d09c26b154c3144807dabd2e588823030d2): remove `complex/reim` 
+-   [`91256d0`](https://github.com/stdlib-js/stdlib/commit/91256d09c26b154c3144807dabd2e588823030d2): remove `complex/reim`
 
     -   To migrate, users should update their require/import paths to use
-    `@stdlib/complex/float64/reim` which provides the same API and
-    implementation.
+        `@stdlib/complex/float64/reim` which provides the same API and
+        implementation.
 
 </section>
 
@@ -1474,11 +1452,11 @@ This release closes the following issue:
 
 ##### BREAKING CHANGES
 
--   [`47530f7`](https://github.com/stdlib-js/stdlib/commit/47530f71e0b6f10b8289949516f12919d5031511): remove `complex/reimf` 
+-   [`47530f7`](https://github.com/stdlib-js/stdlib/commit/47530f71e0b6f10b8289949516f12919d5031511): remove `complex/reimf`
 
     -   To migrate, users should update their require/import paths to use
-    `@stdlib/complex/float32/reim` which provides the same API and
-    implementation.
+        `@stdlib/complex/float32/reim` which provides the same API and
+        implementation.
 
 </section>
 
@@ -1500,11 +1478,11 @@ This release closes the following issue:
 
 ##### BREAKING CHANGES
 
--   [`00d0530`](https://github.com/stdlib-js/stdlib/commit/00d0530d0daabe872c5bc9559abae76b2024dfe3): remove `complex/reviver-float32` 
+-   [`00d0530`](https://github.com/stdlib-js/stdlib/commit/00d0530d0daabe872c5bc9559abae76b2024dfe3): remove `complex/reviver-float32`
 
     -   To migrate, users should update their require/import paths to use
-    `@stdlib/complex/float32/reviver` which provides the same API and
-    implementation.
+        `@stdlib/complex/float32/reviver` which provides the same API and
+        implementation.
 
 </section>
 
@@ -1524,155 +1502,139 @@ This release closes the following issue:
 
 ### BREAKING CHANGES
 
--   [`bd258a3`](https://github.com/stdlib-js/stdlib/commit/bd258a3c2803d841658c7465505966149845a6fb): update namespace TypeScript declarations
--   [`bd258a3`](https://github.com/stdlib-js/stdlib/commit/bd258a3c2803d841658c7465505966149845a6fb): update namespace declarations 
+-   [`bd258a3`](https://github.com/stdlib-js/stdlib/commit/bd258a3c2803d841658c7465505966149845a6fb): update namespace declarations
 
     -   To migrate, users should see the guidance found in the relevant commits for namespace refactoring. See issue #2260.
 
--   [`565a2ff`](https://github.com/stdlib-js/stdlib/commit/565a2ffe3aa2c7260109cbacf85bf6029c12e305): refactor namespace to export subnamespaces
--   [`565a2ff`](https://github.com/stdlib-js/stdlib/commit/565a2ffe3aa2c7260109cbacf85bf6029c12e305): APIs renamed and/or moved to subnamespaces 
+-   [`565a2ff`](https://github.com/stdlib-js/stdlib/commit/565a2ffe3aa2c7260109cbacf85bf6029c12e305): APIs renamed and/or moved to subnamespaces
 
     -   To migrate, users should consult the list of exports to determine
-    which properties moved where. Double-precision APIs moved to the
-    `float64` namespace and single-precision APIs moved to the `float32`
-    namespace. The following properties were renamed:
-    - complexCtors => ctors
-    - complexDataType => dtype
-    - complexDataTypes => dtypes
-    - complexPromotionRules => promotionRules
+        which properties moved where. Double-precision APIs moved to the
+        `float64` namespace and single-precision APIs moved to the `float32`
+        namespace. The following properties were renamed:
+        - complexCtors => ctors
+        - complexDataType => dtype
+        - complexDataTypes => dtypes
+        - complexPromotionRules => promotionRules
 
--   [`d9edc48`](https://github.com/stdlib-js/stdlib/commit/d9edc482b619ce39d6d2b0ed172e85e7cb295ba4): convert `complex/float64` to a namespace
--   [`d9edc48`](https://github.com/stdlib-js/stdlib/commit/d9edc482b619ce39d6d2b0ed172e85e7cb295ba4): `complex/float64` converted to a namespace 
+-   [`d9edc48`](https://github.com/stdlib-js/stdlib/commit/d9edc482b619ce39d6d2b0ed172e85e7cb295ba4): `complex/float64` converted to a namespace
 
     -   This commit refactors `complex/float64` to be a namespace. The
-    constructor is now the `complex/float64/ctor`. To migrate, users
-    should update their import paths to `complex/float64/ctor` which
-    provides the same API and implementation.
+        constructor is now the `complex/float64/ctor`. To migrate, users
+        should update their import paths to `complex/float64/ctor` which
+        provides the same API and implementation.
 
--   [`a0516b7`](https://github.com/stdlib-js/stdlib/commit/a0516b707ec22a182856d3bed344b7f5e241e01f): convert `complex/float32` to a namespace
--   [`a0516b7`](https://github.com/stdlib-js/stdlib/commit/a0516b707ec22a182856d3bed344b7f5e241e01f): `complex/float32` converted to a namespace 
+-   [`a0516b7`](https://github.com/stdlib-js/stdlib/commit/a0516b707ec22a182856d3bed344b7f5e241e01f): `complex/float32` converted to a namespace
 
     -   This commit refactors `complex/float32` to be a namespace. The
-    constructor is now the `complex/float32/ctor`. To migrate, users
-    should update their import paths to `complex/float32/ctor` which
-    provides the same API and implementation.
+        constructor is now the `complex/float32/ctor`. To migrate, users
+        should update their import paths to `complex/float32/ctor` which
+        provides the same API and implementation.
 
--   [`41fe604`](https://github.com/stdlib-js/stdlib/commit/41fe6043d813771c445a2f685a72b22bee14c748): remove `complex/real` 
-
-    -   To migrate, users should update their require/import paths to use
-    `@stdlib/complex/float64/real` which provides the same API and
-    implementation.
-
--   [`cc6e633`](https://github.com/stdlib-js/stdlib/commit/cc6e633a921b16310fedf0d0cbb2335b36d539f2): remove `complex/realf` 
+-   [`41fe604`](https://github.com/stdlib-js/stdlib/commit/41fe6043d813771c445a2f685a72b22bee14c748): remove `complex/real`
 
     -   To migrate, users should update their require/import paths to use
-    `@stdlib/complex/float32/real` which provides the same API and
-    implementation.
+        `@stdlib/complex/float64/real` which provides the same API and
+        implementation.
 
--   [`42c94d5`](https://github.com/stdlib-js/stdlib/commit/42c94d51660e57dedf2a3fb2b59c1eb07fca2975): remove `complex/imag` 
-
-    -   To migrate, users should update their require/import paths to use
-    `@stdlib/complex/float64/imag` which provides the same API and
-    implementation.
-
--   [`1ab834c`](https://github.com/stdlib-js/stdlib/commit/1ab834ceefeb9dcfb1b09a9bd8aa3b0468f3ab9b): remove `complex/imagf` 
+-   [`cc6e633`](https://github.com/stdlib-js/stdlib/commit/cc6e633a921b16310fedf0d0cbb2335b36d539f2): remove `complex/realf`
 
     -   To migrate, users should update their require/import paths to use
-    `@stdlib/complex/float32/imag` which provides the same API and
-    implementation.
+        `@stdlib/complex/float32/real` which provides the same API and
+        implementation.
 
--   [`91256d0`](https://github.com/stdlib-js/stdlib/commit/91256d09c26b154c3144807dabd2e588823030d2): remove `complex/reim` 
-
-    -   To migrate, users should update their require/import paths to use
-    `@stdlib/complex/float64/reim` which provides the same API and
-    implementation.
-
--   [`47530f7`](https://github.com/stdlib-js/stdlib/commit/47530f71e0b6f10b8289949516f12919d5031511): remove `complex/reimf` 
+-   [`42c94d5`](https://github.com/stdlib-js/stdlib/commit/42c94d51660e57dedf2a3fb2b59c1eb07fca2975): remove `complex/imag`
 
     -   To migrate, users should update their require/import paths to use
-    `@stdlib/complex/float32/reim` which provides the same API and
-    implementation.
+        `@stdlib/complex/float64/imag` which provides the same API and
+        implementation.
 
--   [`146dc69`](https://github.com/stdlib-js/stdlib/commit/146dc694836012c9b7dff52c67c7e36f52bfbbce): remove `complex/conj` 
-
-    -   To migrate, users should update their require/import paths to use
-    `@stdlib/complex/float64/conj` which provides the same API and
-    implementation.
-
--   [`7444acc`](https://github.com/stdlib-js/stdlib/commit/7444acc6ab0866a6728a07346da45bbcfe4a898c): remove `complex/conjf` 
+-   [`1ab834c`](https://github.com/stdlib-js/stdlib/commit/1ab834ceefeb9dcfb1b09a9bd8aa3b0468f3ab9b): remove `complex/imagf`
 
     -   To migrate, users should update their require/import paths to use
-    `@stdlib/complex/float32/conj` which provides the same API and
-    implementation.
+        `@stdlib/complex/float32/imag` which provides the same API and
+        implementation.
 
--   [`866b939`](https://github.com/stdlib-js/stdlib/commit/866b93963b9ba84407c36b19514aba6ab55489b8): remove `complex/base/assert/is-not-equal` 
-
-    -   To migrate, users should update their require/import paths to use
-    `@stdlib/complex/float64/base/assert/is-not-equal` which provides the
-    same API and implementation.
-
--   [`33db937`](https://github.com/stdlib-js/stdlib/commit/33db9374d77760cc20b4f025b6582af7138eda33): remove `complex/base/assert/is-not-equalf` 
+-   [`91256d0`](https://github.com/stdlib-js/stdlib/commit/91256d09c26b154c3144807dabd2e588823030d2): remove `complex/reim`
 
     -   To migrate, users should update their require/import paths to use
-    `@stdlib/complex/float32/base/assert/is-not-equal` which provides the
-    same API and implementation.
+        `@stdlib/complex/float64/reim` which provides the same API and
+        implementation.
 
--   [`f6c3671`](https://github.com/stdlib-js/stdlib/commit/f6c3671093e29616c7da3347bb311ff8007daba4): remove `complex/base/assert/is-equalf` 
-
-    -   To migrate, users should update their require/import paths to use
-    `@stdlib/complex/float32/base/assert/is-equal` which provides the
-    same API and implementation.
-
--   [`155251c`](https://github.com/stdlib-js/stdlib/commit/155251c40cd609f0f667b98834ef3244c9621405): remove `complex/base/assert/is-same-value` 
+-   [`47530f7`](https://github.com/stdlib-js/stdlib/commit/47530f71e0b6f10b8289949516f12919d5031511): remove `complex/reimf`
 
     -   To migrate, users should update their require/import paths to use
-    `@stdlib/complex/float64/base/assert/is-same-value` which provides the
-    same API and implementation.
+        `@stdlib/complex/float32/reim` which provides the same API and
+        implementation.
 
--   [`fd52b0d`](https://github.com/stdlib-js/stdlib/commit/fd52b0da91cb5aa49d287b0ee984fd1e0063e6ab): remove `complex/base/assert/is-same-value-zero` 
-
-    -   To migrate, users should update their require/import paths to use
-    `@stdlib/complex/float64/base/assert/is-same-value-zero` which provides the
-    same API and implementation.
-
--   [`a391a4c`](https://github.com/stdlib-js/stdlib/commit/a391a4c422edfa112a686ccfee71390ae32f9edd): remove `complex/base/assert/is-same-value-zerof` 
+-   [`146dc69`](https://github.com/stdlib-js/stdlib/commit/146dc694836012c9b7dff52c67c7e36f52bfbbce): remove `complex/conj`
 
     -   To migrate, users should update their require/import paths to use
-    `@stdlib/complex/float32/base/assert/is-same-value` which provides the
-    same API and implementation.
+        `@stdlib/complex/float64/conj` which provides the same API and
+        implementation.
 
--   [`de703af`](https://github.com/stdlib-js/stdlib/commit/de703afc520c9bae446c5b9de9357dc23e047647): remove `complex/base/assert` namespace 
+-   [`7444acc`](https://github.com/stdlib-js/stdlib/commit/7444acc6ab0866a6728a07346da45bbcfe4a898c): remove `complex/conjf`
+
+    -   To migrate, users should update their require/import paths to use
+        `@stdlib/complex/float32/conj` which provides the same API and
+        implementation.
+
+-   [`866b939`](https://github.com/stdlib-js/stdlib/commit/866b93963b9ba84407c36b19514aba6ab55489b8): remove `complex/base/assert/is-not-equal`
+
+    -   To migrate, users should update their require/import paths to use
+        `@stdlib/complex/float64/base/assert/is-not-equal` which provides the
+        same API and implementation.
+
+-   [`33db937`](https://github.com/stdlib-js/stdlib/commit/33db9374d77760cc20b4f025b6582af7138eda33): remove `complex/base/assert/is-not-equalf`
+
+    -   To migrate, users should update their require/import paths to use
+        `@stdlib/complex/float32/base/assert/is-not-equal` which provides the
+        same API and implementation.
+
+-   [`f6c3671`](https://github.com/stdlib-js/stdlib/commit/f6c3671093e29616c7da3347bb311ff8007daba4): remove `complex/base/assert/is-equalf`
+
+    -   To migrate, users should update their require/import paths to use
+        `@stdlib/complex/float32/base/assert/is-equal` which provides the
+        same API and implementation.
+
+-   [`155251c`](https://github.com/stdlib-js/stdlib/commit/155251c40cd609f0f667b98834ef3244c9621405): remove `complex/base/assert/is-same-value`
+
+    -   To migrate, users should update their require/import paths to use
+        `@stdlib/complex/float64/base/assert/is-same-value` which provides the
+        same API and implementation.
+
+-   [`fd52b0d`](https://github.com/stdlib-js/stdlib/commit/fd52b0da91cb5aa49d287b0ee984fd1e0063e6ab): remove `complex/base/assert/is-same-value-zero`
+
+    -   To migrate, users should update their require/import paths to use
+        `@stdlib/complex/float64/base/assert/is-same-value-zero` which provides the
+        same API and implementation.
+
+-   [`a391a4c`](https://github.com/stdlib-js/stdlib/commit/a391a4c422edfa112a686ccfee71390ae32f9edd): remove `complex/base/assert/is-same-value-zerof`
+
+    -   To migrate, users should update their require/import paths to use
+        `@stdlib/complex/float32/base/assert/is-same-value` which provides the
+        same API and implementation.
+
+-   [`de703af`](https://github.com/stdlib-js/stdlib/commit/de703afc520c9bae446c5b9de9357dc23e047647): remove `complex/base/assert` namespace
 
     -   To migrate, users should use the `complex/float32/base/assert` and
-    `complex/float64/base/assert` namespaces.
+        `complex/float64/base/assert` namespaces.
 
--   [`91ac840`](https://github.com/stdlib-js/stdlib/commit/91ac840a8f3afd034c16b44ecc441949f70f422b): remove `complex/base/assert/is-same-valuef` 
-
-    -   To migrate, users should update their require/import paths to use
-    `@stdlib/complex/float32/base/assert/is-same-value` which provides the
-    same API and implementation.
-
--   [`00d0530`](https://github.com/stdlib-js/stdlib/commit/00d0530d0daabe872c5bc9559abae76b2024dfe3): remove `complex/reviver-float32` 
+-   [`91ac840`](https://github.com/stdlib-js/stdlib/commit/91ac840a8f3afd034c16b44ecc441949f70f422b): remove `complex/base/assert/is-same-valuef`
 
     -   To migrate, users should update their require/import paths to use
-    `@stdlib/complex/float32/reviver` which provides the same API and
-    implementation.
+        `@stdlib/complex/float32/base/assert/is-same-value` which provides the
+        same API and implementation.
+
+-   [`00d0530`](https://github.com/stdlib-js/stdlib/commit/00d0530d0daabe872c5bc9559abae76b2024dfe3): remove `complex/reviver-float32`
+
+    -   To migrate, users should update their require/import paths to use
+        `@stdlib/complex/float32/reviver` which provides the same API and
+        implementation.
 
 </section>
 
 <!-- /.breaking-changes -->
-
-<section class="issues">
-
-### Closed Issues
-
-This release closes the following issue:
-
-[#1333 ](https://github.com/stdlib-js/stdlib/issues/1333 )
-
-</section>
-
-<!-- /.issues -->
 
 <section class="contributors">
 
@@ -1797,27 +1759,17 @@ A total of 6 people contributed to this release. Thank you to the following cont
 
 <!-- /.release -->
 
+<section class="release" id="v0.2.1">
+
 ## 0.2.1 (2024-02-05)
 
-<section class="packages">
-
-### Packages
+No changes reported for this release.
 
 </section>
 
-<!-- /.packages -->
+<!-- /.release -->
 
-<section class="commits">
-
-### Commits
-
-<details>
-
-</details>
-
-</section>
-
-<!-- /.commits -->
+<section class="release" id="v0.2.0">
 
 ## 0.2.0 (2024-02-05)
 
@@ -2128,66 +2080,6 @@ A total of 6 people contributed to this release. Thank you to the following cont
 
 <!-- /.package -->
 
-<section class="package" id="complex-base-cast-return-v0.2.0">
-
-#### [@stdlib/complex/base/cast-return](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/base/cast-return)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="complex-base-wrap-function-v0.2.0">
-
-#### [@stdlib/complex/base/wrap-function](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/base/wrap-function)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="complex-conj-v0.2.0">
-
-#### [@stdlib/complex/conj](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/conj)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="complex-conjf-v0.2.0">
-
-#### [@stdlib/complex/conjf](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/conjf)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="complex-ctors-v0.2.0">
-
-#### [@stdlib/complex/ctors](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/ctors)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
 <section class="package" id="complex-dtype-v0.2.0">
 
 #### [@stdlib/complex/dtype](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/dtype)
@@ -2209,12 +2101,11 @@ No changes reported for this release.</details>
 ##### BREAKING CHANGES
 
 -   [`e25b23b`](https://github.com/stdlib-js/stdlib/commit/e25b23b917ee6e387722db7192d22e4a70222da0): rename type definitions for array and ndarray data types
--   [`e25b23b`](https://github.com/stdlib-js/stdlib/commit/e25b23b917ee6e387722db7192d22e4a70222da0): rename type definitions for array and ndarray data types 
 
     -   In order to migrate, users should update their implementations to
-    use the latest naming conventions. The affected type definitions
-    are aliases for individual data type strings, so their should be
-    no behavioral changes.
+        use the latest naming conventions. The affected type definitions
+        are aliases for individual data type strings, so their should be
+        no behavioral changes.
 
 </section>
 
@@ -2247,12 +2138,11 @@ No changes reported for this release.</details>
 ##### BREAKING CHANGES
 
 -   [`e25b23b`](https://github.com/stdlib-js/stdlib/commit/e25b23b917ee6e387722db7192d22e4a70222da0): rename type definitions for array and ndarray data types
--   [`e25b23b`](https://github.com/stdlib-js/stdlib/commit/e25b23b917ee6e387722db7192d22e4a70222da0): rename type definitions for array and ndarray data types 
 
     -   In order to migrate, users should update their implementations to
-    use the latest naming conventions. The affected type definitions
-    are aliases for individual data type strings, so their should be
-    no behavioral changes.
+        use the latest naming conventions. The affected type definitions
+        are aliases for individual data type strings, so their should be
+        no behavioral changes.
 
 </section>
 
@@ -2284,7 +2174,7 @@ No changes reported for this release.</details>
 
 ##### BREAKING CHANGES
 
--   [`9ab3f37`](https://github.com/stdlib-js/stdlib/commit/9ab3f375160e963eed84ce860a1aba54d18d4561): remove `complex/eq` 
+-   [`9ab3f37`](https://github.com/stdlib-js/stdlib/commit/9ab3f375160e963eed84ce860a1aba54d18d4561): remove `complex/eq`
 
     -   To migrate, users should use `@stdlib/complex/base/assert/is-equal`.
 
@@ -2318,7 +2208,7 @@ No changes reported for this release.</details>
 
 ##### BREAKING CHANGES
 
--   [`2b880de`](https://github.com/stdlib-js/stdlib/commit/2b880de752f87d556180d9dbfcc3f6f31411fdc5): remove `complex/eqf` 
+-   [`2b880de`](https://github.com/stdlib-js/stdlib/commit/2b880de752f87d556180d9dbfcc3f6f31411fdc5): remove `complex/eqf`
 
     -   To migrate, users should use `@stdlib/complex/base/assert/is-equalf`.
 
@@ -2327,54 +2217,6 @@ No changes reported for this release.</details>
 <!-- /.breaking-changes -->
 
 </details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="complex-float32-v0.2.0">
-
-#### [@stdlib/complex/float32](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float32)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="complex-float64-v0.2.0">
-
-#### [@stdlib/complex/float64](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float64)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="complex-imag-v0.2.0">
-
-#### [@stdlib/complex/imag](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/imag)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="complex-imagf-v0.2.0">
-
-#### [@stdlib/complex/imagf](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/imagf)
-
-<details>
-
-No changes reported for this release.</details>
 
 </section>
 
@@ -2401,102 +2243,17 @@ No changes reported for this release.</details>
 ##### BREAKING CHANGES
 
 -   [`e25b23b`](https://github.com/stdlib-js/stdlib/commit/e25b23b917ee6e387722db7192d22e4a70222da0): rename type definitions for array and ndarray data types
--   [`e25b23b`](https://github.com/stdlib-js/stdlib/commit/e25b23b917ee6e387722db7192d22e4a70222da0): rename type definitions for array and ndarray data types 
 
     -   In order to migrate, users should update their implementations to
-    use the latest naming conventions. The affected type definitions
-    are aliases for individual data type strings, so their should be
-    no behavioral changes.
+        use the latest naming conventions. The affected type definitions
+        are aliases for individual data type strings, so their should be
+        no behavioral changes.
 
 </section>
 
 <!-- /.breaking-changes -->
 
 </details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="complex-real-v0.2.0">
-
-#### [@stdlib/complex/real](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/real)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="complex-realf-v0.2.0">
-
-#### [@stdlib/complex/realf](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/realf)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="complex-reim-v0.2.0">
-
-#### [@stdlib/complex/reim](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/reim)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="complex-reimf-v0.2.0">
-
-#### [@stdlib/complex/reimf](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/reimf)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="complex-reviver-v0.2.0">
-
-#### [@stdlib/complex/reviver](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/reviver)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="complex-reviver-float32-v0.2.0">
-
-#### [@stdlib/complex/reviver-float32](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/reviver-float32)
-
-<details>
-
-No changes reported for this release.</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="complex-reviver-float64-v0.2.0">
-
-#### [@stdlib/complex/reviver-float64](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/reviver-float64)
-
-<details>
-
-No changes reported for this release.</details>
 
 </section>
 
@@ -2510,21 +2267,20 @@ No changes reported for this release.</details>
 
 ### BREAKING CHANGES
 
--   [`2b880de`](https://github.com/stdlib-js/stdlib/commit/2b880de752f87d556180d9dbfcc3f6f31411fdc5): remove `complex/eqf` 
+-   [`2b880de`](https://github.com/stdlib-js/stdlib/commit/2b880de752f87d556180d9dbfcc3f6f31411fdc5): remove `complex/eqf`
 
     -   To migrate, users should use `@stdlib/complex/base/assert/is-equalf`.
 
--   [`9ab3f37`](https://github.com/stdlib-js/stdlib/commit/9ab3f375160e963eed84ce860a1aba54d18d4561): remove `complex/eq` 
+-   [`9ab3f37`](https://github.com/stdlib-js/stdlib/commit/9ab3f375160e963eed84ce860a1aba54d18d4561): remove `complex/eq`
 
     -   To migrate, users should use `@stdlib/complex/base/assert/is-equal`.
 
 -   [`e25b23b`](https://github.com/stdlib-js/stdlib/commit/e25b23b917ee6e387722db7192d22e4a70222da0): rename type definitions for array and ndarray data types
--   [`e25b23b`](https://github.com/stdlib-js/stdlib/commit/e25b23b917ee6e387722db7192d22e4a70222da0): rename type definitions for array and ndarray data types 
 
     -   In order to migrate, users should update their implementations to
-    use the latest naming conventions. The affected type definitions
-    are aliases for individual data type strings, so their should be
-    no behavioral changes.
+        use the latest naming conventions. The affected type definitions
+        are aliases for individual data type strings, so their should be
+        no behavioral changes.
 
 </section>
 
@@ -2534,10 +2290,9 @@ No changes reported for this release.</details>
 
 ### Contributors
 
-A total of 3 people contributed to this release. Thank you to the following contributors:
+A total of 2 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
--   Philipp Burckhardt
 -   Philipp Burckhardt
 
 </section>
@@ -2602,27 +2357,21 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <!-- /.commits -->
 
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.1.1">
+
 ## 0.1.1 (2023-11-08)
 
-<section class="packages">
-
-### Packages
+No changes reported for this release.
 
 </section>
 
-<!-- /.packages -->
+<!-- /.release -->
 
-<section class="commits">
-
-### Commits
-
-<details>
-
-</details>
-
-</section>
-
-<!-- /.commits -->
+<section class="release" id="v0.1.0">
 
 ## 0.1.0 (2023-11-08)
 
@@ -2650,8 +2399,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 ##### BREAKING CHANGES
 
--   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version
--   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version to 4.1 
+-   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -2685,8 +2433,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 ##### BREAKING CHANGES
 
--   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version
--   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version to 4.1 
+-   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -2730,8 +2477,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 ##### BREAKING CHANGES
 
--   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version
--   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version to 4.1 
+-   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -2775,8 +2521,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 ##### BREAKING CHANGES
 
--   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version
--   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version to 4.1 
+-   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -2810,8 +2555,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 ##### BREAKING CHANGES
 
--   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version
--   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version to 4.1 
+-   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -2845,8 +2589,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 ##### BREAKING CHANGES
 
--   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version
--   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version to 4.1 
+-   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -2880,8 +2623,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 ##### BREAKING CHANGES
 
--   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version
--   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version to 4.1 
+-   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -2915,8 +2657,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 ##### BREAKING CHANGES
 
--   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version
--   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version to 4.1 
+-   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -2960,8 +2701,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 ##### BREAKING CHANGES
 
--   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version
--   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version to 4.1 
+-   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -3005,8 +2745,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 ##### BREAKING CHANGES
 
--   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version
--   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version to 4.1 
+-   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -3040,8 +2779,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 ##### BREAKING CHANGES
 
--   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version
--   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version to 4.1 
+-   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -3075,8 +2813,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 ##### BREAKING CHANGES
 
--   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version
--   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version to 4.1 
+-   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -3120,8 +2857,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 ##### BREAKING CHANGES
 
--   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version
--   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version to 4.1 
+-   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -3165,8 +2901,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 ##### BREAKING CHANGES
 
--   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version
--   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version to 4.1 
+-   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -3210,8 +2945,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 ##### BREAKING CHANGES
 
--   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version
--   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version to 4.1 
+-   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -3255,8 +2989,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 ##### BREAKING CHANGES
 
--   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version
--   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version to 4.1 
+-   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -3300,8 +3033,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 ##### BREAKING CHANGES
 
--   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version
--   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version to 4.1 
+-   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -3345,8 +3077,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 ##### BREAKING CHANGES
 
--   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version
--   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version to 4.1 
+-   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -3390,8 +3121,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 ##### BREAKING CHANGES
 
--   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version
--   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version to 4.1 
+-   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -3425,8 +3155,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 ##### BREAKING CHANGES
 
--   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version
--   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version to 4.1 
+-   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -3460,8 +3189,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 ##### BREAKING CHANGES
 
--   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version
--   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version to 4.1 
+-   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -3495,8 +3223,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 ##### BREAKING CHANGES
 
--   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version
--   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version to 4.1 
+-   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -3518,8 +3245,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 ### BREAKING CHANGES
 
--   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version
--   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version to 4.1 
+-   [`9768c66`](https://github.com/stdlib-js/stdlib/commit/9768c662b6e255b70ba9fb0faa989ea1eea71f66): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -3562,267 +3288,127 @@ A total of 2 people contributed to this release. Thank you to the following cont
 
 <!-- /.commits -->
 
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.0.12">
+
 ## 0.0.12 (2021-08-23)
 
-<section class="packages">
-
-### Packages
+No changes reported for this release.
 
 </section>
 
-<!-- /.packages -->
+<!-- /.release -->
 
-<section class="commits">
-
-### Commits
-
-<details>
-
-</details>
-
-</section>
-
-<!-- /.commits -->
+<section class="release" id="v0.0.11">
 
 ## 0.0.11 (2021-07-10)
 
-<section class="packages">
-
-### Packages
+No changes reported for this release.
 
 </section>
 
-<!-- /.packages -->
+<!-- /.release -->
 
-<section class="commits">
-
-### Commits
-
-<details>
-
-</details>
-
-</section>
-
-<!-- /.commits -->
+<section class="release" id="v0.0.10">
 
 ## 0.0.10 (2021-07-07)
 
-<section class="packages">
-
-### Packages
+No changes reported for this release.
 
 </section>
 
-<!-- /.packages -->
+<!-- /.release -->
 
-<section class="commits">
-
-### Commits
-
-<details>
-
-</details>
-
-</section>
-
-<!-- /.commits -->
+<section class="release" id="v0.0.9">
 
 ## 0.0.9 (2021-06-27)
 
-<section class="packages">
-
-### Packages
+No changes reported for this release.
 
 </section>
 
-<!-- /.packages -->
+<!-- /.release -->
 
-<section class="commits">
-
-### Commits
-
-<details>
-
-</details>
-
-</section>
-
-<!-- /.commits -->
+<section class="release" id="v0.0.8">
 
 ## 0.0.8 (2021-06-16)
 
-<section class="packages">
-
-### Packages
+No changes reported for this release.
 
 </section>
 
-<!-- /.packages -->
+<!-- /.release -->
 
-<section class="commits">
-
-### Commits
-
-<details>
-
-</details>
-
-</section>
-
-<!-- /.commits -->
+<section class="release" id="v0.0.7">
 
 ## 0.0.7 (2021-06-15)
 
-<section class="packages">
-
-### Packages
+No changes reported for this release.
 
 </section>
 
-<!-- /.packages -->
+<!-- /.release -->
 
-<section class="commits">
-
-### Commits
-
-<details>
-
-</details>
-
-</section>
-
-<!-- /.commits -->
+<section class="release" id="v0.0.6">
 
 ## 0.0.6 (2021-06-14)
 
-<section class="packages">
-
-### Packages
+No changes reported for this release.
 
 </section>
 
-<!-- /.packages -->
+<!-- /.release -->
 
-<section class="commits">
-
-### Commits
-
-<details>
-
-</details>
-
-</section>
-
-<!-- /.commits -->
+<section class="release" id="v0.0.5">
 
 ## 0.0.5 (2021-06-13)
 
-<section class="packages">
-
-### Packages
+No changes reported for this release.
 
 </section>
 
-<!-- /.packages -->
+<!-- /.release -->
 
-<section class="commits">
-
-### Commits
-
-<details>
-
-</details>
-
-</section>
-
-<!-- /.commits -->
+<section class="release" id="v0.0.4">
 
 ## 0.0.4 (2021-06-12)
 
-<section class="packages">
-
-### Packages
+No changes reported for this release.
 
 </section>
 
-<!-- /.packages -->
+<!-- /.release -->
 
-<section class="commits">
-
-### Commits
-
-<details>
-
-</details>
-
-</section>
-
-<!-- /.commits -->
+<section class="release" id="v0.0.3">
 
 ## 0.0.3 (2021-06-12)
 
-<section class="packages">
-
-### Packages
+No changes reported for this release.
 
 </section>
 
-<!-- /.packages -->
+<!-- /.release -->
 
-<section class="commits">
-
-### Commits
-
-<details>
-
-</details>
-
-</section>
-
-<!-- /.commits -->
+<section class="release" id="v0.0.2">
 
 ## 0.0.2 (2021-06-10)
 
-<section class="packages">
-
-### Packages
+No changes reported for this release.
 
 </section>
 
-<!-- /.packages -->
+<!-- /.release -->
 
-<section class="commits">
-
-### Commits
-
-<details>
-
-</details>
-
-</section>
-
-<!-- /.commits -->
+<section class="release" id="v0.0.1">
 
 ## 0.0.1 (2021-06-10)
 
-<section class="packages">
-
-### Packages
+No changes reported for this release.
 
 </section>
 
-<!-- /.packages -->
-
-<section class="commits">
-
-### Commits
-
-<details>
-
-</details>
-
-</section>
-
-<!-- /.commits -->
+<!-- /.release -->
 
