@@ -2,6 +2,16 @@
 
 > Package changelog.
 
+<section class="release" id="v0.3.1">
+
+## 0.3.1 (2024-08-18)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.3.0">
 
 ## 0.3.0 (2024-08-17)
@@ -10,7 +20,7 @@
 
 ### Packages
 
-<section class="package" id="complex-unreleased">
+<section class="package" id="complex-v0.3.0">
 
 #### [@stdlib/complex](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex)
 
@@ -57,7 +67,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="complex-base-unreleased">
+<section class="package" id="complex-base-v0.3.0">
 
 #### [@stdlib/complex/base](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/base)
 
@@ -92,7 +102,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="complex-base-assert-unreleased">
+<section class="package" id="complex-base-assert-v0.3.0">
 
 #### [@stdlib/complex/base/assert](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/base/assert)
 
@@ -117,7 +127,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="complex-base-assert-is-equal-unreleased">
+<section class="package" id="complex-base-assert-is-equal-v0.3.0">
 
 #### [@stdlib/complex/base/assert/is-equal](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/base/assert/is-equal)
 
@@ -139,7 +149,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="complex-base-assert-is-equalf-unreleased">
+<section class="package" id="complex-base-assert-is-equalf-v0.3.0">
 
 #### [@stdlib/complex/base/assert/is-equalf](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/base/assert/is-equalf)
 
@@ -175,7 +185,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="complex-base-assert-is-not-equal-unreleased">
+<section class="package" id="complex-base-assert-is-not-equal-v0.3.0">
 
 #### [@stdlib/complex/base/assert/is-not-equal](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/base/assert/is-not-equal)
 
@@ -211,7 +221,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="complex-base-assert-is-not-equalf-unreleased">
+<section class="package" id="complex-base-assert-is-not-equalf-v0.3.0">
 
 #### [@stdlib/complex/base/assert/is-not-equalf](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/base/assert/is-not-equalf)
 
@@ -247,7 +257,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="complex-base-assert-is-same-value-unreleased">
+<section class="package" id="complex-base-assert-is-same-value-v0.3.0">
 
 #### [@stdlib/complex/base/assert/is-same-value](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/base/assert/is-same-value)
 
@@ -283,7 +293,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="complex-base-assert-is-same-value-zero-unreleased">
+<section class="package" id="complex-base-assert-is-same-value-zero-v0.3.0">
 
 #### [@stdlib/complex/base/assert/is-same-value-zero](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/base/assert/is-same-value-zero)
 
@@ -319,7 +329,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="complex-base-assert-is-same-value-zerof-unreleased">
+<section class="package" id="complex-base-assert-is-same-value-zerof-v0.3.0">
 
 #### [@stdlib/complex/base/assert/is-same-value-zerof](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/base/assert/is-same-value-zerof)
 
@@ -355,7 +365,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="complex-base-assert-is-same-valuef-unreleased">
+<section class="package" id="complex-base-assert-is-same-valuef-v0.3.0">
 
 #### [@stdlib/complex/base/assert/is-same-valuef](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/base/assert/is-same-valuef)
 
@@ -391,7 +401,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="complex-base-parse-unreleased">
+<section class="package" id="complex-base-parse-v0.3.0">
 
 #### [@stdlib/complex/base/parse](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/base/parse)
 
@@ -413,7 +423,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="complex-conj-unreleased">
+<section class="package" id="complex-conj-v0.3.0">
 
 #### [@stdlib/complex/conj](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/conj)
 
@@ -449,7 +459,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="complex-conjf-unreleased">
+<section class="package" id="complex-conjf-v0.3.0">
 
 #### [@stdlib/complex/conjf](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/conjf)
 
@@ -485,7 +495,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="complex-float32-unreleased">
+<section class="package" id="complex-float32-v0.3.0">
 
 #### [@stdlib/complex/float32](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float32)
 
@@ -529,7 +539,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="complex-float32-base-unreleased">
+<section class="package" id="complex-float32-base-v0.3.0">
 
 #### [@stdlib/complex/float32/base](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float32/base)
 
@@ -565,7 +575,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="complex-float32-base-add-unreleased">
+<section class="package" id="complex-float32-base-add-v0.3.0">
 
 #### [@stdlib/complex/float32/base/add](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float32/base/add)
 
@@ -587,7 +597,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="complex-float32-base-assert-unreleased">
+<section class="package" id="complex-float32-base-assert-v0.3.0">
 
 #### [@stdlib/complex/float32/base/assert](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float32/base/assert)
 
@@ -622,7 +632,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="complex-float32-base-assert-is-equal-unreleased">
+<section class="package" id="complex-float32-base-assert-is-equal-v0.3.0">
 
 #### [@stdlib/complex/float32/base/assert/is-equal](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float32/base/assert/is-equal)
 
@@ -644,7 +654,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="complex-float32-base-assert-is-not-equal-unreleased">
+<section class="package" id="complex-float32-base-assert-is-not-equal-v0.3.0">
 
 #### [@stdlib/complex/float32/base/assert/is-not-equal](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float32/base/assert/is-not-equal)
 
@@ -666,7 +676,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="complex-float32-base-assert-is-same-value-unreleased">
+<section class="package" id="complex-float32-base-assert-is-same-value-v0.3.0">
 
 #### [@stdlib/complex/float32/base/assert/is-same-value](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float32/base/assert/is-same-value)
 
@@ -688,7 +698,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="complex-float32-base-assert-is-same-value-zero-unreleased">
+<section class="package" id="complex-float32-base-assert-is-same-value-zero-v0.3.0">
 
 #### [@stdlib/complex/float32/base/assert/is-same-value-zero](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float32/base/assert/is-same-value-zero)
 
@@ -710,7 +720,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="complex-float32-base-mul-unreleased">
+<section class="package" id="complex-float32-base-mul-v0.3.0">
 
 #### [@stdlib/complex/float32/base/mul](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float32/base/mul)
 
@@ -732,7 +742,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="complex-float32-conj-unreleased">
+<section class="package" id="complex-float32-conj-v0.3.0">
 
 #### [@stdlib/complex/float32/conj](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float32/conj)
 
@@ -754,7 +764,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="complex-float32-ctor-unreleased">
+<section class="package" id="complex-float32-ctor-v0.3.0">
 
 #### [@stdlib/complex/float32/ctor](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float32/ctor)
 
@@ -776,7 +786,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="complex-float32-imag-unreleased">
+<section class="package" id="complex-float32-imag-v0.3.0">
 
 #### [@stdlib/complex/float32/imag](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float32/imag)
 
@@ -798,7 +808,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="complex-float32-real-unreleased">
+<section class="package" id="complex-float32-real-v0.3.0">
 
 #### [@stdlib/complex/float32/real](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float32/real)
 
@@ -820,7 +830,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="complex-float32-reim-unreleased">
+<section class="package" id="complex-float32-reim-v0.3.0">
 
 #### [@stdlib/complex/float32/reim](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float32/reim)
 
@@ -842,7 +852,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="complex-float32-reviver-unreleased">
+<section class="package" id="complex-float32-reviver-v0.3.0">
 
 #### [@stdlib/complex/float32/reviver](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float32/reviver)
 
@@ -864,7 +874,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="complex-float64-unreleased">
+<section class="package" id="complex-float64-v0.3.0">
 
 #### [@stdlib/complex/float64](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float64)
 
@@ -907,7 +917,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="complex-float64-base-unreleased">
+<section class="package" id="complex-float64-base-v0.3.0">
 
 #### [@stdlib/complex/float64/base](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float64/base)
 
@@ -943,7 +953,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="complex-float64-base-add-unreleased">
+<section class="package" id="complex-float64-base-add-v0.3.0">
 
 #### [@stdlib/complex/float64/base/add](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float64/base/add)
 
@@ -965,7 +975,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="complex-float64-base-assert-unreleased">
+<section class="package" id="complex-float64-base-assert-v0.3.0">
 
 #### [@stdlib/complex/float64/base/assert](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float64/base/assert)
 
@@ -1000,7 +1010,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="complex-float64-base-assert-is-not-equal-unreleased">
+<section class="package" id="complex-float64-base-assert-is-not-equal-v0.3.0">
 
 #### [@stdlib/complex/float64/base/assert/is-not-equal](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float64/base/assert/is-not-equal)
 
@@ -1022,7 +1032,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="complex-float64-base-assert-is-same-value-unreleased">
+<section class="package" id="complex-float64-base-assert-is-same-value-v0.3.0">
 
 #### [@stdlib/complex/float64/base/assert/is-same-value](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float64/base/assert/is-same-value)
 
@@ -1044,7 +1054,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="complex-float64-base-assert-is-same-value-zero-unreleased">
+<section class="package" id="complex-float64-base-assert-is-same-value-zero-v0.3.0">
 
 #### [@stdlib/complex/float64/base/assert/is-same-value-zero](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float64/base/assert/is-same-value-zero)
 
@@ -1066,7 +1076,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="complex-float64-base-mul-unreleased">
+<section class="package" id="complex-float64-base-mul-v0.3.0">
 
 #### [@stdlib/complex/float64/base/mul](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float64/base/mul)
 
@@ -1088,7 +1098,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="complex-float64-conj-unreleased">
+<section class="package" id="complex-float64-conj-v0.3.0">
 
 #### [@stdlib/complex/float64/conj](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float64/conj)
 
@@ -1110,7 +1120,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="complex-float64-ctor-unreleased">
+<section class="package" id="complex-float64-ctor-v0.3.0">
 
 #### [@stdlib/complex/float64/ctor](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float64/ctor)
 
@@ -1142,7 +1152,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="complex-float64-imag-unreleased">
+<section class="package" id="complex-float64-imag-v0.3.0">
 
 #### [@stdlib/complex/float64/imag](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float64/imag)
 
@@ -1164,7 +1174,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="complex-float64-real-unreleased">
+<section class="package" id="complex-float64-real-v0.3.0">
 
 #### [@stdlib/complex/float64/real](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float64/real)
 
@@ -1186,7 +1196,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="complex-float64-reim-unreleased">
+<section class="package" id="complex-float64-reim-v0.3.0">
 
 #### [@stdlib/complex/float64/reim](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float64/reim)
 
@@ -1208,7 +1218,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="complex-imag-unreleased">
+<section class="package" id="complex-imag-v0.3.0">
 
 #### [@stdlib/complex/imag](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/imag)
 
@@ -1244,7 +1254,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="complex-imagf-unreleased">
+<section class="package" id="complex-imagf-v0.3.0">
 
 #### [@stdlib/complex/imagf](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/imagf)
 
@@ -1280,7 +1290,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="complex-parse-float32-unreleased">
+<section class="package" id="complex-parse-float32-v0.3.0">
 
 #### [@stdlib/complex/parse-float32](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/parse-float32)
 
@@ -1302,7 +1312,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="complex-parse-float64-unreleased">
+<section class="package" id="complex-parse-float64-v0.3.0">
 
 #### [@stdlib/complex/parse-float64](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/parse-float64)
 
@@ -1324,7 +1334,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="complex-real-unreleased">
+<section class="package" id="complex-real-v0.3.0">
 
 #### [@stdlib/complex/real](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/real)
 
@@ -1360,7 +1370,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="complex-realf-unreleased">
+<section class="package" id="complex-realf-v0.3.0">
 
 #### [@stdlib/complex/realf](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/realf)
 
@@ -1396,7 +1406,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="complex-reim-unreleased">
+<section class="package" id="complex-reim-v0.3.0">
 
 #### [@stdlib/complex/reim](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/reim)
 
@@ -1432,7 +1442,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="complex-reimf-unreleased">
+<section class="package" id="complex-reimf-v0.3.0">
 
 #### [@stdlib/complex/reimf](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/reimf)
 
@@ -1468,7 +1478,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="complex-reviver-float32-unreleased">
+<section class="package" id="complex-reviver-float32-v0.3.0">
 
 #### [@stdlib/complex/reviver-float32](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/reviver-float32)
 
