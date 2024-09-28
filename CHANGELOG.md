@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-09-21)
+## Unreleased (2024-09-28)
 
 <section class="packages">
 
@@ -32,6 +32,8 @@ A total of 1 person contributed to this release. Thank you to this contributor:
 
 <details>
 
+-   [`58f787f`](https://github.com/stdlib-js/stdlib/commit/58f787fa43b56f5c5480542d6f91f5038574dbfb) - **chore:** use ComplexLike type _(by Philipp Burckhardt)_
+-   [`975147f`](https://github.com/stdlib-js/stdlib/commit/975147f3125c786ec1672acb3d2564ca16eaa790) - **docs:** fix TSDoc lint errors _(by Philipp Burckhardt)_
 -   [`6e9f42e`](https://github.com/stdlib-js/stdlib/commit/6e9f42e4c912485d9896eaa16c88b70fd3688e97) - **docs:** harmonize list formatting in repl.txt and ensure starting newline _(by Philipp Burckhardt)_
 -   [`f387603`](https://github.com/stdlib-js/stdlib/commit/f387603e739f88a38af3263ce6ff675ad903ee8c) - **docs:** consistently use declarative instead of imperative sentences outside of intros _(by Philipp Burckhardt)_
 -   [`ed44fee`](https://github.com/stdlib-js/stdlib/commit/ed44feecb9eaa5e0849d1a533e5415624d0aa338) - **style:** use imperative in package.json description and end with period _(by Philipp Burckhardt)_
@@ -1698,7 +1700,7 @@ A total of 6 people contributed to this release. Thank you to the following cont
 
 -   Athan Reines
 -   Philipp Burckhardt
--   Pranav
+-   Pranav Goswami
 -   Rejoan Sardar
 -   Snehil Shah
 -   Spandan Barve
