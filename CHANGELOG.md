@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-01-17)
+## Unreleased (2025-01-18)
 
 <section class="packages">
 
@@ -102,6 +102,7 @@ A total of 2 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`22a3dcf`](https://github.com/stdlib-js/stdlib/commit/22a3dcfe916b7f5c979d6ee93045d37add5d685d) - **docs:** update namespace TypeScript declaration comments [(#4794)](https://github.com/stdlib-js/stdlib/pull/4794) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`a0aef8f`](https://github.com/stdlib-js/stdlib/commit/a0aef8ff6010029008236151a684d1295a66f6a7) - **feat:** add `strided` API _(by Athan Reines)_
 -   [`e93b466`](https://github.com/stdlib-js/stdlib/commit/e93b4667550eed6470a805d8e244764c6fe26525) - **feat:** add `assign` method _(by Athan Reines)_
 -   [`40308a8`](https://github.com/stdlib-js/stdlib/commit/40308a8953dd480537d4c4359cc6e09f679e3ec1) - **build:** update configurations _(by Athan Reines)_
