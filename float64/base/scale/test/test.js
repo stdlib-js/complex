@@ -22,25 +22,25 @@
 
 var tape = require( 'tape' );
 var isMethod = require( '@stdlib/assert/is-method' );
-var add = require( './../lib' );
+var scale = require( './../lib' );
 
 
 // TESTS //
 
 tape( 'main export is a function', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof add, 'function', 'main export is a function' );
+	t.strictEqual( typeof scale, 'function', 'main export is a function' );
 	t.end();
 });
 
 tape( 'attached to the main export is an `assign` method', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( isMethod( add, 'assign' ), true, 'returns expected value' );
+	t.strictEqual( isMethod( scale, 'assign' ), true, 'returns expected value' );
 	t.end();
 });
 
 tape( 'attached to the main export is a `strided` method', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( isMethod( add, 'strided' ), true, 'returns expected value' );
+	t.strictEqual( isMethod( scale, 'strided' ), true, 'returns expected value' );
 	t.end();
 });

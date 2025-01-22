@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2025 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -19,27 +19,27 @@
 'use strict';
 
 /**
-* Add two double-precision complex floating-point numbers.
+* Scale a double-precision complex floating-point number by a real-valued double-precision floating-point scalar constant.
 *
-* @module @stdlib/complex/float64/base/add
+* @module @stdlib/complex/float64/base/scale
 *
 * @example
 * var Complex128 = require( '@stdlib/complex/float64/ctor' );
 * var real = require( '@stdlib/complex/float64/real' );
 * var imag = require( '@stdlib/complex/float64/imag' );
-* var cadd = require( '@stdlib/complex/float64/base/add' );
+* var scale = require( '@stdlib/complex/float64/base/scale' );
 *
 * var z = new Complex128( 5.0, 3.0 );
 * // returns <Complex128>
 *
-* var out = cadd( z, z );
+* var out = scale( scalar, z );
 * // returns <Complex128>
 *
 * var re = real( out );
-* // returns 10.0
+* // returns 25.0
 *
 * var im = imag( out );
-* // returns 6.0
+* // returns 15.0
 */
 
 // MODULES //

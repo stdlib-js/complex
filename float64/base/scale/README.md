@@ -2,7 +2,7 @@
 
 @license Apache-2.0
 
-Copyright (c) 2018 The Stdlib Authors.
+Copyright (c) 2025 The Stdlib Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# add
+# scale
 
-> Add two double-precision complex floating-point numbers.
+> Scale a double-precision complex floating-point number by a real-valued double-precision floating-point scalar constant.
 
 <section class="intro">
 
@@ -33,40 +33,45 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var add = require( '@stdlib/complex/float64/base/add' );
+var scale = require( '@stdlib/complex/float64/base/scale' );
 ```
 
-#### add( z1, z2 )
+#### scale( alpha, z )
 
-Adds two double-precision complex floating-point numbers.
+Scales a double-precision complex floating-point number by a real-valued double-precision floating-point scalar constant.
 
 ```javascript
 var Complex128 = require( '@stdlib/complex/float64/ctor' );
 var real = require( '@stdlib/complex/float64/real' );
 var imag = require( '@stdlib/complex/float64/imag' );
 
-var z = new Complex128( -1.5, 2.5 );
+var z = new Complex128( 5.0, 3.0 );
 
-var v = add( z, z );
+var v = scale( 5.0, z );
 // returns <Complex128>
 
 var re = real( v );
-// returns -3.0
+// returns 25.0
 
 var im = imag( v );
-// returns 5.0
+// returns 15.0
 ```
 
-#### add.assign( re1, im1, re2, im2, out, strideOut, offsetOut )
+The function supports the following parameters:
 
-Adds two double-precision complex floating-point numbers and assigns results to a provided output array.
+-   **alpha**: real-valued scalar constant.
+-   **z**: [complex number][@stdlib/complex/float64/ctor].
+
+#### scale.assign( alpha, re1, im1, out, strideOut, offsetOut )
+
+Scales a double-precision complex floating-point number by a real-valued double-precision floating-point scalar constant and assigns results to a provided output array.
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
 
 var out = new Float64Array( 2 );
-var v = add.assign( 5.0, 3.0, -2.0, 1.0, out, 1, 0 );
-// returns <Float64Array>[ 3.0, 4.0 ]
+var v = scale.assign( 5.0, 5.0, 3.0, out, 1, 0 );
+// returns <Float64Array>[ 25.0, 15.0 ]
 
 var bool = ( out === v );
 // returns true
@@ -74,27 +79,25 @@ var bool = ( out === v );
 
 The function supports the following parameters:
 
--   **re1**: real component of the first complex number.
--   **im1**: imaginary component of the first complex number.
--   **re2**: real component of the second complex number.
--   **im2**: imaginary component of the second complex number.
+-   **alpha**: real-valued scalar constant.
+-   **re**: real component of the complex number.
+-   **im**: imaginary component of the complex number.
 -   **out**: output array.
 -   **strideOut**: stride length for `out`.
 -   **offsetOut**: starting index for `out`.
 
-#### add.strided( z1, sz1, oz1, z2, sz2, oz2, out, so, oo )
+#### scale.strided( alpha, z, sz, oz, out, so, oo )
 
-Adds two double-precision complex floating-point numbers stored in real-valued strided array views and assigns results to a provided strided output array.
+Scales a double-precision complex floating-point number stored in a real-valued strided array view by a real-valued double-precision floating-point scalar constant and assigns results to a provided strided output array.
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
 
-var z1 = new Float64Array( [ 5.0, 3.0 ] );
-var z2 = new Float64Array( [ -2.0, 1.0 ] );
+var z = new Float64Array( [ 5.0, 3.0 ] );
 var out = new Float64Array( 2 );
 
-var v = add.strided( z1, 1, 0, z2, 1, 0, out, 1, 0 );
-// returns <Float64Array>[ 3.0, 4.0 ]
+var v = scale.strided( 5.0, z, 1, 0, out, 1, 0 );
+// returns <Float64Array>[ 25.0, 15.0 ]
 
 var bool = ( out === v );
 // returns true
@@ -102,12 +105,10 @@ var bool = ( out === v );
 
 The function supports the following parameters:
 
--   **z1**: first complex number strided array view.
--   **sz1**: stride length for `z1`.
--   **oz1**: starting index for `z1`.
--   **z2**: second complex number strided array view.
--   **sz2**: stride length for `z2`.
--   **oz2**: starting index for `z2`.
+-   **alpha**: real-valued scalar constant.
+-   **z**: complex number strided array view.
+-   **sz**: stride length for `z`.
+-   **oz**: starting index for `z`.
 -   **out**: output array.
 -   **so**: stride length for `out`.
 -   **oo**: starting index for `out`.
@@ -125,19 +126,17 @@ The function supports the following parameters:
 ```javascript
 var Complex128 = require( '@stdlib/complex/float64/ctor' );
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
-var add = require( '@stdlib/complex/float64/base/add' );
+var scale = require( '@stdlib/complex/float64/base/scale' );
 
 var rand = discreteUniform( -50, 50 );
 
 var z1;
 var z2;
-var z3;
 var i;
 for ( i = 0; i < 100; i++ ) {
     z1 = new Complex128( rand(), rand() );
-    z2 = new Complex128( rand(), rand() );
-    z3 = add( z1, z2 );
-    console.log( '(%s) + (%s) = %s', z1.toString(), z2.toString(), z3.toString() );
+    z2 = scale( 5.0, z1 );
+    console.log( '(%s) * 5.0 = %s', z1.toString(), z2.toString() );
 }
 ```
 
@@ -168,36 +167,36 @@ for ( i = 0; i < 100; i++ ) {
 ### Usage
 
 ```c
-#include "stdlib/complex/float64/base/add.h"
+#include "stdlib/complex/float64/base/scale.h"
 ```
 
-#### stdlib_base_complex128_add( z1, z2 )
+#### stdlib_base_complex128_scale( alpha, z )
 
-Adds two double-precision complex floating-point numbers.
+Scales a double-precision complex floating-point number by a real-valued double-precision floating-point scalar constant.
 
 ```c
 #include "stdlib/complex/float64/ctor.h"
 #include "stdlib/complex/float64/real.h"
 #include "stdlib/complex/float64/imag.h"
 
-stdlib_complex128_t z = stdlib_complex128( 3.0, -2.0 );
+stdlib_complex128_t z = stdlib_complex128( 5.0, 3.0 );
 
-stdlib_complex128_t out = stdlib_base_complex128_add( z, z );
+stdlib_complex128_t out = stdlib_base_complex128_scale( 5.0, z );
 
 double re = stdlib_complex128_real( out );
-// returns 6.0
+// returns 25.0
 
 double im = stdlib_complex128_imag( out );
-// returns -4.0
+// returns 15.0
 ```
 
 The function accepts the following arguments:
 
--   **z1**: `[in] stdlib_complex128_t` input value.
--   **z2**: `[in] stdlib_complex128_t` input value.
+-   **alpha**: `[in] double` scalar constant.
+-   **z**: `[in] stdlib_complex128_t` complex number.
 
 ```c
-stdlib_complex128_t stdlib_base_complex128_add( const stdlib_complex128_t z1, const stdlib_complex128_t z2 );
+stdlib_complex128_t stdlib_base_complex128_scale( const double alpha, const stdlib_complex128_t z );
 ```
 
 </section>
@@ -219,7 +218,7 @@ stdlib_complex128_t stdlib_base_complex128_add( const stdlib_complex128_t z1, co
 ### Examples
 
 ```c
-#include "stdlib/complex/float64/base/add.h"
+#include "stdlib/complex/float64/base/scale.h"
 #include "stdlib/complex/float64/ctor.h"
 #include "stdlib/complex/float64/reim.h"
 #include <stdio.h>
@@ -242,9 +241,9 @@ int main( void ) {
         stdlib_complex128_reim( v, &re, &im );
         printf( "z = %lf + %lfi\n", re, im );
 
-        y = stdlib_base_complex128_add( v, v );
+        y = stdlib_base_complex128_scale( 5.0, v );
         stdlib_complex128_reim( y, &re, &im );
-        printf( "add(z, z) = %lf + %lfi\n", re, im );
+        printf( "scale(5.0, z) = %lf + %lfi\n", re, im );
     }
 }
 ```
@@ -261,14 +260,6 @@ int main( void ) {
 
 <section class="related">
 
-* * *
-
-## See Also
-
--   <span class="package-name">[`@stdlib/math/base/ops/cdiv`][@stdlib/math/base/ops/cdiv]</span><span class="delimiter">: </span><span class="description">divide two complex numbers.</span>
--   <span class="package-name">[`@stdlib/complex/float64/base/mul`][@stdlib/complex/float64/base/mul]</span><span class="delimiter">: </span><span class="description">multiply two double-precision complex floating-point numbers.</span>
--   <span class="package-name">[`@stdlib/math/base/ops/csub`][@stdlib/math/base/ops/csub]</span><span class="delimiter">: </span><span class="description">subtract two double-precision complex floating-point numbers.</span>
-
 </section>
 
 <!-- /.related -->
@@ -277,15 +268,7 @@ int main( void ) {
 
 <section class="links">
 
-<!-- <related-links> -->
-
-[@stdlib/math/base/ops/cdiv]: https://github.com/stdlib-js/math-base-ops-cdiv
-
-[@stdlib/complex/float64/base/mul]: https://github.com/stdlib-js/complex/tree/main/float64/base/mul
-
-[@stdlib/math/base/ops/csub]: https://github.com/stdlib-js/math-base-ops-csub
-
-<!-- </related-links> -->
+[@stdlib/complex/float64/ctor]: https://github.com/stdlib-js/complex/tree/main/float64/ctor
 
 </section>
 
