@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-02-17)
+## Unreleased (2025-02-18)
 
 <section class="packages">
 
@@ -261,9 +261,10 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 3 people contributed to this release. Thank you to the following contributors:
+A total of 4 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   Gururaj Gurram
 -   Philipp Burckhardt
 -   Shabareesh Shetty
 
@@ -278,6 +279,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 <details>
 
 -   [`ae8e7b9`](https://github.com/stdlib-js/stdlib/commit/ae8e7b9f2140d1a5b98e8bc03fb909df3171d410) - **feat:** update namespace TypeScript declarations [(#5254)](https://github.com/stdlib-js/stdlib/pull/5254) _(by stdlib-bot)_
+-   [`2752fe3`](https://github.com/stdlib-js/stdlib/commit/2752fe3ed80c146e8a122c1e7ed442099ba367bc) - **refactor:** update paths _(by Gururaj Gurram)_
 -   [`d7154e2`](https://github.com/stdlib-js/stdlib/commit/d7154e2c7756ce51a9bbbf38848960ea988d4ea6) - **feat:** add `strided` and `assign` APIs to `complex/float32/base/mul` [(#5205)](https://github.com/stdlib-js/stdlib/pull/5205) _(by Shabareesh Shetty, Athan Reines, stdlib-bot)_
 -   [`b957f93`](https://github.com/stdlib-js/stdlib/commit/b957f93bfacfa2b307db9b30a45fa48ce5b4488b) - **docs:** fix description _(by Athan Reines)_
 -   [`8409bd1`](https://github.com/stdlib-js/stdlib/commit/8409bd17639c21c94be23d8498789fca5352892b) - **feat:** update namespace TypeScript declarations [(#4856)](https://github.com/stdlib-js/stdlib/pull/4856) _(by stdlib-bot)_

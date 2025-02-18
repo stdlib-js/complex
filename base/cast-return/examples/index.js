@@ -19,7 +19,7 @@
 'use strict';
 
 var Complex64 = require( './../../../float32/ctor' );
-var addf = require( '@stdlib/math/base/ops/addf' );
+var addf = require( '@stdlib/number/float32/base/add' );
 var realf = require( './../../../float32/real' );
 var imagf = require( './../../../float32/imag' );
 var castReturn = require( './../lib' );
