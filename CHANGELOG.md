@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-02-18)
+## Unreleased (2025-03-12)
 
 <section class="packages">
 
@@ -158,6 +158,28 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="complex-float64-base-div-unreleased">
+
+#### [@stdlib/complex/float64/base/div](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float64/base/div)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`afa2318`](https://github.com/stdlib-js/stdlib/commit/afa231834cb55bc1f0fb01d16b4cb81e7d435a35) - add `complex/float64/base/div`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="complex-float64-base-mul-unreleased">
 
 #### [@stdlib/complex/float64/base/mul](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float64/base/mul)
@@ -278,6 +300,8 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`3bad287`](https://github.com/stdlib-js/stdlib/commit/3bad287c1589abf75463bbb43311c22d4a991c22) - **refactor:** update paths _(by Gururaj Gurram)_
+-   [`afa2318`](https://github.com/stdlib-js/stdlib/commit/afa231834cb55bc1f0fb01d16b4cb81e7d435a35) - **feat:** add `complex/float64/base/div` _(by Gururaj Gurram)_
 -   [`ae8e7b9`](https://github.com/stdlib-js/stdlib/commit/ae8e7b9f2140d1a5b98e8bc03fb909df3171d410) - **feat:** update namespace TypeScript declarations [(#5254)](https://github.com/stdlib-js/stdlib/pull/5254) _(by stdlib-bot)_
 -   [`2752fe3`](https://github.com/stdlib-js/stdlib/commit/2752fe3ed80c146e8a122c1e7ed442099ba367bc) - **refactor:** update paths _(by Gururaj Gurram)_
 -   [`d7154e2`](https://github.com/stdlib-js/stdlib/commit/d7154e2c7756ce51a9bbbf38848960ea988d4ea6) - **feat:** add `strided` and `assign` APIs to `complex/float32/base/mul` [(#5205)](https://github.com/stdlib-js/stdlib/pull/5205) _(by Shabareesh Shetty, Athan Reines, stdlib-bot)_
