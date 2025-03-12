@@ -300,6 +300,7 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`fba8768`](https://github.com/stdlib-js/stdlib/commit/fba87687603f2a4269c54589079c2b2e7f8da162) - **chore:** remove unused header _(by Athan Reines)_
 -   [`3bad287`](https://github.com/stdlib-js/stdlib/commit/3bad287c1589abf75463bbb43311c22d4a991c22) - **refactor:** update paths _(by Gururaj Gurram)_
 -   [`afa2318`](https://github.com/stdlib-js/stdlib/commit/afa231834cb55bc1f0fb01d16b4cb81e7d435a35) - **feat:** add `complex/float64/base/div` _(by Gururaj Gurram)_
 -   [`ae8e7b9`](https://github.com/stdlib-js/stdlib/commit/ae8e7b9f2140d1a5b98e8bc03fb909df3171d410) - **feat:** update namespace TypeScript declarations [(#5254)](https://github.com/stdlib-js/stdlib/pull/5254) _(by stdlib-bot)_

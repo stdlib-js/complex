@@ -23,7 +23,6 @@
 #include "stdlib/constants/float64/max.h"
 #include "stdlib/constants/float64/eps.h"
 #include "stdlib/constants/float64/smallest_normal.h"
-#include <stdint.h>
 
 static const double LARGE_THRESHOLD = STDLIB_CONSTANT_FLOAT64_MAX * 0.5;
 static const double SMALL_THRESHOLD = STDLIB_CONSTANT_FLOAT64_SMALLEST_NORMAL * ( 2.0 / STDLIB_CONSTANT_FLOAT64_EPS );
