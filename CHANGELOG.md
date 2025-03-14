@@ -112,6 +112,28 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="complex-float32-base-neg-unreleased">
+
+#### [@stdlib/complex/float32/base/neg](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float32/base/neg)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`4866c10`](https://github.com/stdlib-js/stdlib/commit/4866c103418bc09e2c11a3f0238ac6941e830eca) - add `complex/float32/base/neg`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="complex-float64-base-unreleased">
 
 #### [@stdlib/complex/float64/base](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float64/base)
@@ -322,6 +344,7 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`4866c10`](https://github.com/stdlib-js/stdlib/commit/4866c103418bc09e2c11a3f0238ac6941e830eca) - **feat:** add `complex/float32/base/neg` _(by Gururaj Gurram)_
 -   [`27a5a10`](https://github.com/stdlib-js/stdlib/commit/27a5a100469ef790c3e12d32947f8f299b6b7c15) - **feat:** add `complex/float64/base/neg` _(by Gururaj Gurram)_
 -   [`fba8768`](https://github.com/stdlib-js/stdlib/commit/fba87687603f2a4269c54589079c2b2e7f8da162) - **chore:** remove unused header _(by Athan Reines)_
 -   [`3bad287`](https://github.com/stdlib-js/stdlib/commit/3bad287c1589abf75463bbb43311c22d4a991c22) - **refactor:** update paths _(by Gururaj Gurram)_
