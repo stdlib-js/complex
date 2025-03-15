@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# add
+# csubf
 
-> Add two single-precision complex floating-point numbers.
+> Subtract two single-precision complex floating-point numbers.
 
 <section class="intro">
 
@@ -33,28 +33,29 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var add = require( '@stdlib/complex/float32/base/add' );
+var csubf = require( '@stdlib/complex/float32/base/sub' );
 ```
 
-#### add( z1, z2 )
+#### csubf( z1, z2 )
 
-Adds two single-precision complex floating-point numbers.
+Subtracts two single-precision complex floating-point numbers.
 
 ```javascript
 var Complex64 = require( '@stdlib/complex/float32/ctor' );
 var realf = require( '@stdlib/complex/float32/real' );
 var imagf = require( '@stdlib/complex/float32/imag' );
 
-var z = new Complex64( -1.5, 2.5 );
+var z1 = new Complex64( 5.0, 3.0 );
+var z2 = new Complex64( -2.0, 1.0 );
 
-var v = add( z, z );
+var v = csubf( z1, z2 );
 // returns <Complex64>
 
 var re = realf( v );
-// returns -3.0
+// returns 7.0
 
 var im = imagf( v );
-// returns 5.0
+// returns 2.0
 ```
 
 </section>
@@ -70,19 +71,20 @@ var im = imagf( v );
 ```javascript
 var Complex64 = require( '@stdlib/complex/float32/ctor' );
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
-var add = require( '@stdlib/complex/float32/base/add' );
+var csubf = require( '@stdlib/complex/float32/base/sub' );
 
-var rand = discreteUniform( -50, 50 );
-
+var rand;
 var z1;
 var z2;
 var z3;
 var i;
+
+rand = discreteUniform( -50, 50 );
 for ( i = 0; i < 100; i++ ) {
     z1 = new Complex64( rand(), rand() );
     z2 = new Complex64( rand(), rand() );
-    z3 = add( z1, z2 );
-    console.log( '(%s) + (%s) = %s', z1.toString(), z2.toString(), z3.toString() );
+    z3 = csubf( z1, z2 );
+    console.log( '(%s) - (%s) = %s', z1.toString(), z2.toString(), z3.toString() );
 }
 ```
 
@@ -113,27 +115,27 @@ for ( i = 0; i < 100; i++ ) {
 ### Usage
 
 ```c
-#include "stdlib/complex/float32/base/add.h"
+#include "stdlib/complex/float32/base/sub.h"
 ```
 
-#### stdlib_base_complex64_add( z1, z2 )
+#### stdlib_base_complex64_sub( z1, z2 )
 
-Adds two single-precision complex floating-point numbers.
+Subtracts two single-precision complex floating-point numbers.
 
 ```c
 #include "stdlib/complex/float32/ctor.h"
 #include "stdlib/complex/float32/real.h"
 #include "stdlib/complex/float32/imag.h"
 
-stdlib_complex64_t z = stdlib_complex64( 3.0f, -2.0f );
-
-stdlib_complex64_t out = stdlib_base_complex64_add( z, z );
+stdlib_complex64_t z1 = stdlib_complex64( 5.0f, 3.0f );
+stdlib_complex64_t z2 = stdlib_complex64( -2.0f, 1.0f );
+stdlib_complex64_t out = stdlib_base_complex64_sub( z1, z2 );
 
 float re = stdlib_complex64_real( out );
-// returns 6.0f
+// returns 7.0f
 
 float im = stdlib_complex64_imag( out );
-// returns -4.0f
+// returns 2.0f
 ```
 
 The function accepts the following arguments:
@@ -142,7 +144,7 @@ The function accepts the following arguments:
 -   **z2**: `[in] stdlib_complex64_t` input value.
 
 ```c
-stdlib_complex64_t stdlib_base_complex64_add( const stdlib_complex64_t z1, const stdlib_complex64_t z2 );
+stdlib_complex64_t stdlib_base_complex64_sub( const stdlib_complex64_t z1, const stdlib_complex64_t z2 );
 ```
 
 </section>
@@ -164,7 +166,7 @@ stdlib_complex64_t stdlib_base_complex64_add( const stdlib_complex64_t z1, const
 ### Examples
 
 ```c
-#include "stdlib/complex/float32/base/add.h"
+#include "stdlib/complex/float32/base/sub.h"
 #include "stdlib/complex/float32/ctor.h"
 #include "stdlib/complex/float32/reim.h"
 #include <stdio.h>
@@ -187,9 +189,9 @@ int main( void ) {
         stdlib_complex64_reim( v, &re, &im );
         printf( "z = %f + %fi\n", re, im );
 
-        y = stdlib_base_complex64_add( v, v );
+        y = stdlib_base_complex64_sub( v, v );
         stdlib_complex64_reim( y, &re, &im );
-        printf( "add(z, z) = %f + %fi\n", re, im );
+        printf( "csubf(z, z) = %f + %fi\n", re, im );
     }
 }
 ```
@@ -210,9 +212,9 @@ int main( void ) {
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/complex/float64/base/add`][@stdlib/complex/float64/base/add]</span><span class="delimiter">: </span><span class="description">add two double-precision complex floating-point numbers.</span>
+-   <span class="package-name">[`@stdlib/complex/float32/base/add`][@stdlib/complex/float32/base/add]</span><span class="delimiter">: </span><span class="description">add two single-precision complex floating-point numbers.</span>
 -   <span class="package-name">[`@stdlib/complex/float32/base/mul`][@stdlib/complex/float32/base/mul]</span><span class="delimiter">: </span><span class="description">multiply two single-precision complex floating-point numbers.</span>
--   <span class="package-name">[`@stdlib/complex/float32/base/sub`][@stdlib/complex/float32/base/sub]</span><span class="delimiter">: </span><span class="description">subtract two single-precision complex floating-point numbers.</span>
+-   <span class="package-name">[`@stdlib/complex/float64/base/sub`][@stdlib/complex/float64/base/sub]</span><span class="delimiter">: </span><span class="description">subtract two double-precision complex floating-point numbers.</span>
 
 </section>
 
@@ -224,11 +226,11 @@ int main( void ) {
 
 <!-- <related-links> -->
 
-[@stdlib/complex/float64/base/add]: https://github.com/stdlib-js/complex/tree/main/float64/base/add
+[@stdlib/complex/float32/base/add]: https://github.com/stdlib-js/complex/tree/main/float32/base/add
 
 [@stdlib/complex/float32/base/mul]: https://github.com/stdlib-js/complex/tree/main/float32/base/mul
 
-[@stdlib/complex/float32/base/sub]: https://github.com/stdlib-js/complex/tree/main/float32/base/sub
+[@stdlib/complex/float64/base/sub]: https://github.com/stdlib-js/complex/tree/main/float64/base/sub
 
 <!-- </related-links> -->
 
