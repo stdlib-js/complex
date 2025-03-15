@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-03-14)
+## Unreleased (2025-03-15)
 
 <section class="packages">
 
@@ -291,6 +291,28 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="complex-float64-base-sub-unreleased">
+
+#### [@stdlib/complex/float64/base/sub](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float64/base/sub)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7e1f49e`](https://github.com/stdlib-js/stdlib/commit/7e1f49e881547d1212a1b411fb98b15ac0fb3fff) - add `complex/float64/base/sub`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 </section>
 
 <!-- /.packages -->
@@ -344,6 +366,8 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`c7c1fb3`](https://github.com/stdlib-js/stdlib/commit/c7c1fb325f010a77313c58bfd51598af47720d89) - **refactor:** update paths _(by Gururaj Gurram)_
+-   [`7e1f49e`](https://github.com/stdlib-js/stdlib/commit/7e1f49e881547d1212a1b411fb98b15ac0fb3fff) - **feat:** add `complex/float64/base/sub` _(by Gururaj Gurram)_
 -   [`4866c10`](https://github.com/stdlib-js/stdlib/commit/4866c103418bc09e2c11a3f0238ac6941e830eca) - **feat:** add `complex/float32/base/neg` _(by Gururaj Gurram)_
 -   [`27a5a10`](https://github.com/stdlib-js/stdlib/commit/27a5a100469ef790c3e12d32947f8f299b6b7c15) - **feat:** add `complex/float64/base/neg` _(by Gururaj Gurram)_
 -   [`fba8768`](https://github.com/stdlib-js/stdlib/commit/fba87687603f2a4269c54589079c2b2e7f8da162) - **chore:** remove unused header _(by Athan Reines)_

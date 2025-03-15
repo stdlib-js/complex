@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# add
+# csub
 
-> Add two double-precision complex floating-point numbers.
+> Subtract two double-precision complex floating-point numbers.
 
 <section class="intro">
 
@@ -33,84 +33,30 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var add = require( '@stdlib/complex/float64/base/add' );
+var csub = require( '@stdlib/complex/float64/base/sub' );
 ```
 
-#### add( z1, z2 )
+#### csub( z1, z2 )
 
-Adds two double-precision complex floating-point numbers.
+Subtracts two double-precision complex floating-point numbers.
 
 ```javascript
 var Complex128 = require( '@stdlib/complex/float64/ctor' );
 var real = require( '@stdlib/complex/float64/real' );
 var imag = require( '@stdlib/complex/float64/imag' );
 
-var z = new Complex128( -1.5, 2.5 );
+var z1 = new Complex128( 5.0, 3.0 );
+var z2 = new Complex128( -2.0, 1.0 );
 
-var v = add( z, z );
+var v = csub( z1, z2 );
 // returns <Complex128>
 
 var re = real( v );
-// returns -3.0
+// returns 7.0
 
 var im = imag( v );
-// returns 5.0
+// returns 2.0
 ```
-
-#### add.assign( re1, im1, re2, im2, out, strideOut, offsetOut )
-
-Adds two double-precision complex floating-point numbers and assigns results to a provided output array.
-
-```javascript
-var Float64Array = require( '@stdlib/array/float64' );
-
-var out = new Float64Array( 2 );
-var v = add.assign( 5.0, 3.0, -2.0, 1.0, out, 1, 0 );
-// returns <Float64Array>[ 3.0, 4.0 ]
-
-var bool = ( out === v );
-// returns true
-```
-
-The function supports the following parameters:
-
--   **re1**: real component of the first complex number.
--   **im1**: imaginary component of the first complex number.
--   **re2**: real component of the second complex number.
--   **im2**: imaginary component of the second complex number.
--   **out**: output array.
--   **strideOut**: stride length for `out`.
--   **offsetOut**: starting index for `out`.
-
-#### add.strided( z1, sz1, oz1, z2, sz2, oz2, out, so, oo )
-
-Adds two double-precision complex floating-point numbers stored in real-valued strided array views and assigns results to a provided strided output array.
-
-```javascript
-var Float64Array = require( '@stdlib/array/float64' );
-
-var z1 = new Float64Array( [ 5.0, 3.0 ] );
-var z2 = new Float64Array( [ -2.0, 1.0 ] );
-var out = new Float64Array( 2 );
-
-var v = add.strided( z1, 1, 0, z2, 1, 0, out, 1, 0 );
-// returns <Float64Array>[ 3.0, 4.0 ]
-
-var bool = ( out === v );
-// returns true
-```
-
-The function supports the following parameters:
-
--   **z1**: first complex number strided array view.
--   **sz1**: stride length for `z1`.
--   **oz1**: starting index for `z1`.
--   **z2**: second complex number strided array view.
--   **sz2**: stride length for `z2`.
--   **oz2**: starting index for `z2`.
--   **out**: output array.
--   **so**: stride length for `out`.
--   **oo**: starting index for `out`.
 
 </section>
 
@@ -125,19 +71,20 @@ The function supports the following parameters:
 ```javascript
 var Complex128 = require( '@stdlib/complex/float64/ctor' );
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
-var add = require( '@stdlib/complex/float64/base/add' );
+var csub = require( '@stdlib/complex/float64/base/sub' );
 
-var rand = discreteUniform( -50, 50 );
-
+var rand;
 var z1;
 var z2;
 var z3;
 var i;
+
+rand = discreteUniform( -50, 50 );
 for ( i = 0; i < 100; i++ ) {
     z1 = new Complex128( rand(), rand() );
     z2 = new Complex128( rand(), rand() );
-    z3 = add( z1, z2 );
-    console.log( '(%s) + (%s) = %s', z1.toString(), z2.toString(), z3.toString() );
+    z3 = csub( z1, z2 );
+    console.log( '(%s) - (%s) = %s', z1.toString(), z2.toString(), z3.toString() );
 }
 ```
 
@@ -168,27 +115,28 @@ for ( i = 0; i < 100; i++ ) {
 ### Usage
 
 ```c
-#include "stdlib/complex/float64/base/add.h"
+#include "stdlib/complex/float64/base/sub.h"
 ```
 
-#### stdlib_base_complex128_add( z1, z2 )
+#### stdlib_base_complex128_sub( z1, z2 )
 
-Adds two double-precision complex floating-point numbers.
+Subtracts two double-precision complex floating-point numbers.
 
 ```c
 #include "stdlib/complex/float64/ctor.h"
 #include "stdlib/complex/float64/real.h"
 #include "stdlib/complex/float64/imag.h"
 
-stdlib_complex128_t z = stdlib_complex128( 3.0, -2.0 );
+stdlib_complex128_t z1 = stdlib_complex128( 5.0, 3.0 );
+stdlib_complex128_t z2 = stdlib_complex128( -2.0, 1.0 );
 
-stdlib_complex128_t out = stdlib_base_complex128_add( z, z );
+stdlib_complex128_t out = stdlib_base_complex128_sub( z1, z2 );
 
 double re = stdlib_complex128_real( out );
-// returns 6.0
+// returns 7.0
 
 double im = stdlib_complex128_imag( out );
-// returns -4.0
+// returns 2.0
 ```
 
 The function accepts the following arguments:
@@ -197,7 +145,7 @@ The function accepts the following arguments:
 -   **z2**: `[in] stdlib_complex128_t` input value.
 
 ```c
-stdlib_complex128_t stdlib_base_complex128_add( const stdlib_complex128_t z1, const stdlib_complex128_t z2 );
+stdlib_complex128_t stdlib_base_complex128_sub( const stdlib_complex128_t z1, const stdlib_complex128_t z2 );
 ```
 
 </section>
@@ -219,7 +167,7 @@ stdlib_complex128_t stdlib_base_complex128_add( const stdlib_complex128_t z1, co
 ### Examples
 
 ```c
-#include "stdlib/complex/float64/base/add.h"
+#include "stdlib/complex/float64/base/sub.h"
 #include "stdlib/complex/float64/ctor.h"
 #include "stdlib/complex/float64/reim.h"
 #include <stdio.h>
@@ -242,9 +190,9 @@ int main( void ) {
         stdlib_complex128_reim( v, &re, &im );
         printf( "z = %lf + %lfi\n", re, im );
 
-        y = stdlib_base_complex128_add( v, v );
+        y = stdlib_base_complex128_sub( v, v );
         stdlib_complex128_reim( y, &re, &im );
-        printf( "add(z, z) = %lf + %lfi\n", re, im );
+        printf( "csub(z, z) = %lf + %lfi\n", re, im );
     }
 }
 ```
@@ -265,9 +213,9 @@ int main( void ) {
 
 ## See Also
 
+-   <span class="package-name">[`@stdlib/complex/float64/base/add`][@stdlib/complex/float64/base/add]</span><span class="delimiter">: </span><span class="description">add two double-precision complex floating-point numbers.</span>
 -   <span class="package-name">[`@stdlib/complex/float64/base/div`][@stdlib/complex/float64/base/div]</span><span class="delimiter">: </span><span class="description">divide two complex numbers.</span>
 -   <span class="package-name">[`@stdlib/complex/float64/base/mul`][@stdlib/complex/float64/base/mul]</span><span class="delimiter">: </span><span class="description">multiply two double-precision complex floating-point numbers.</span>
--   <span class="package-name">[`@stdlib/complex/float64/base/sub`][@stdlib/complex/float64/base/sub]</span><span class="delimiter">: </span><span class="description">subtract two double-precision complex floating-point numbers.</span>
 
 </section>
 
@@ -279,11 +227,11 @@ int main( void ) {
 
 <!-- <related-links> -->
 
+[@stdlib/complex/float64/base/add]: https://github.com/stdlib-js/complex/tree/main/float64/base/add
+
 [@stdlib/complex/float64/base/div]: https://github.com/stdlib-js/complex/tree/main/float64/base/div
 
 [@stdlib/complex/float64/base/mul]: https://github.com/stdlib-js/complex/tree/main/float64/base/mul
-
-[@stdlib/complex/float64/base/sub]: https://github.com/stdlib-js/complex/tree/main/float64/base/sub
 
 <!-- </related-links> -->
 
