@@ -410,6 +410,7 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`78cd0c6`](https://github.com/stdlib-js/stdlib/commit/78cd0c688dde6c59102389f257f06e756c493647) - **docs:** remove empty line _(by Athan Reines)_
 -   [`404a4ed`](https://github.com/stdlib-js/stdlib/commit/404a4edd985350b32a67d87bb0fb0801fa70419f) - **feat:** add `complex/float64/base/identity` _(by Gururaj Gurram)_
 -   [`74b15bb`](https://github.com/stdlib-js/stdlib/commit/74b15bba6c22bcdd23d61a4e8996a59c7ef0f041) - **refactor:** update paths _(by Gururaj Gurram)_
 -   [`89ecfe0`](https://github.com/stdlib-js/stdlib/commit/89ecfe0212aef0448017f8e404a3862fda851170) - **refactor:** update paths _(by Gururaj Gurram)_

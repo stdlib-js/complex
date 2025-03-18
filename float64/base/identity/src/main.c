@@ -38,7 +38,6 @@
 *
 * double im = stdlib_complex128_imag( out );
 * // returns 3.0
-
 */
 stdlib_complex128_t stdlib_base_complex128_identity( const stdlib_complex128_t z ) {
 	return z;
