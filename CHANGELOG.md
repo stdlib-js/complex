@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-03-17)
+## Unreleased (2025-03-18)
 
 <section class="packages">
 
@@ -224,6 +224,28 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="complex-float64-base-identity-unreleased">
+
+#### [@stdlib/complex/float64/base/identity](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float64/base/identity)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`404a4ed`](https://github.com/stdlib-js/stdlib/commit/404a4edd985350b32a67d87bb0fb0801fa70419f) - add `complex/float64/base/identity`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="complex-float64-base-mul-unreleased">
 
 #### [@stdlib/complex/float64/base/mul](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/complex/float64/base/mul)
@@ -388,6 +410,7 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`404a4ed`](https://github.com/stdlib-js/stdlib/commit/404a4edd985350b32a67d87bb0fb0801fa70419f) - **feat:** add `complex/float64/base/identity` _(by Gururaj Gurram)_
 -   [`74b15bb`](https://github.com/stdlib-js/stdlib/commit/74b15bba6c22bcdd23d61a4e8996a59c7ef0f041) - **refactor:** update paths _(by Gururaj Gurram)_
 -   [`89ecfe0`](https://github.com/stdlib-js/stdlib/commit/89ecfe0212aef0448017f8e404a3862fda851170) - **refactor:** update paths _(by Gururaj Gurram)_
 -   [`3a62008`](https://github.com/stdlib-js/stdlib/commit/3a620083a7978286cc05db9231ecbee4d0478e1a) - **feat:** add `complex/float32/base/sub` _(by Gururaj Gurram)_
