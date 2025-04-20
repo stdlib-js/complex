@@ -55,6 +55,15 @@ setReadOnly( ns, 'add', require( './../../../float32/base/add' ) );
 setReadOnly( ns, 'assert', require( './../../../float32/base/assert' ) );
 
 /**
+* @name identity
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/complex/float32/base/identity}
+*/
+setReadOnly( ns, 'identity', require( './../../../float32/base/identity' ) );
+
+/**
 * @name mul
 * @memberof ns
 * @readonly
@@ -62,6 +71,24 @@ setReadOnly( ns, 'assert', require( './../../../float32/base/assert' ) );
 * @see {@link module:@stdlib/complex/float32/base/mul}
 */
 setReadOnly( ns, 'mul', require( './../../../float32/base/mul' ) );
+
+/**
+* @name neg
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/complex/float32/base/neg}
+*/
+setReadOnly( ns, 'neg', require( './../../../float32/base/neg' ) );
+
+/**
+* @name sub
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/complex/float32/base/sub}
+*/
+setReadOnly( ns, 'sub', require( './../../../float32/base/sub' ) );
 
 
 // EXPORTS //
