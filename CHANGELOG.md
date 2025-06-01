@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`7475c9d`](https://github.com/stdlib-js/stdlib/commit/7475c9dfd5461211d8071b7073b8958300dd5838) - add `complex/float32/base/scale` [(#7156)](https://github.com/stdlib-js/stdlib/pull/7156)
 -   [`8ab1153`](https://github.com/stdlib-js/stdlib/commit/8ab1153533c1dcbe7eb1ce05590843dbeffa67e7) - update `complex/float32/base/identity` to accept stdlib complex numbers [(#6235)](https://github.com/stdlib-js/stdlib/pull/6235)
 -   [`31343c9`](https://github.com/stdlib-js/stdlib/commit/31343c901e94328361327c4d7054a71052599916) - add `complex/float32/base/identity`
 -   [`404a4ed`](https://github.com/stdlib-js/stdlib/commit/404a4edd985350b32a67d87bb0fb0801fa70419f) - add `complex/float64/base/identity`
@@ -72,6 +73,7 @@ A total of 3 issues were closed in this release:
 
 <details>
 
+-   [`7475c9d`](https://github.com/stdlib-js/stdlib/commit/7475c9dfd5461211d8071b7073b8958300dd5838) - **feat:** add `complex/float32/base/scale` [(#7156)](https://github.com/stdlib-js/stdlib/pull/7156) _(by Shabareesh Shetty, Athan Reines)_
 -   [`5c8faed`](https://github.com/stdlib-js/stdlib/commit/5c8faed8016941ff5a337bb4d14b1bdb65748993) - **docs:** update example _(by Athan Reines)_
 -   [`15db561`](https://github.com/stdlib-js/stdlib/commit/15db56149d56fe240062bc6eea137b8049bca4c0) - **chore:** fix EditorConfig lint errors [(#6893)](https://github.com/stdlib-js/stdlib/pull/6893) _(by Lalit Narayan Yadav, Shabareesh Shetty)_
 -   [`c3320f1`](https://github.com/stdlib-js/stdlib/commit/c3320f1da27e449679eecd2f19f865ae60f72aa5) - **docs:** update namespace table of contents [(#6764)](https://github.com/stdlib-js/stdlib/pull/6764) _(by stdlib-bot)_
