@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`6afa527`](https://github.com/stdlib-js/stdlib/commit/6afa5271c97c6b90710a4fb15d34bf04e8ae71b4) - add `scale` to namespace
 -   [`7475c9d`](https://github.com/stdlib-js/stdlib/commit/7475c9dfd5461211d8071b7073b8958300dd5838) - add `complex/float32/base/scale` [(#7156)](https://github.com/stdlib-js/stdlib/pull/7156)
 -   [`8ab1153`](https://github.com/stdlib-js/stdlib/commit/8ab1153533c1dcbe7eb1ce05590843dbeffa67e7) - update `complex/float32/base/identity` to accept stdlib complex numbers [(#6235)](https://github.com/stdlib-js/stdlib/pull/6235)
 -   [`31343c9`](https://github.com/stdlib-js/stdlib/commit/31343c901e94328361327c4d7054a71052599916) - add `complex/float32/base/identity`
@@ -73,6 +74,7 @@ A total of 3 issues were closed in this release:
 
 <details>
 
+-   [`6afa527`](https://github.com/stdlib-js/stdlib/commit/6afa5271c97c6b90710a4fb15d34bf04e8ae71b4) - **feat:** add `scale` to namespace _(by Athan Reines)_
 -   [`7475c9d`](https://github.com/stdlib-js/stdlib/commit/7475c9dfd5461211d8071b7073b8958300dd5838) - **feat:** add `complex/float32/base/scale` [(#7156)](https://github.com/stdlib-js/stdlib/pull/7156) _(by Shabareesh Shetty, Athan Reines)_
 -   [`5c8faed`](https://github.com/stdlib-js/stdlib/commit/5c8faed8016941ff5a337bb4d14b1bdb65748993) - **docs:** update example _(by Athan Reines)_
 -   [`15db561`](https://github.com/stdlib-js/stdlib/commit/15db56149d56fe240062bc6eea137b8049bca4c0) - **chore:** fix EditorConfig lint errors [(#6893)](https://github.com/stdlib-js/stdlib/pull/6893) _(by Lalit Narayan Yadav, Shabareesh Shetty)_
