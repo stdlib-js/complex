@@ -74,6 +74,7 @@ A total of 3 issues were closed in this release:
 
 <details>
 
+-   [`c705a94`](https://github.com/stdlib-js/stdlib/commit/c705a94eb25e0783437c29a1a9bdb6a41fb09207) - **style:** add missing space [(#7173)](https://github.com/stdlib-js/stdlib/pull/7173) _(by Shabareesh Shetty)_
 -   [`4514170`](https://github.com/stdlib-js/stdlib/commit/4514170ad8cf99fd55fc30804fd1f1d17e11ed7f) - **docs:** update namespace table of contents [(#7162)](https://github.com/stdlib-js/stdlib/pull/7162) _(by stdlib-bot)_
 -   [`6afa527`](https://github.com/stdlib-js/stdlib/commit/6afa5271c97c6b90710a4fb15d34bf04e8ae71b4) - **feat:** add `scale` to namespace _(by Athan Reines)_
 -   [`7475c9d`](https://github.com/stdlib-js/stdlib/commit/7475c9dfd5461211d8071b7073b8958300dd5838) - **feat:** add `complex/float32/base/scale` [(#7156)](https://github.com/stdlib-js/stdlib/pull/7156) _(by Shabareesh Shetty, Athan Reines)_
