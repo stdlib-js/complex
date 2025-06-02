@@ -74,6 +74,8 @@ A total of 3 issues were closed in this release:
 
 <details>
 
+-   [`4506e9d`](https://github.com/stdlib-js/stdlib/commit/4506e9d226429b5491a1d2393c90c3acadf9546b) - **docs:** update comments _(by Athan Reines)_
+-   [`b228bf3`](https://github.com/stdlib-js/stdlib/commit/b228bf31d96eacac782648edf8c29141d094a59b) - **docs:** update comments _(by Athan Reines)_
 -   [`32e3cc7`](https://github.com/stdlib-js/stdlib/commit/32e3cc79eaabee985dd78349ed48d707e06b6c4a) - **docs:** change examples for `complex/float64/base/mul` [(#7181)](https://github.com/stdlib-js/stdlib/pull/7181) _(by Shabareesh Shetty)_
 -   [`3b08499`](https://github.com/stdlib-js/stdlib/commit/3b08499dcdae21f946e61da757c0c21da2e8f9ed) - **docs:** change package naming and examples for `complex/float32/base/mul` [(#7167)](https://github.com/stdlib-js/stdlib/pull/7167) _(by Shabareesh Shetty)_
 -   [`c705a94`](https://github.com/stdlib-js/stdlib/commit/c705a94eb25e0783437c29a1a9bdb6a41fb09207) - **style:** add missing space [(#7173)](https://github.com/stdlib-js/stdlib/pull/7173) _(by Shabareesh Shetty)_
