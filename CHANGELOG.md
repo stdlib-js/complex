@@ -74,6 +74,7 @@ A total of 3 issues were closed in this release:
 
 <details>
 
+-   [`664b1c7`](https://github.com/stdlib-js/stdlib/commit/664b1c73dafc01aa23ecf20f5d15eb8fe7d1f4af) - **docs:** fix comments _(by Athan Reines)_
 -   [`01fbdab`](https://github.com/stdlib-js/stdlib/commit/01fbdab1cb9d80c25f07c960b6493898a0842d06) - **docs:** change examples for `complex/float64/base/add` [(#7177)](https://github.com/stdlib-js/stdlib/pull/7177) _(by Shabareesh Shetty)_
 -   [`4506e9d`](https://github.com/stdlib-js/stdlib/commit/4506e9d226429b5491a1d2393c90c3acadf9546b) - **docs:** update comments _(by Athan Reines)_
 -   [`b228bf3`](https://github.com/stdlib-js/stdlib/commit/b228bf31d96eacac782648edf8c29141d094a59b) - **docs:** update comments _(by Athan Reines)_
