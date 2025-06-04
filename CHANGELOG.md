@@ -74,6 +74,7 @@ A total of 3 issues were closed in this release:
 
 <details>
 
+-   [`9bdeea6`](https://github.com/stdlib-js/stdlib/commit/9bdeea6f5229c13589cc191b2f83e89541c26199) - **docs:** update examples for `complex/float64/base/scale` [(#7196)](https://github.com/stdlib-js/stdlib/pull/7196) _(by Shabareesh Shetty)_
 -   [`ffc0320`](https://github.com/stdlib-js/stdlib/commit/ffc0320402db316862834d20e9d6e98086b21db6) - **chore:** change examples for `complex/float64/base/sub` [(#7192)](https://github.com/stdlib-js/stdlib/pull/7192) _(by Shabareesh Shetty, Philipp Burckhardt)_
 -   [`4821a02`](https://github.com/stdlib-js/stdlib/commit/4821a020f23d86279b8a487509afb4aca176dd57) - **chore:** change examples for `complex/float64/base/div` [(#7180)](https://github.com/stdlib-js/stdlib/pull/7180) _(by Shabareesh Shetty)_
 -   [`920ac76`](https://github.com/stdlib-js/stdlib/commit/920ac76fffbe4c5513bc7820c09b5b5fc3b507bb) - **chore:** change naming and examples for `complex/float32/base/add` [(#7169)](https://github.com/stdlib-js/stdlib/pull/7169) _(by Shabareesh Shetty, stdlib-bot)_
