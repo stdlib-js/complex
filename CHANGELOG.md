@@ -74,6 +74,7 @@ A total of 3 issues were closed in this release:
 
 <details>
 
+-   [`4821a02`](https://github.com/stdlib-js/stdlib/commit/4821a020f23d86279b8a487509afb4aca176dd57) - **chore:** change examples for `complex/float64/base/div` [(#7180)](https://github.com/stdlib-js/stdlib/pull/7180) _(by Shabareesh Shetty)_
 -   [`920ac76`](https://github.com/stdlib-js/stdlib/commit/920ac76fffbe4c5513bc7820c09b5b5fc3b507bb) - **chore:** change naming and examples for `complex/float32/base/add` [(#7169)](https://github.com/stdlib-js/stdlib/pull/7169) _(by Shabareesh Shetty, stdlib-bot)_
 -   [`1b155f1`](https://github.com/stdlib-js/stdlib/commit/1b155f118f396a5e2ad21ab2ca50247684109062) - **chore:** change naming and examples for `complex/float32/base/sub` [(#7168)](https://github.com/stdlib-js/stdlib/pull/7168) _(by Shabareesh Shetty)_
 -   [`fd8e4ed`](https://github.com/stdlib-js/stdlib/commit/fd8e4ed71f3040c8430bf8cbe595d8a299dfc38d) - **docs:** fix comment _(by Athan Reines)_
