@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-06-04)
+## Unreleased (2025-06-07)
 
 <section class="features">
 
@@ -74,6 +74,7 @@ A total of 3 issues were closed in this release:
 
 <details>
 
+-   [`4d41d28`](https://github.com/stdlib-js/stdlib/commit/4d41d2886db94c1735215a4f48579b18cee036da) - **docs:** update examples for `complex/float64/base/add` [(#7253)](https://github.com/stdlib-js/stdlib/pull/7253) _(by Shabareesh Shetty)_
 -   [`8bf8f93`](https://github.com/stdlib-js/stdlib/commit/8bf8f93d8fe5b05cd7de8347abb65255ec3b06aa) - **docs:** change examples for `complex/float64/base/mul-add` [(#7191)](https://github.com/stdlib-js/stdlib/pull/7191) _(by Shabareesh Shetty)_
 -   [`9bdeea6`](https://github.com/stdlib-js/stdlib/commit/9bdeea6f5229c13589cc191b2f83e89541c26199) - **docs:** update examples for `complex/float64/base/scale` [(#7196)](https://github.com/stdlib-js/stdlib/pull/7196) _(by Shabareesh Shetty)_
 -   [`ffc0320`](https://github.com/stdlib-js/stdlib/commit/ffc0320402db316862834d20e9d6e98086b21db6) - **chore:** change examples for `complex/float64/base/sub` [(#7192)](https://github.com/stdlib-js/stdlib/pull/7192) _(by Shabareesh Shetty, Philipp Burckhardt)_
