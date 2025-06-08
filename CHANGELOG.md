@@ -74,6 +74,7 @@ A total of 3 issues were closed in this release:
 
 <details>
 
+-   [`22106cb`](https://github.com/stdlib-js/stdlib/commit/22106cb80c9f9c7221d85e5e7818ef99324bd98b) - **docs:** update examples for `complex/float64/base/sub` [(#7271)](https://github.com/stdlib-js/stdlib/pull/7271) _(by Shabareesh Shetty)_
 -   [`f482c99`](https://github.com/stdlib-js/stdlib/commit/f482c9978e9ff27b9c9bf4afe03a6ee8e79f254a) - **docs:** update examples for `complex/float64/base/mul-add` [(#7267)](https://github.com/stdlib-js/stdlib/pull/7267) _(by Shabareesh Shetty)_
 -   [`6aeced9`](https://github.com/stdlib-js/stdlib/commit/6aeced9c39c38399d41e0da9a63ba3729452470b) - **docs:** update examples for `complex/float64/base/div` [(#7266)](https://github.com/stdlib-js/stdlib/pull/7266) _(by Shabareesh Shetty)_
 -   [`b9dd967`](https://github.com/stdlib-js/stdlib/commit/b9dd967f6b4a30027fa5f612f0133081836146ca) - **docs:** update examples for `complex/float64/base/mul` [(#7265)](https://github.com/stdlib-js/stdlib/pull/7265) _(by Shabareesh Shetty)_
