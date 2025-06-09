@@ -74,6 +74,7 @@ A total of 3 issues were closed in this release:
 
 <details>
 
+-   [`3bf64b6`](https://github.com/stdlib-js/stdlib/commit/3bf64b62546b1101028888918c0c6baf78de7781) - **docs:** update examples for `complex/float32/base/neg` [(#7291)](https://github.com/stdlib-js/stdlib/pull/7291) _(by Shabareesh Shetty, Athan Reines)_
 -   [`d1c3e38`](https://github.com/stdlib-js/stdlib/commit/d1c3e38f0b788040e73f2ae4c6402e1d1337697c) - **docs:** update examples for `complex/float32/base/identity` [(#7289)](https://github.com/stdlib-js/stdlib/pull/7289) _(by Shabareesh Shetty)_
 -   [`568a25d`](https://github.com/stdlib-js/stdlib/commit/568a25d9a472197659a97d53e7c27cbe455f1bbe) - **docs:** update examples for `complex/float32/base/mul` [(#7290)](https://github.com/stdlib-js/stdlib/pull/7290) _(by Shabareesh Shetty)_
 -   [`30c471f`](https://github.com/stdlib-js/stdlib/commit/30c471f4887835a6ca2827fa9ef3cb2abb1756af) - **docs:** update examples for `complex/float32/base/scale` [(#7292)](https://github.com/stdlib-js/stdlib/pull/7292) _(by Shabareesh Shetty)_
