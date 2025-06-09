@@ -74,6 +74,7 @@ A total of 3 issues were closed in this release:
 
 <details>
 
+-   [`e4518d4`](https://github.com/stdlib-js/stdlib/commit/e4518d45e76b55384e150c318f5967fa90524e73) - **docs:** update examples for `complex/float64/conj` [(#7295)](https://github.com/stdlib-js/stdlib/pull/7295) _(by Shabareesh Shetty)_
 -   [`74a62b6`](https://github.com/stdlib-js/stdlib/commit/74a62b6ea9087704c9890d3a220f952bc97a45c5) - **docs:** update examples for `complex/float32/base/add` [(#7288)](https://github.com/stdlib-js/stdlib/pull/7288) _(by Shabareesh Shetty)_
 -   [`a39fad8`](https://github.com/stdlib-js/stdlib/commit/a39fad8acb6663751c1153dc98df58ea22145ed5) - **docs:** update examples for `complex/float64/base/neg` [(#7270)](https://github.com/stdlib-js/stdlib/pull/7270) _(by Shabareesh Shetty)_
 -   [`22106cb`](https://github.com/stdlib-js/stdlib/commit/22106cb80c9f9c7221d85e5e7818ef99324bd98b) - **docs:** update examples for `complex/float64/base/sub` [(#7271)](https://github.com/stdlib-js/stdlib/pull/7271) _(by Shabareesh Shetty)_
