@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-06-26)
+## Unreleased (2025-06-29)
 
 <section class="features">
 
@@ -75,6 +75,7 @@ A total of 3 issues were closed in this release:
 
 <details>
 
+-   [`dd6d9cf`](https://github.com/stdlib-js/stdlib/commit/dd6d9cff0105270f0664490f3c89b36d4df89032) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`46ff8ea`](https://github.com/stdlib-js/stdlib/commit/46ff8ea7761ae438c4718681c5890f146fb0985e) - **docs:** minor clean-up _(by Philipp Burckhardt)_
 -   [`40373c5`](https://github.com/stdlib-js/stdlib/commit/40373c5e6b6474a375807b29f76c2e2c83034c06) - **feat:** refactor and add native addon for `complex/float64/conj` [(#7301)](https://github.com/stdlib-js/stdlib/pull/7301) _(by Shabareesh Shetty, Athan Reines, stdlib-bot)_
 -   [`3bf64b6`](https://github.com/stdlib-js/stdlib/commit/3bf64b62546b1101028888918c0c6baf78de7781) - **docs:** update examples for `complex/float32/base/neg` [(#7291)](https://github.com/stdlib-js/stdlib/pull/7291) _(by Shabareesh Shetty, Athan Reines)_
