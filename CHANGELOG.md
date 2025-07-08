@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-07-05)
+## Unreleased (2025-07-08)
 
 <section class="features">
 
@@ -75,6 +75,7 @@ A total of 3 issues were closed in this release:
 
 <details>
 
+-   [`8ea46b6`](https://github.com/stdlib-js/stdlib/commit/8ea46b662dc6e27231d250d101e33a3cf770cd77) - **test:** update descriptions to match language used in JS tests _(by Philipp Burckhardt)_
 -   [`7cfd30f`](https://github.com/stdlib-js/stdlib/commit/7cfd30f9518e86adde577c3ebaacfd874e2cc651) - **test:** add appropriate values in test cases [(#7557)](https://github.com/stdlib-js/stdlib/pull/7557) _(by Shabareesh Shetty, Athan Reines)_
 -   [`dd6d9cf`](https://github.com/stdlib-js/stdlib/commit/dd6d9cff0105270f0664490f3c89b36d4df89032) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`46ff8ea`](https://github.com/stdlib-js/stdlib/commit/46ff8ea7761ae438c4718681c5890f146fb0985e) - **docs:** minor clean-up _(by Philipp Burckhardt)_
