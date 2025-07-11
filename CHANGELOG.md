@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-07-08)
+## Unreleased (2025-07-11)
 
 <section class="features">
 
 ### Features
 
+-   [`42bc50f`](https://github.com/stdlib-js/stdlib/commit/42bc50ff323a7739452261f9e022fdd39381f4b7) - add `complex/float64/base/assert/is-almost-equal` [(#7620)](https://github.com/stdlib-js/stdlib/pull/7620)
 -   [`40373c5`](https://github.com/stdlib-js/stdlib/commit/40373c5e6b6474a375807b29f76c2e2c83034c06) - refactor and add native addon for `complex/float64/conj` [(#7301)](https://github.com/stdlib-js/stdlib/pull/7301)
 -   [`6afa527`](https://github.com/stdlib-js/stdlib/commit/6afa5271c97c6b90710a4fb15d34bf04e8ae71b4) - add `scale` to namespace
 -   [`7475c9d`](https://github.com/stdlib-js/stdlib/commit/7475c9dfd5461211d8071b7073b8958300dd5838) - add `complex/float32/base/scale` [(#7156)](https://github.com/stdlib-js/stdlib/pull/7156)
@@ -75,6 +76,7 @@ A total of 3 issues were closed in this release:
 
 <details>
 
+-   [`42bc50f`](https://github.com/stdlib-js/stdlib/commit/42bc50ff323a7739452261f9e022fdd39381f4b7) - **feat:** add `complex/float64/base/assert/is-almost-equal` [(#7620)](https://github.com/stdlib-js/stdlib/pull/7620) _(by Karan Anand, Athan Reines)_
 -   [`8ea46b6`](https://github.com/stdlib-js/stdlib/commit/8ea46b662dc6e27231d250d101e33a3cf770cd77) - **test:** update descriptions to match language used in JS tests _(by Philipp Burckhardt)_
 -   [`7cfd30f`](https://github.com/stdlib-js/stdlib/commit/7cfd30f9518e86adde577c3ebaacfd874e2cc651) - **test:** add appropriate values in test cases [(#7557)](https://github.com/stdlib-js/stdlib/pull/7557) _(by Shabareesh Shetty, Athan Reines)_
 -   [`dd6d9cf`](https://github.com/stdlib-js/stdlib/commit/dd6d9cff0105270f0664490f3c89b36d4df89032) - **chore:** minor clean-up _(by Philipp Burckhardt)_
