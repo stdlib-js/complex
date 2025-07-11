@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`9d89154`](https://github.com/stdlib-js/stdlib/commit/9d8915457450867faad800fea902a043423f0e0e) - add `complex/float32/base/assert/is-almost-equal` [(#7622)](https://github.com/stdlib-js/stdlib/pull/7622)
 -   [`42bc50f`](https://github.com/stdlib-js/stdlib/commit/42bc50ff323a7739452261f9e022fdd39381f4b7) - add `complex/float64/base/assert/is-almost-equal` [(#7620)](https://github.com/stdlib-js/stdlib/pull/7620)
 -   [`40373c5`](https://github.com/stdlib-js/stdlib/commit/40373c5e6b6474a375807b29f76c2e2c83034c06) - refactor and add native addon for `complex/float64/conj` [(#7301)](https://github.com/stdlib-js/stdlib/pull/7301)
 -   [`6afa527`](https://github.com/stdlib-js/stdlib/commit/6afa5271c97c6b90710a4fb15d34bf04e8ae71b4) - add `scale` to namespace
@@ -76,6 +77,7 @@ A total of 3 issues were closed in this release:
 
 <details>
 
+-   [`9d89154`](https://github.com/stdlib-js/stdlib/commit/9d8915457450867faad800fea902a043423f0e0e) - **feat:** add `complex/float32/base/assert/is-almost-equal` [(#7622)](https://github.com/stdlib-js/stdlib/pull/7622) _(by Karan Anand)_
 -   [`42bc50f`](https://github.com/stdlib-js/stdlib/commit/42bc50ff323a7739452261f9e022fdd39381f4b7) - **feat:** add `complex/float64/base/assert/is-almost-equal` [(#7620)](https://github.com/stdlib-js/stdlib/pull/7620) _(by Karan Anand, Athan Reines)_
 -   [`8ea46b6`](https://github.com/stdlib-js/stdlib/commit/8ea46b662dc6e27231d250d101e33a3cf770cd77) - **test:** update descriptions to match language used in JS tests _(by Philipp Burckhardt)_
 -   [`7cfd30f`](https://github.com/stdlib-js/stdlib/commit/7cfd30f9518e86adde577c3ebaacfd874e2cc651) - **test:** add appropriate values in test cases [(#7557)](https://github.com/stdlib-js/stdlib/pull/7557) _(by Shabareesh Shetty, Athan Reines)_
