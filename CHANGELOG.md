@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-07-11)
+## Unreleased (2025-07-13)
 
 <section class="features">
 
@@ -38,6 +38,16 @@
 </section>
 
 <!-- /.features -->
+
+<section class="bug-fixes">
+
+### Bug Fixes
+
+-   [`2a0ea7f`](https://github.com/stdlib-js/stdlib/commit/2a0ea7feb22806685fef9eac8a32d7012dab7adc) - use correct package names in package.json
+
+</section>
+
+<!-- /.bug-fixes -->
 
 <section class="breaking-changes">
 
@@ -77,6 +87,7 @@ A total of 3 issues were closed in this release:
 
 <details>
 
+-   [`2a0ea7f`](https://github.com/stdlib-js/stdlib/commit/2a0ea7feb22806685fef9eac8a32d7012dab7adc) - **fix:** use correct package names in package.json _(by Philipp Burckhardt)_
 -   [`24b7f7d`](https://github.com/stdlib-js/stdlib/commit/24b7f7d6900b467339d0911981d3c093d1b82efa) - **test:** add missing test for third parameter _(by Athan Reines)_
 -   [`71e8e76`](https://github.com/stdlib-js/stdlib/commit/71e8e767185b454e8f68d7fee778f3177f2e7f85) - **test:** add TS test for third parameter _(by Philipp Burckhardt)_
 -   [`9d89154`](https://github.com/stdlib-js/stdlib/commit/9d8915457450867faad800fea902a043423f0e0e) - **feat:** add `complex/float32/base/assert/is-almost-equal` [(#7622)](https://github.com/stdlib-js/stdlib/pull/7622) _(by Karan Anand)_
