@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-07-13)
+## Unreleased (2025-07-25)
 
 <section class="features">
 
@@ -73,9 +73,9 @@
 
 ### Closed Issues
 
-A total of 3 issues were closed in this release:
+A total of 4 issues were closed in this release:
 
-[#5203](https://github.com/stdlib-js/stdlib/issues/5203), [#6698](https://github.com/stdlib-js/stdlib/issues/6698), [#6885](https://github.com/stdlib-js/stdlib/issues/6885)
+[#5203](https://github.com/stdlib-js/stdlib/issues/5203), [#6698](https://github.com/stdlib-js/stdlib/issues/6698), [#6885](https://github.com/stdlib-js/stdlib/issues/6885), [#7735](https://github.com/stdlib-js/stdlib/issues/7735)
 
 </section>
 
@@ -87,6 +87,7 @@ A total of 3 issues were closed in this release:
 
 <details>
 
+-   [`53c6429`](https://github.com/stdlib-js/stdlib/commit/53c6429aee35e48e178bc96072a39d1d9db325f3) - **chore:** fix EditorConfig lint errors [(#7737)](https://github.com/stdlib-js/stdlib/pull/7737) _(by AryanJ18, Athan Reines)_
 -   [`2a0ea7f`](https://github.com/stdlib-js/stdlib/commit/2a0ea7feb22806685fef9eac8a32d7012dab7adc) - **fix:** use correct package names in package.json _(by Philipp Burckhardt)_
 -   [`24b7f7d`](https://github.com/stdlib-js/stdlib/commit/24b7f7d6900b467339d0911981d3c093d1b82efa) - **test:** add missing test for third parameter _(by Athan Reines)_
 -   [`71e8e76`](https://github.com/stdlib-js/stdlib/commit/71e8e767185b454e8f68d7fee778f3177f2e7f85) - **test:** add TS test for third parameter _(by Philipp Burckhardt)_
@@ -180,8 +181,9 @@ A total of 3 issues were closed in this release:
 
 ### Contributors
 
-A total of 7 people contributed to this release. Thank you to the following contributors:
+A total of 8 people contributed to this release. Thank you to the following contributors:
 
+-   AryanJ18
 -   Athan Reines
 -   Gururaj Gurram
 -   Karan Anand
