@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-07-25)
+## Unreleased (2025-08-13)
 
 <section class="features">
 
 ### Features
 
+-   [`dfbf338`](https://github.com/stdlib-js/stdlib/commit/dfbf3388bb499ec7ec5f453758acec3e6d18ee0b) - add `assign` and `strided` methods to `complex/float64/base/div` [(#7771)](https://github.com/stdlib-js/stdlib/pull/7771)
 -   [`9d89154`](https://github.com/stdlib-js/stdlib/commit/9d8915457450867faad800fea902a043423f0e0e) - add `complex/float32/base/assert/is-almost-equal` [(#7622)](https://github.com/stdlib-js/stdlib/pull/7622)
 -   [`42bc50f`](https://github.com/stdlib-js/stdlib/commit/42bc50ff323a7739452261f9e022fdd39381f4b7) - add `complex/float64/base/assert/is-almost-equal` [(#7620)](https://github.com/stdlib-js/stdlib/pull/7620)
 -   [`40373c5`](https://github.com/stdlib-js/stdlib/commit/40373c5e6b6474a375807b29f76c2e2c83034c06) - refactor and add native addon for `complex/float64/conj` [(#7301)](https://github.com/stdlib-js/stdlib/pull/7301)
@@ -87,6 +88,9 @@ A total of 4 issues were closed in this release:
 
 <details>
 
+-   [`dfbf338`](https://github.com/stdlib-js/stdlib/commit/dfbf3388bb499ec7ec5f453758acec3e6d18ee0b) - **feat:** add `assign` and `strided` methods to `complex/float64/base/div` [(#7771)](https://github.com/stdlib-js/stdlib/pull/7771) _(by Aayush Khanna, stdlib-bot)_
+-   [`d293a23`](https://github.com/stdlib-js/stdlib/commit/d293a2321d3c9dc0c4e016cb890032d0b32d28fc) - **docs:** add missing periods _(by Philipp Burckhardt)_
+-   [`6eee151`](https://github.com/stdlib-js/stdlib/commit/6eee15199727d04e3757e66f38384e97b8a333da) - **style:** fix indentation in JSON files _(by Philipp Burckhardt)_
 -   [`53c6429`](https://github.com/stdlib-js/stdlib/commit/53c6429aee35e48e178bc96072a39d1d9db325f3) - **chore:** fix EditorConfig lint errors [(#7737)](https://github.com/stdlib-js/stdlib/pull/7737) _(by AryanJ18, Athan Reines)_
 -   [`2a0ea7f`](https://github.com/stdlib-js/stdlib/commit/2a0ea7feb22806685fef9eac8a32d7012dab7adc) - **fix:** use correct package names in package.json _(by Philipp Burckhardt)_
 -   [`24b7f7d`](https://github.com/stdlib-js/stdlib/commit/24b7f7d6900b467339d0911981d3c093d1b82efa) - **test:** add missing test for third parameter _(by Athan Reines)_
@@ -181,8 +185,9 @@ A total of 4 issues were closed in this release:
 
 ### Contributors
 
-A total of 8 people contributed to this release. Thank you to the following contributors:
+A total of 9 people contributed to this release. Thank you to the following contributors:
 
+-   Aayush Khanna
 -   AryanJ18
 -   Athan Reines
 -   Gururaj Gurram

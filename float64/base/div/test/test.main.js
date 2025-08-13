@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2023 The Stdlib Authors.
+* Copyright (c) 2025 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -22,7 +22,6 @@
 
 // MODULES //
 
-var resolve = require( 'path' ).resolve;
 var tape = require( 'tape' );
 var isnan = require( '@stdlib/math/base/assert/is-nan' );
 var abs = require( '@stdlib/math/base/special/abs' );
@@ -34,15 +33,7 @@ var toBinaryString = require( '@stdlib/number/float64/base/to-binary-string' );
 var Complex128 = require( './../../../../float64/ctor' );
 var real = require( './../../../../float64/real' );
 var imag = require( './../../../../float64/imag' );
-var tryRequire = require( '@stdlib/utils/try-require' );
-
-
-// VARIABLES //
-
-var cdiv = tryRequire( resolve( __dirname, './../lib/native.js' ) );
-var opts = {
-	'skip': ( cdiv instanceof Error )
-};
+var cdiv = require( './../lib' );
 
 
 // FIXTURES //
@@ -92,13 +83,13 @@ function bitdiff( a, b ) {
 
 // TESTS //
 
-tape( 'main export is a function', opts, function test( t ) {
+tape( 'main export is a function', function test( t ) {
 	t.ok( true, __filename );
 	t.strictEqual( typeof cdiv, 'function', 'main export is a function' );
 	t.end();
 });
 
-tape( 'the function computes a complex quotient (base behavior)', opts, function test( t ) {
+tape( 'the function computes a complex quotient (base behavior)', function test( t ) {
 	var z1;
 	var z2;
 	var v;
@@ -114,7 +105,7 @@ tape( 'the function computes a complex quotient (base behavior)', opts, function
 	t.end();
 });
 
-tape( 'the function computes a complex quotient (difficult cases)', opts, function test( t ) {
+tape( 'the function computes a complex quotient (difficult cases)', function test( t ) {
 	var idx;
 	var re1;
 	var im1;
@@ -245,8 +236,8 @@ tape( 'the function computes a complex quotient (difficult cases)', opts, functi
 	* See section 3.6 in https://arxiv.org/pdf/1210.4539.pdf.
 	*
 	* ```text
-	* q[0]: 0011111111100011001100110011001100110011001100110011001100110100
-	* 0.6:  0011111111100011001100110011001100110011001100110011001100110011
+	* real(q): 0011111111100011001100110011001100110011001100110011001100110100
+	* 0.6:     0011111111100011001100110011001100110011001100110011001100110011
 	* ```
 	*
 	* If we add
@@ -255,7 +246,7 @@ tape( 'the function computes a complex quotient (difficult cases)', opts, functi
 	* 0000000000000000000000000000000000000000000000000000000000000001
 	* ```
 	*
-	* to `0.6`, we get `q[0]`; thus, the result is 1 bit off.
+	* to `0.6`, we get `real( q )`; thus, the result is 1 bit off.
 	*/
 	idx = bitdiff( real( q ), 0.6 );
 	t.strictEqual( idx, 61, 'real component has expected binary representation' );
@@ -300,7 +291,7 @@ tape( 'the function computes a complex quotient (difficult cases)', opts, functi
 	t.end();
 });
 
-tape( 'the function computes a complex quotient (tested against fixtures)', opts, function test( t ) {
+tape( 'the function computes a complex quotient (tested against fixtures)', function test( t ) {
 	var delta;
 	var tol;
 	var re1;
@@ -330,25 +321,21 @@ tape( 'the function computes a complex quotient (tested against fixtures)', opts
 			t.strictEqual( real( q ), qre[ i ], 'returns expected real component' );
 		} else {
 			delta = abs( real( q ) - qre[ i ] );
-
-			// NOTE: the tolerance here is larger than for the JavaScript implementation due to compiler optimizations which may be performed resulting in result divergence. For discussion, see https://github.com/stdlib-js/stdlib/pull/2298#discussion_r1624765205
-			tol = 2.0 * EPS * abs( qre[ i ] );
-			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. real: '+real(q)+'. expected: '+qre[i]+'. delta: '+delta+'. tol: '+tol+'.' );
+			tol = EPS * abs( qre[ i ] );
+			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. real: '+real( q )+'. expected: '+qre[i]+'. delta: '+delta+'. tol: '+tol+'.' );
 		}
 		if ( imag( q ) === qim[ i ] ) {
 			t.strictEqual( imag( q ), qim[ i ], 'returns expected imaginary component' );
 		} else {
 			delta = abs( imag( q ) - qim[ i ] );
-
-			// NOTE: the tolerance here is larger than for the JavaScript implementation due to compiler optimizations which may be performed resulting in result divergence. For discussion, see https://github.com/stdlib-js/stdlib/pull/2298#discussion_r1624765205
-			tol = 2.0 * EPS * abs( qim[ i ] );
-			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. imag: '+imag(q)+'. expected: '+qim[i]+'. delta: '+delta+'. tol: '+tol+'.' );
+			tol = EPS * abs( qim[ i ] );
+			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. imag: '+imag( q )+'. expected: '+qim[i]+'. delta: '+delta+'. tol: '+tol+'.' );
 		}
 	}
 	t.end();
 });
 
-tape( 'the function computes a complex quotient (different component scales)', opts, function test( t ) {
+tape( 'the function computes a complex quotient (different component scales)', function test( t ) {
 	var delta;
 	var tol;
 	var re1;
@@ -379,20 +366,20 @@ tape( 'the function computes a complex quotient (different component scales)', o
 		} else {
 			delta = abs( real( q ) - qre[ i ] );
 			tol = EPS * abs( qre[ i ] );
-			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. real: '+real(q)+'. expected: '+qre[i]+'. delta: '+delta+'. tol: '+tol+'.' );
+			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. real: '+real( q )+'. expected: '+qre[i]+'. delta: '+delta+'. tol: '+tol+'.' );
 		}
 		if ( imag( q ) === qim[ i ] ) {
 			t.strictEqual( imag( q ), qim[ i ], 'returns expected imaginary component' );
 		} else {
 			delta = abs( imag( q ) - qim[ i ] );
 			tol = EPS * abs( qim[ i ] );
-			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. imag: '+imag(q)+'. expected: '+qim[i]+'. delta: '+delta+'. tol: '+tol+'.' );
+			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. imag: '+imag( q )+'. expected: '+qim[i]+'. delta: '+delta+'. tol: '+tol+'.' );
 		}
 	}
 	t.end();
 });
 
-tape( 'the function computes a complex quotient (different component scales)', opts, function test( t ) {
+tape( 'the function computes a complex quotient (different component scales)', function test( t ) {
 	var delta;
 	var tol;
 	var re1;
@@ -423,20 +410,20 @@ tape( 'the function computes a complex quotient (different component scales)', o
 		} else {
 			delta = abs( real( q ) - qre[ i ] );
 			tol = EPS * abs( qre[ i ] );
-			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. real: '+real(q)+'. expected: '+qre[i]+'. delta: '+delta+'. tol: '+tol+'.' );
+			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. real: '+real( q )+'. expected: '+qre[i]+'. delta: '+delta+'. tol: '+tol+'.' );
 		}
 		if ( imag( q ) === qim[ i ] ) {
 			t.strictEqual( imag( q ), qim[ i ], 'returns expected imaginary component' );
 		} else {
 			delta = abs( imag( q ) - qim[ i ] );
 			tol = EPS * abs( qim[ i ] );
-			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. imag: '+imag(q)+'. expected: '+qim[i]+'. delta: '+delta+'. tol: '+tol+'.' );
+			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. imag: '+imag( q )+'. expected: '+qim[i]+'. delta: '+delta+'. tol: '+tol+'.' );
 		}
 	}
 	t.end();
 });
 
-tape( 'the function computes a complex quotient (different imaginary component scales)', opts, function test( t ) {
+tape( 'the function computes a complex quotient (different imaginary component scales)', function test( t ) {
 	var delta;
 	var tol;
 	var re1;
@@ -467,20 +454,20 @@ tape( 'the function computes a complex quotient (different imaginary component s
 		} else {
 			delta = abs( real( q ) - qre[ i ] );
 			tol = EPS * abs( qre[ i ] );
-			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. real: '+real(q)+'. expected: '+qre[i]+'. delta: '+delta+'. tol: '+tol+'.' );
+			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. real: '+real( q )+'. expected: '+qre[i]+'. delta: '+delta+'. tol: '+tol+'.' );
 		}
 		if ( imag( q ) === qim[ i ] ) {
 			t.strictEqual( imag( q ), qim[ i ], 'returns expected imaginary component' );
 		} else {
 			delta = abs( imag( q ) - qim[ i ] );
 			tol = EPS * abs( qim[ i ] );
-			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. imag: '+imag(q)+'. expected: '+qim[i]+'. delta: '+delta+'. tol: '+tol+'.' );
+			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. imag: '+imag( q )+'. expected: '+qim[i]+'. delta: '+delta+'. tol: '+tol+'.' );
 		}
 	}
 	t.end();
 });
 
-tape( 'the function computes a complex quotient (real imaginary component scales)', opts, function test( t ) {
+tape( 'the function computes a complex quotient (real imaginary component scales)', function test( t ) {
 	var delta;
 	var tol;
 	var re1;
@@ -511,20 +498,20 @@ tape( 'the function computes a complex quotient (real imaginary component scales
 		} else {
 			delta = abs( real( q ) - qre[ i ] );
 			tol = EPS * abs( qre[ i ] );
-			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. real: '+real(q)+'. expected: '+qre[i]+'. delta: '+delta+'. tol: '+tol+'.' );
+			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. real: '+real( q )+'. expected: '+qre[i]+'. delta: '+delta+'. tol: '+tol+'.' );
 		}
 		if ( imag( q ) === qim[ i ] ) {
 			t.strictEqual( imag( q ), qim[ i ], 'returns expected imaginary component' );
 		} else {
 			delta = abs( imag( q ) - qim[ i ] );
 			tol = EPS * abs( qim[ i ] );
-			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. imag: '+imag(q)+'. expected: '+qim[i]+'. delta: '+delta+'. tol: '+tol+'.' );
+			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. imag: '+imag( q )+'. expected: '+qim[i]+'. delta: '+delta+'. tol: '+tol+'.' );
 		}
 	}
 	t.end();
 });
 
-tape( 'the function computes a complex quotient (large negative imaginary components)', opts, function test( t ) {
+tape( 'the function computes a complex quotient (large negative imaginary components)', function test( t ) {
 	var delta;
 	var tol;
 	var re1;
@@ -555,20 +542,20 @@ tape( 'the function computes a complex quotient (large negative imaginary compon
 		} else {
 			delta = abs( real( q ) - qre[ i ] );
 			tol = EPS * abs( qre[ i ] );
-			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. real: '+real(q)+'. expected: '+qre[i]+'. delta: '+delta+'. tol: '+tol+'.' );
+			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. real: '+real( q )+'. expected: '+qre[i]+'. delta: '+delta+'. tol: '+tol+'.' );
 		}
 		if ( imag( q ) === qim[ i ] ) {
 			t.strictEqual( imag( q ), qim[ i ], 'returns expected imaginary component' );
 		} else {
 			delta = abs( imag( q ) - qim[ i ] );
 			tol = EPS * abs( qim[ i ] );
-			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. imag: '+imag(q)+'. expected: '+qim[i]+'. delta: '+delta+'. tol: '+tol+'.' );
+			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. imag: '+imag( q )+'. expected: '+qim[i]+'. delta: '+delta+'. tol: '+tol+'.' );
 		}
 	}
 	t.end();
 });
 
-tape( 'the function computes a complex quotient (large negative real components)', opts, function test( t ) {
+tape( 'the function computes a complex quotient (large negative real components)', function test( t ) {
 	var delta;
 	var tol;
 	var re1;
@@ -599,20 +586,20 @@ tape( 'the function computes a complex quotient (large negative real components)
 		} else {
 			delta = abs( real( q ) - qre[ i ] );
 			tol = EPS * abs( qre[ i ] );
-			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. real: '+real(q)+'. expected: '+qre[i]+'. delta: '+delta+'. tol: '+tol+'.' );
+			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. real: '+real( q )+'. expected: '+qre[i]+'. delta: '+delta+'. tol: '+tol+'.' );
 		}
 		if ( imag( q ) === qim[ i ] ) {
 			t.strictEqual( imag( q ), qim[ i ], 'returns expected imaginary component' );
 		} else {
 			delta = abs( imag( q ) - qim[ i ] );
 			tol = EPS * abs( qim[ i ] );
-			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. imag: '+imag(q)+'. expected: '+qim[i]+'. delta: '+delta+'. tol: '+tol+'.' );
+			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. imag: '+imag( q )+'. expected: '+qim[i]+'. delta: '+delta+'. tol: '+tol+'.' );
 		}
 	}
 	t.end();
 });
 
-tape( 'the function computes a complex quotient (large positive imaginary components)', opts, function test( t ) {
+tape( 'the function computes a complex quotient (large positive imaginary components)', function test( t ) {
 	var delta;
 	var tol;
 	var re1;
@@ -643,20 +630,20 @@ tape( 'the function computes a complex quotient (large positive imaginary compon
 		} else {
 			delta = abs( real( q ) - qre[ i ] );
 			tol = EPS * abs( qre[ i ] );
-			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. real: '+real(q)+'. expected: '+qre[i]+'. delta: '+delta+'. tol: '+tol+'.' );
+			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. real: '+real( q )+'. expected: '+qre[i]+'. delta: '+delta+'. tol: '+tol+'.' );
 		}
 		if ( imag( q ) === qim[ i ] ) {
 			t.strictEqual( imag( q ), qim[ i ], 'returns expected imaginary component' );
 		} else {
 			delta = abs( imag( q ) - qim[ i ] );
 			tol = EPS * abs( qim[ i ] );
-			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. imag: '+imag(q)+'. expected: '+qim[i]+'. delta: '+delta+'. tol: '+tol+'.' );
+			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. imag: '+imag( q )+'. expected: '+qim[i]+'. delta: '+delta+'. tol: '+tol+'.' );
 		}
 	}
 	t.end();
 });
 
-tape( 'the function computes a complex quotient (large positive real components)', opts, function test( t ) {
+tape( 'the function computes a complex quotient (large positive real components)', function test( t ) {
 	var delta;
 	var tol;
 	var re1;
@@ -686,25 +673,21 @@ tape( 'the function computes a complex quotient (large positive real components)
 			t.strictEqual( real( q ), qre[ i ], 'returns expected real component' );
 		} else {
 			delta = abs( real( q ) - qre[ i ] );
-
-			// NOTE: the tolerance here is larger than for the JavaScript implementation due to compiler optimizations which may be performed resulting in result divergence. For discussion, see https://github.com/stdlib-js/stdlib/pull/2298#discussion_r1624765205
-			tol = 2.0 * EPS * abs( qre[ i ] );
-			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. real: '+real(q)+'. expected: '+qre[i]+'. delta: '+delta+'. tol: '+tol+'.' );
+			tol = EPS * abs( qre[ i ] );
+			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. real: '+real( q )+'. expected: '+qre[i]+'. delta: '+delta+'. tol: '+tol+'.' );
 		}
 		if ( imag( q ) === qim[ i ] ) {
 			t.strictEqual( imag( q ), qim[ i ], 'returns expected imaginary component' );
 		} else {
 			delta = abs( imag( q ) - qim[ i ] );
-
-			// NOTE: the tolerance here is larger than for the JavaScript implementation due to compiler optimizations which may be performed resulting in result divergence. For discussion, see https://github.com/stdlib-js/stdlib/pull/2298#discussion_r1624765205
-			tol = 2.0 * EPS * abs( qim[ i ] );
-			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. imag: '+imag(q)+'. expected: '+qim[i]+'. delta: '+delta+'. tol: '+tol+'.' );
+			tol = EPS * abs( qim[ i ] );
+			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. imag: '+imag( q )+'. expected: '+qim[i]+'. delta: '+delta+'. tol: '+tol+'.' );
 		}
 	}
 	t.end();
 });
 
-tape( 'the function computes a complex quotient (tiny negative imaginary components)', opts, function test( t ) {
+tape( 'the function computes a complex quotient (tiny negative imaginary components)', function test( t ) {
 	var delta;
 	var tol;
 	var re1;
@@ -735,20 +718,20 @@ tape( 'the function computes a complex quotient (tiny negative imaginary compone
 		} else {
 			delta = abs( real( q ) - qre[ i ] );
 			tol = EPS * abs( qre[ i ] );
-			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. real: '+real(q)+'. expected: '+qre[i]+'. delta: '+delta+'. tol: '+tol+'.' );
+			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. real: '+real( q )+'. expected: '+qre[i]+'. delta: '+delta+'. tol: '+tol+'.' );
 		}
 		if ( imag( q ) === qim[ i ] ) {
 			t.strictEqual( imag( q ), qim[ i ], 'returns expected imaginary component' );
 		} else {
 			delta = abs( imag( q ) - qim[ i ] );
 			tol = EPS * abs( qim[ i ] );
-			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. imag: '+imag(q)+'. expected: '+qim[i]+'. delta: '+delta+'. tol: '+tol+'.' );
+			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. imag: '+imag( q )+'. expected: '+qim[i]+'. delta: '+delta+'. tol: '+tol+'.' );
 		}
 	}
 	t.end();
 });
 
-tape( 'the function computes a complex quotient (tiny negative real components)', opts, function test( t ) {
+tape( 'the function computes a complex quotient (tiny negative real components)', function test( t ) {
 	var delta;
 	var tol;
 	var re1;
@@ -779,20 +762,20 @@ tape( 'the function computes a complex quotient (tiny negative real components)'
 		} else {
 			delta = abs( real( q ) - qre[ i ] );
 			tol = EPS * abs( qre[ i ] );
-			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. real: '+real(q)+'. expected: '+qre[i]+'. delta: '+delta+'. tol: '+tol+'.' );
+			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. real: '+real( q )+'. expected: '+qre[i]+'. delta: '+delta+'. tol: '+tol+'.' );
 		}
 		if ( imag( q ) === qim[ i ] ) {
 			t.strictEqual( imag( q ), qim[ i ], 'returns expected imaginary component' );
 		} else {
 			delta = abs( imag( q ) - qim[ i ] );
 			tol = EPS * abs( qim[ i ] );
-			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. imag: '+imag(q)+'. expected: '+qim[i]+'. delta: '+delta+'. tol: '+tol+'.' );
+			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. imag: '+imag( q )+'. expected: '+qim[i]+'. delta: '+delta+'. tol: '+tol+'.' );
 		}
 	}
 	t.end();
 });
 
-tape( 'the function computes a complex quotient (tiny positive imaginary components)', opts, function test( t ) {
+tape( 'the function computes a complex quotient (tiny positive imaginary components)', function test( t ) {
 	var delta;
 	var tol;
 	var re1;
@@ -823,20 +806,20 @@ tape( 'the function computes a complex quotient (tiny positive imaginary compone
 		} else {
 			delta = abs( real( q ) - qre[ i ] );
 			tol = EPS * abs( qre[ i ] );
-			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. real: '+real(q)+'. expected: '+qre[i]+'. delta: '+delta+'. tol: '+tol+'.' );
+			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. real: '+real( q )+'. expected: '+qre[i]+'. delta: '+delta+'. tol: '+tol+'.' );
 		}
 		if ( imag( q ) === qim[ i ] ) {
 			t.strictEqual( imag( q ), qim[ i ], 'returns expected imaginary component' );
 		} else {
 			delta = abs( imag( q ) - qim[ i ] );
 			tol = EPS * abs( qim[ i ] );
-			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. imag: '+imag(q)+'. expected: '+qim[i]+'. delta: '+delta+'. tol: '+tol+'.' );
+			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. imag: '+imag( q )+'. expected: '+qim[i]+'. delta: '+delta+'. tol: '+tol+'.' );
 		}
 	}
 	t.end();
 });
 
-tape( 'the function computes a complex quotient (tiny positive real components)', opts, function test( t ) {
+tape( 'the function computes a complex quotient (tiny positive real components)', function test( t ) {
 	var delta;
 	var tol;
 	var re1;
@@ -867,20 +850,20 @@ tape( 'the function computes a complex quotient (tiny positive real components)'
 		} else {
 			delta = abs( real( q ) - qre[ i ] );
 			tol = EPS * abs( qre[ i ] );
-			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. real: '+real(q)+'. expected: '+qre[i]+'. delta: '+delta+'. tol: '+tol+'.' );
+			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. real: '+real( q )+'. expected: '+qre[i]+'. delta: '+delta+'. tol: '+tol+'.' );
 		}
 		if ( imag( q ) === qim[ i ] ) {
 			t.strictEqual( imag( q ), qim[ i ], 'returns expected imaginary component' );
 		} else {
 			delta = abs( imag( q ) - qim[ i ] );
 			tol = EPS * abs( qim[ i ] );
-			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. imag: '+imag(q)+'. expected: '+qim[i]+'. delta: '+delta+'. tol: '+tol+'.' );
+			t.ok( delta <= tol, 'within tolerance. x: '+re1[i]+' + '+im1[i]+'i. y: '+re2[i]+' + '+im2[i]+'i. imag: '+imag( q )+'. expected: '+qim[i]+'. delta: '+delta+'. tol: '+tol+'.' );
 		}
 	}
 	t.end();
 });
 
-tape( 'the function handles large and small numbers', opts, function test( t ) {
+tape( 'the function handles large and small numbers', function test( t ) {
 	var expected;
 	var z1;
 	var z2;
@@ -937,7 +920,7 @@ tape( 'the function handles large and small numbers', opts, function test( t ) {
 	t.end();
 });
 
-tape( 'the function may overflow during complex division', opts, function test( t ) {
+tape( 'the function may overflow during complex division', function test( t ) {
 	var z1;
 	var z2;
 	var v;
@@ -1023,7 +1006,7 @@ tape( 'the function may overflow during complex division', opts, function test( 
 	t.end();
 });
 
-tape( 'if a real or imaginary component is `NaN`, all components are `NaN`', opts, function test( t ) {
+tape( 'if a real or imaginary component is `NaN`, all components are `NaN`', function test( t ) {
 	var z1;
 	var z2;
 	var v;
