@@ -55,6 +55,24 @@ setReadOnly( ns, 'add', require( './../../../float64/base/add' ) );
 setReadOnly( ns, 'assert', require( './../../../float64/base/assert' ) );
 
 /**
+* @name div
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/complex/float64/base/div}
+*/
+setReadOnly( ns, 'div', require( './../../../float64/base/div' ) );
+
+/**
+* @name identity
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/complex/float64/base/identity}
+*/
+setReadOnly( ns, 'identity', require( './../../../float64/base/identity' ) );
+
+/**
 * @name mul
 * @memberof ns
 * @readonly
@@ -73,6 +91,15 @@ setReadOnly( ns, 'mul', require( './../../../float64/base/mul' ) );
 setReadOnly( ns, 'muladd', require( './../../../float64/base/mul-add' ) );
 
 /**
+* @name neg
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/complex/float64/base/neg}
+*/
+setReadOnly( ns, 'neg', require( './../../../float64/base/neg' ) );
+
+/**
 * @name scale
 * @memberof ns
 * @readonly
@@ -80,6 +107,15 @@ setReadOnly( ns, 'muladd', require( './../../../float64/base/mul-add' ) );
 * @see {@link module:@stdlib/complex/float64/base/scale}
 */
 setReadOnly( ns, 'scale', require( './../../../float64/base/scale' ) );
+
+/**
+* @name sub
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/complex/float64/base/sub}
+*/
+setReadOnly( ns, 'sub', require( './../../../float64/base/sub' ) );
 
 
 // EXPORTS //

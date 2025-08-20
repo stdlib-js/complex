@@ -46,6 +46,15 @@ var ns = {};
 setReadOnly( ns, 'cast', require( './../../base/cast-return' ) );
 
 /**
+* @name parse
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/complex/base/parse}
+*/
+setReadOnly( ns, 'parse', require( './../../base/parse' ) );
+
+/**
 * @name wrap
 * @memberof ns
 * @readonly

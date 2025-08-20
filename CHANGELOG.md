@@ -4,12 +4,15 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-08-13)
+## Unreleased (2025-08-20)
 
 <section class="features">
 
 ### Features
 
+-   [`75fdd8b`](https://github.com/stdlib-js/stdlib/commit/75fdd8bef41b544c26df891cf01c1f55596f2d08) - add `parse` to `complex/base` namespace
+-   [`73f774e`](https://github.com/stdlib-js/stdlib/commit/73f774e9d2df804c06ac8198c0bdb11186788009) - add missing functions to namespace
+-   [`da256e5`](https://github.com/stdlib-js/stdlib/commit/da256e5fe42c5c31463be8f7e3a2c1b35c8c7144) - add `isAlmostEqual` to namespace
 -   [`dfbf338`](https://github.com/stdlib-js/stdlib/commit/dfbf3388bb499ec7ec5f453758acec3e6d18ee0b) - add `assign` and `strided` methods to `complex/float64/base/div` [(#7771)](https://github.com/stdlib-js/stdlib/pull/7771)
 -   [`9d89154`](https://github.com/stdlib-js/stdlib/commit/9d8915457450867faad800fea902a043423f0e0e) - add `complex/float32/base/assert/is-almost-equal` [(#7622)](https://github.com/stdlib-js/stdlib/pull/7622)
 -   [`42bc50f`](https://github.com/stdlib-js/stdlib/commit/42bc50ff323a7739452261f9e022fdd39381f4b7) - add `complex/float64/base/assert/is-almost-equal` [(#7620)](https://github.com/stdlib-js/stdlib/pull/7620)
@@ -88,6 +91,13 @@ A total of 4 issues were closed in this release:
 
 <details>
 
+-   [`5acfd64`](https://github.com/stdlib-js/stdlib/commit/5acfd64326637640433a7e3ffc5d101db23ab1d8) - **docs:** fix example code _(by Philipp Burckhardt)_
+-   [`75fdd8b`](https://github.com/stdlib-js/stdlib/commit/75fdd8bef41b544c26df891cf01c1f55596f2d08) - **feat:** add `parse` to `complex/base` namespace _(by Philipp Burckhardt)_
+-   [`73f774e`](https://github.com/stdlib-js/stdlib/commit/73f774e9d2df804c06ac8198c0bdb11186788009) - **feat:** add missing functions to namespace _(by Philipp Burckhardt)_
+-   [`da256e5`](https://github.com/stdlib-js/stdlib/commit/da256e5fe42c5c31463be8f7e3a2c1b35c8c7144) - **feat:** add `isAlmostEqual` to namespace _(by Philipp Burckhardt)_
+-   [`fc438e0`](https://github.com/stdlib-js/stdlib/commit/fc438e0edbad0689d6923d6f3edb959b96597662) - **test:** use standardized assertion messages and fix lint errors _(by Philipp Burckhardt)_
+-   [`07f7c05`](https://github.com/stdlib-js/stdlib/commit/07f7c0522c73e6ad9505e1d45035ae439344200d) - **test:** use standardized assertion messages and fix lint errors _(by Philipp Burckhardt)_
+-   [`7483bef`](https://github.com/stdlib-js/stdlib/commit/7483bef13b1d3241347266d25a02957269419825) - **test:** use .strictEqual() instead of .equal() _(by Philipp Burckhardt)_
 -   [`dfbf338`](https://github.com/stdlib-js/stdlib/commit/dfbf3388bb499ec7ec5f453758acec3e6d18ee0b) - **feat:** add `assign` and `strided` methods to `complex/float64/base/div` [(#7771)](https://github.com/stdlib-js/stdlib/pull/7771) _(by Aayush Khanna, stdlib-bot)_
 -   [`d293a23`](https://github.com/stdlib-js/stdlib/commit/d293a2321d3c9dc0c4e016cb890032d0b32d28fc) - **docs:** add missing periods _(by Philipp Burckhardt)_
 -   [`6eee151`](https://github.com/stdlib-js/stdlib/commit/6eee15199727d04e3757e66f38384e97b8a333da) - **style:** fix indentation in JSON files _(by Philipp Burckhardt)_
