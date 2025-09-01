@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-08-20)
+## Unreleased (2025-09-01)
 
 <section class="features">
 
 ### Features
 
+-   [`0cf2dd6`](https://github.com/stdlib-js/stdlib/commit/0cf2dd65ae1a209d306184a82c4226742bfa6103) - add `isAlmostEqual` exports to namespaces
 -   [`75fdd8b`](https://github.com/stdlib-js/stdlib/commit/75fdd8bef41b544c26df891cf01c1f55596f2d08) - add `parse` to `complex/base` namespace
 -   [`73f774e`](https://github.com/stdlib-js/stdlib/commit/73f774e9d2df804c06ac8198c0bdb11186788009) - add missing functions to namespace
 -   [`da256e5`](https://github.com/stdlib-js/stdlib/commit/da256e5fe42c5c31463be8f7e3a2c1b35c8c7144) - add `isAlmostEqual` to namespace
@@ -91,6 +92,7 @@ A total of 4 issues were closed in this release:
 
 <details>
 
+-   [`0cf2dd6`](https://github.com/stdlib-js/stdlib/commit/0cf2dd65ae1a209d306184a82c4226742bfa6103) - **feat:** add `isAlmostEqual` exports to namespaces _(by Philipp Burckhardt)_
 -   [`5acfd64`](https://github.com/stdlib-js/stdlib/commit/5acfd64326637640433a7e3ffc5d101db23ab1d8) - **docs:** fix example code _(by Philipp Burckhardt)_
 -   [`75fdd8b`](https://github.com/stdlib-js/stdlib/commit/75fdd8bef41b544c26df891cf01c1f55596f2d08) - **feat:** add `parse` to `complex/base` namespace _(by Philipp Burckhardt)_
 -   [`73f774e`](https://github.com/stdlib-js/stdlib/commit/73f774e9d2df804c06ac8198c0bdb11186788009) - **feat:** add missing functions to namespace _(by Philipp Burckhardt)_
