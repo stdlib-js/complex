@@ -95,6 +95,7 @@ A total of 6 issues were closed in this release:
 
 <details>
 
+-   [`6af3333`](https://github.com/stdlib-js/stdlib/commit/6af33331f46100b46fdb69dc89a4c08299371951) - **test:** use strictEqual check _(by Philipp Burckhardt)_
 -   [`c60545c`](https://github.com/stdlib-js/stdlib/commit/c60545c5ac8624783808e72e5a91dbbf6ddb7cad) - **feat:** add `complex/float32/base/mul-add` [(#5214)](https://github.com/stdlib-js/stdlib/pull/5214) _(by Shabareesh Shetty, Athan Reines, stdlib-bot)_
 -   [`fea0e25`](https://github.com/stdlib-js/stdlib/commit/fea0e25bcdfef27741b914208a535240ef44e5a5) - **docs:** update example and remove excess whitespace _(by Athan Reines)_
 -   [`7c8ed3b`](https://github.com/stdlib-js/stdlib/commit/7c8ed3b2052a00de76bfdb1a4f5a8fb31cf98881) - **feat:** add strided and assign APIs to `complex/float32/base/add` [(#5391)](https://github.com/stdlib-js/stdlib/pull/5391) _(by Shabareesh Shetty, Athan Reines, stdlib-bot)_
