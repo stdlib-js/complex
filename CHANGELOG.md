@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`7c8ed3b`](https://github.com/stdlib-js/stdlib/commit/7c8ed3b2052a00de76bfdb1a4f5a8fb31cf98881) - add strided and assign APIs to `complex/float32/base/add` [(#5391)](https://github.com/stdlib-js/stdlib/pull/5391)
 -   [`ab94c83`](https://github.com/stdlib-js/stdlib/commit/ab94c83ad9d32ce492cb65a0146bb6408973b478) - add `blas/base/wasm/zscal` [(#6810)](https://github.com/stdlib-js/stdlib/pull/6810)
 -   [`0cf2dd6`](https://github.com/stdlib-js/stdlib/commit/0cf2dd65ae1a209d306184a82c4226742bfa6103) - add `isAlmostEqual` exports to namespaces
 -   [`75fdd8b`](https://github.com/stdlib-js/stdlib/commit/75fdd8bef41b544c26df891cf01c1f55596f2d08) - add `parse` to `complex/base` namespace
@@ -79,9 +80,9 @@
 
 ### Closed Issues
 
-A total of 4 issues were closed in this release:
+A total of 5 issues were closed in this release:
 
-[#5203](https://github.com/stdlib-js/stdlib/issues/5203), [#6698](https://github.com/stdlib-js/stdlib/issues/6698), [#6885](https://github.com/stdlib-js/stdlib/issues/6885), [#7735](https://github.com/stdlib-js/stdlib/issues/7735)
+[#5196](https://github.com/stdlib-js/stdlib/issues/5196), [#5203](https://github.com/stdlib-js/stdlib/issues/5203), [#6698](https://github.com/stdlib-js/stdlib/issues/6698), [#6885](https://github.com/stdlib-js/stdlib/issues/6885), [#7735](https://github.com/stdlib-js/stdlib/issues/7735)
 
 </section>
 
@@ -93,6 +94,7 @@ A total of 4 issues were closed in this release:
 
 <details>
 
+-   [`7c8ed3b`](https://github.com/stdlib-js/stdlib/commit/7c8ed3b2052a00de76bfdb1a4f5a8fb31cf98881) - **feat:** add strided and assign APIs to `complex/float32/base/add` [(#5391)](https://github.com/stdlib-js/stdlib/pull/5391) _(by Shabareesh Shetty, Athan Reines, stdlib-bot)_
 -   [`04b1546`](https://github.com/stdlib-js/stdlib/commit/04b1546ca3611169c371007d2ef16e5f0af392e0) - **style:** remove excess trailing lines _(by Athan Reines)_
 -   [`ab94c83`](https://github.com/stdlib-js/stdlib/commit/ab94c83ad9d32ce492cb65a0146bb6408973b478) - **feat:** add `blas/base/wasm/zscal` [(#6810)](https://github.com/stdlib-js/stdlib/pull/6810) _(by Shabareesh Shetty, Athan Reines, stdlib-bot)_
 -   [`0cf2dd6`](https://github.com/stdlib-js/stdlib/commit/0cf2dd65ae1a209d306184a82c4226742bfa6103) - **feat:** add `isAlmostEqual` exports to namespaces _(by Philipp Burckhardt)_
