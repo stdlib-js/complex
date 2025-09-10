@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-09-07)
+## Unreleased (2025-09-10)
 
 <section class="features">
 
@@ -95,6 +95,7 @@ A total of 6 issues were closed in this release:
 
 <details>
 
+-   [`33d711b`](https://github.com/stdlib-js/stdlib/commit/33d711b32194fa35075481f408444ce4bb48a32d) - **docs:** add missing forward slashes to return annotations _(by Philipp Burckhardt)_
 -   [`6af3333`](https://github.com/stdlib-js/stdlib/commit/6af33331f46100b46fdb69dc89a4c08299371951) - **test:** use strictEqual check _(by Philipp Burckhardt)_
 -   [`c60545c`](https://github.com/stdlib-js/stdlib/commit/c60545c5ac8624783808e72e5a91dbbf6ddb7cad) - **feat:** add `complex/float32/base/mul-add` [(#5214)](https://github.com/stdlib-js/stdlib/pull/5214) _(by Shabareesh Shetty, Athan Reines, stdlib-bot)_
 -   [`fea0e25`](https://github.com/stdlib-js/stdlib/commit/fea0e25bcdfef27741b914208a535240ef44e5a5) - **docs:** update example and remove excess whitespace _(by Athan Reines)_
