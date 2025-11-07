@@ -4,12 +4,17 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-09-18)
+## Unreleased (2025-11-07)
 
 <section class="features">
 
 ### Features
 
+-   [`b34ccb9`](https://github.com/stdlib-js/stdlib/commit/b34ccb9ddd53057a38713fcf7a8df7af65de268c) - update `complex/base` TypeScript declarations
+-   [`2b6e31a`](https://github.com/stdlib-js/stdlib/commit/2b6e31af8313d3b5de9aa1234ccd95c0ed52ffe0) - update `complex/float64/base` TypeScript declarations
+-   [`0bc68ba`](https://github.com/stdlib-js/stdlib/commit/0bc68ba0764320d5e2f7edbbd0d53cbd279c8e3e) - update `complex/float64/base/assert` TypeScript declarations
+-   [`9f96d8d`](https://github.com/stdlib-js/stdlib/commit/9f96d8df1b8e843be0ee98019248a8399745d0f8) - update `complex/float32/base` TypeScript declarations
+-   [`46781e0`](https://github.com/stdlib-js/stdlib/commit/46781e08e44b6f569313453dfd517799e98da393) - update `complex/float32/base/assert` TypeScript declarations
 -   [`c60545c`](https://github.com/stdlib-js/stdlib/commit/c60545c5ac8624783808e72e5a91dbbf6ddb7cad) - add `complex/float32/base/mul-add` [(#5214)](https://github.com/stdlib-js/stdlib/pull/5214)
 -   [`7c8ed3b`](https://github.com/stdlib-js/stdlib/commit/7c8ed3b2052a00de76bfdb1a4f5a8fb31cf98881) - add strided and assign APIs to `complex/float32/base/add` [(#5391)](https://github.com/stdlib-js/stdlib/pull/5391)
 -   [`ab94c83`](https://github.com/stdlib-js/stdlib/commit/ab94c83ad9d32ce492cb65a0146bb6408973b478) - add `blas/base/wasm/zscal` [(#6810)](https://github.com/stdlib-js/stdlib/pull/6810)
@@ -95,6 +100,14 @@ A total of 6 issues were closed in this release:
 
 <details>
 
+-   [`5f5bb2d`](https://github.com/stdlib-js/stdlib/commit/5f5bb2d4277a24000b57fb07bc28d821500cd7e8) - **docs:** update namespace table of contents [(#8425)](https://github.com/stdlib-js/stdlib/pull/8425) _(by stdlib-bot, Athan Reines)_
+-   [`b34ccb9`](https://github.com/stdlib-js/stdlib/commit/b34ccb9ddd53057a38713fcf7a8df7af65de268c) - **feat:** update `complex/base` TypeScript declarations _(by Philipp Burckhardt)_
+-   [`c92ba2d`](https://github.com/stdlib-js/stdlib/commit/c92ba2d92c3ae4ea40f9b86fc5d620d7f9579f55) - **docs:** clean-up code in TSDoc examples and remove self-requires _(by Philipp Burckhardt)_
+-   [`2b6e31a`](https://github.com/stdlib-js/stdlib/commit/2b6e31af8313d3b5de9aa1234ccd95c0ed52ffe0) - **feat:** update `complex/float64/base` TypeScript declarations _(by Philipp Burckhardt)_
+-   [`0bc68ba`](https://github.com/stdlib-js/stdlib/commit/0bc68ba0764320d5e2f7edbbd0d53cbd279c8e3e) - **feat:** update `complex/float64/base/assert` TypeScript declarations _(by Philipp Burckhardt)_
+-   [`9f96d8d`](https://github.com/stdlib-js/stdlib/commit/9f96d8df1b8e843be0ee98019248a8399745d0f8) - **feat:** update `complex/float32/base` TypeScript declarations _(by Philipp Burckhardt)_
+-   [`46781e0`](https://github.com/stdlib-js/stdlib/commit/46781e08e44b6f569313453dfd517799e98da393) - **feat:** update `complex/float32/base/assert` TypeScript declarations _(by Philipp Burckhardt)_
+-   [`14fbe2a`](https://github.com/stdlib-js/stdlib/commit/14fbe2a5ced542c4183b6cae8a5d369462a6023a) - **docs:** clean-up TypeScript declarations example code _(by Philipp Burckhardt)_
 -   [`29bd670`](https://github.com/stdlib-js/stdlib/commit/29bd6700071a2bcb775ad67639e167ab0fad2ce2) - **style:** consolidate redundant lint directives _(by Athan Reines)_
 -   [`33d711b`](https://github.com/stdlib-js/stdlib/commit/33d711b32194fa35075481f408444ce4bb48a32d) - **docs:** add missing forward slashes to return annotations _(by Philipp Burckhardt)_
 -   [`6af3333`](https://github.com/stdlib-js/stdlib/commit/6af33331f46100b46fdb69dc89a4c08299371951) - **test:** use strictEqual check _(by Philipp Burckhardt)_
@@ -114,7 +127,7 @@ A total of 6 issues were closed in this release:
 -   [`dfbf338`](https://github.com/stdlib-js/stdlib/commit/dfbf3388bb499ec7ec5f453758acec3e6d18ee0b) - **feat:** add `assign` and `strided` methods to `complex/float64/base/div` [(#7771)](https://github.com/stdlib-js/stdlib/pull/7771) _(by Aayush Khanna, stdlib-bot)_
 -   [`d293a23`](https://github.com/stdlib-js/stdlib/commit/d293a2321d3c9dc0c4e016cb890032d0b32d28fc) - **docs:** add missing periods _(by Philipp Burckhardt)_
 -   [`6eee151`](https://github.com/stdlib-js/stdlib/commit/6eee15199727d04e3757e66f38384e97b8a333da) - **style:** fix indentation in JSON files _(by Philipp Burckhardt)_
--   [`53c6429`](https://github.com/stdlib-js/stdlib/commit/53c6429aee35e48e178bc96072a39d1d9db325f3) - **chore:** fix EditorConfig lint errors [(#7737)](https://github.com/stdlib-js/stdlib/pull/7737) _(by AryanJ18, Athan Reines)_
+-   [`53c6429`](https://github.com/stdlib-js/stdlib/commit/53c6429aee35e48e178bc96072a39d1d9db325f3) - **chore:** fix EditorConfig lint errors [(#7737)](https://github.com/stdlib-js/stdlib/pull/7737) _(by Aryan J, Athan Reines)_
 -   [`2a0ea7f`](https://github.com/stdlib-js/stdlib/commit/2a0ea7feb22806685fef9eac8a32d7012dab7adc) - **fix:** use correct package names in package.json _(by Philipp Burckhardt)_
 -   [`24b7f7d`](https://github.com/stdlib-js/stdlib/commit/24b7f7d6900b467339d0911981d3c093d1b82efa) - **test:** add missing test for third parameter _(by Athan Reines)_
 -   [`71e8e76`](https://github.com/stdlib-js/stdlib/commit/71e8e767185b454e8f68d7fee778f3177f2e7f85) - **test:** add TS test for third parameter _(by Philipp Burckhardt)_
@@ -211,7 +224,7 @@ A total of 6 issues were closed in this release:
 A total of 9 people contributed to this release. Thank you to the following contributors:
 
 -   Aayush Khanna
--   AryanJ18
+-   Aryan J
 -   Athan Reines
 -   Gururaj Gurram
 -   Karan Anand

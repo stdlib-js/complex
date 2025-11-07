@@ -46,19 +46,11 @@ interface Namespace {
 	*
 	* @example
 	* var Complex64 = require( './../../../float32/ctor' );
-	* var realf = require( './../../../float32/real' );
-	* var imagf = require( './../../../float32/imag' );
 	*
 	* var z = new Complex64( 5.0, 3.0 );
 	*
 	* var v = ns.conj( z );
-	* // returns <Complex64>
-	*
-	* var re = realf( v );
-	* // returns 5.0
-	*
-	* var im = imagf( v );
-	* // returns -3.0
+	* // returns <Complex64>[ 5.0, -3.0 ]
 	*/
 	conj: typeof conj;
 
