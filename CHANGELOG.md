@@ -100,6 +100,7 @@ A total of 6 issues were closed in this release:
 
 <details>
 
+-   [`2b72de4`](https://github.com/stdlib-js/stdlib/commit/2b72de40d93281d9929a0b4d7cf8f567b60ea2f5) - **docs:** improve doctests for complex number instances in `complex/base/cast-return` [(#8664)](https://github.com/stdlib-js/stdlib/pull/8664) _(by Aryan kumar, Athan Reines)_
 -   [`767edc7`](https://github.com/stdlib-js/stdlib/commit/767edc78af5b5b08f826c95b9dd882415dc556f1) - **docs:** improve doctests in `complex/base/wrap-function` [(#8666)](https://github.com/stdlib-js/stdlib/pull/8666) _(by Aryan kumar, Athan Reines)_
 -   [`7db5b32`](https://github.com/stdlib-js/stdlib/commit/7db5b32afe976e2d3c216a45e0927c88e668d340) - **chore:** add `alias_prefix` to parent namespaces [(#8540)](https://github.com/stdlib-js/stdlib/pull/8540) _(by Gunj Joshi)_
 -   [`5f5bb2d`](https://github.com/stdlib-js/stdlib/commit/5f5bb2d4277a24000b57fb07bc28d821500cd7e8) - **docs:** update namespace table of contents [(#8425)](https://github.com/stdlib-js/stdlib/pull/8425) _(by stdlib-bot, Athan Reines)_
