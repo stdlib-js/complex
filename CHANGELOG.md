@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-01)
+## Unreleased (2025-12-02)
 
 <section class="features">
 
@@ -100,6 +100,7 @@ A total of 6 issues were closed in this release:
 
 <details>
 
+-   [`92dc7c2`](https://github.com/stdlib-js/stdlib/commit/92dc7c2bea09a0f1d6d12d9048381cc8bcc99fe3) - **docs:** fix TSDoc return annotation values and example code _(by Philipp Burckhardt)_
 -   [`2b72de4`](https://github.com/stdlib-js/stdlib/commit/2b72de40d93281d9929a0b4d7cf8f567b60ea2f5) - **docs:** improve doctests for complex number instances in `complex/base/cast-return` [(#8664)](https://github.com/stdlib-js/stdlib/pull/8664) _(by Aryan kumar, Athan Reines)_
 -   [`767edc7`](https://github.com/stdlib-js/stdlib/commit/767edc78af5b5b08f826c95b9dd882415dc556f1) - **docs:** improve doctests in `complex/base/wrap-function` [(#8666)](https://github.com/stdlib-js/stdlib/pull/8666) _(by Aryan kumar, Athan Reines)_
 -   [`7db5b32`](https://github.com/stdlib-js/stdlib/commit/7db5b32afe976e2d3c216a45e0927c88e668d340) - **chore:** add `alias_prefix` to parent namespaces [(#8540)](https://github.com/stdlib-js/stdlib/pull/8540) _(by Gunj Joshi)_
