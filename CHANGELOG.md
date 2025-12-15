@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-02)
+## Unreleased (2025-12-15)
 
 <section class="features">
 
@@ -100,6 +100,7 @@ A total of 6 issues were closed in this release:
 
 <details>
 
+-   [`1466cce`](https://github.com/stdlib-js/stdlib/commit/1466cce297fd5071f8e9344dfc8832afebb47cdd) - **bench:** refactor to use string interpolation in `complex/float64/base/add` [(#8940)](https://github.com/stdlib-js/stdlib/pull/8940) _(by Krishna Awasthi)_
 -   [`92dc7c2`](https://github.com/stdlib-js/stdlib/commit/92dc7c2bea09a0f1d6d12d9048381cc8bcc99fe3) - **docs:** fix TSDoc return annotation values and example code _(by Philipp Burckhardt)_
 -   [`2b72de4`](https://github.com/stdlib-js/stdlib/commit/2b72de40d93281d9929a0b4d7cf8f567b60ea2f5) - **docs:** improve doctests for complex number instances in `complex/base/cast-return` [(#8664)](https://github.com/stdlib-js/stdlib/pull/8664) _(by Aryan kumar, Athan Reines)_
 -   [`767edc7`](https://github.com/stdlib-js/stdlib/commit/767edc78af5b5b08f826c95b9dd882415dc556f1) - **docs:** improve doctests in `complex/base/wrap-function` [(#8666)](https://github.com/stdlib-js/stdlib/pull/8666) _(by Aryan kumar, Athan Reines)_
@@ -225,7 +226,7 @@ A total of 6 issues were closed in this release:
 
 ### Contributors
 
-A total of 11 people contributed to this release. Thank you to the following contributors:
+A total of 12 people contributed to this release. Thank you to the following contributors:
 
 -   Aayush Khanna
 -   Aryan J
@@ -234,6 +235,7 @@ A total of 11 people contributed to this release. Thank you to the following con
 -   Gunj Joshi
 -   Gururaj Gurram
 -   Karan Anand
+-   Krishna Awasthi
 -   Lalit Narayan Yadav
 -   Philipp Burckhardt
 -   SAHIL KUMAR
