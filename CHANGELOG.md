@@ -10,6 +10,10 @@
 
 ### Features
 
+-   [`895d417`](https://github.com/stdlib-js/stdlib/commit/895d417410e631120c7d482ba6a07ab130e18c85) - add `isAlmostSameValue` to namespace
+-   [`95732eb`](https://github.com/stdlib-js/stdlib/commit/95732eba68a330d4038479784cd0d79cc002540a) - add `complex/float32/base/assert/is-almost-same-value`
+-   [`7c681c7`](https://github.com/stdlib-js/stdlib/commit/7c681c773e6ee1817243fbfc788c82cb6abe76ed) - add `isAlmostSameValue` to namespace
+-   [`a33a861`](https://github.com/stdlib-js/stdlib/commit/a33a861d18e0877b8ddbea520efee0adc864b84d) - add `complex/float64/base/assert/is-almost-same-value`
 -   [`b34ccb9`](https://github.com/stdlib-js/stdlib/commit/b34ccb9ddd53057a38713fcf7a8df7af65de268c) - update `complex/base` TypeScript declarations
 -   [`2b6e31a`](https://github.com/stdlib-js/stdlib/commit/2b6e31af8313d3b5de9aa1234ccd95c0ed52ffe0) - update `complex/float64/base` TypeScript declarations
 -   [`0bc68ba`](https://github.com/stdlib-js/stdlib/commit/0bc68ba0764320d5e2f7edbbd0d53cbd279c8e3e) - update `complex/float64/base/assert` TypeScript declarations
@@ -100,6 +104,10 @@ A total of 6 issues were closed in this release:
 
 <details>
 
+-   [`895d417`](https://github.com/stdlib-js/stdlib/commit/895d417410e631120c7d482ba6a07ab130e18c85) - **feat:** add `isAlmostSameValue` to namespace _(by Athan Reines)_
+-   [`95732eb`](https://github.com/stdlib-js/stdlib/commit/95732eba68a330d4038479784cd0d79cc002540a) - **feat:** add `complex/float32/base/assert/is-almost-same-value` _(by Athan Reines)_
+-   [`7c681c7`](https://github.com/stdlib-js/stdlib/commit/7c681c773e6ee1817243fbfc788c82cb6abe76ed) - **feat:** add `isAlmostSameValue` to namespace _(by Athan Reines)_
+-   [`a33a861`](https://github.com/stdlib-js/stdlib/commit/a33a861d18e0877b8ddbea520efee0adc864b84d) - **feat:** add `complex/float64/base/assert/is-almost-same-value` _(by Athan Reines)_
 -   [`1466cce`](https://github.com/stdlib-js/stdlib/commit/1466cce297fd5071f8e9344dfc8832afebb47cdd) - **bench:** refactor to use string interpolation in `complex/float64/base/add` [(#8940)](https://github.com/stdlib-js/stdlib/pull/8940) _(by Krishna Awasthi)_
 -   [`92dc7c2`](https://github.com/stdlib-js/stdlib/commit/92dc7c2bea09a0f1d6d12d9048381cc8bcc99fe3) - **docs:** fix TSDoc return annotation values and example code _(by Philipp Burckhardt)_
 -   [`2b72de4`](https://github.com/stdlib-js/stdlib/commit/2b72de40d93281d9929a0b4d7cf8f567b60ea2f5) - **docs:** improve doctests for complex number instances in `complex/base/cast-return` [(#8664)](https://github.com/stdlib-js/stdlib/pull/8664) _(by Aryan kumar, Athan Reines)_
