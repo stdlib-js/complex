@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`e41ec1a`](https://github.com/stdlib-js/stdlib/commit/e41ec1a68b7da44d7258a1aa1a2ad31714c26b65) - update `complex/base/assert` TypeScript declarations [(#9198)](https://github.com/stdlib-js/stdlib/pull/9198)
 -   [`d2379cd`](https://github.com/stdlib-js/stdlib/commit/d2379cd7b805bfab9fb9742a77038a04508038fb) - update `complex/base` TypeScript declarations [(#9199)](https://github.com/stdlib-js/stdlib/pull/9199)
 -   [`289cb51`](https://github.com/stdlib-js/stdlib/commit/289cb519b04aac1731b7b872c7fd980090230fc8) - update `complex/float32/base/assert` TypeScript declarations [(#9200)](https://github.com/stdlib-js/stdlib/pull/9200)
 -   [`de88a8e`](https://github.com/stdlib-js/stdlib/commit/de88a8ea8b3dadb0158d8f672d5e29f8334ba6d0) - update `complex/float64/base/assert` TypeScript declarations [(#9201)](https://github.com/stdlib-js/stdlib/pull/9201)
@@ -113,6 +114,7 @@ A total of 6 issues were closed in this release:
 
 <details>
 
+-   [`e41ec1a`](https://github.com/stdlib-js/stdlib/commit/e41ec1a68b7da44d7258a1aa1a2ad31714c26b65) - **feat:** update `complex/base/assert` TypeScript declarations [(#9198)](https://github.com/stdlib-js/stdlib/pull/9198) _(by stdlib-bot)_
 -   [`d2379cd`](https://github.com/stdlib-js/stdlib/commit/d2379cd7b805bfab9fb9742a77038a04508038fb) - **feat:** update `complex/base` TypeScript declarations [(#9199)](https://github.com/stdlib-js/stdlib/pull/9199) _(by stdlib-bot)_
 -   [`289cb51`](https://github.com/stdlib-js/stdlib/commit/289cb519b04aac1731b7b872c7fd980090230fc8) - **feat:** update `complex/float32/base/assert` TypeScript declarations [(#9200)](https://github.com/stdlib-js/stdlib/pull/9200) _(by stdlib-bot)_
 -   [`de88a8e`](https://github.com/stdlib-js/stdlib/commit/de88a8ea8b3dadb0158d8f672d5e29f8334ba6d0) - **feat:** update `complex/float64/base/assert` TypeScript declarations [(#9201)](https://github.com/stdlib-js/stdlib/pull/9201) _(by stdlib-bot)_
