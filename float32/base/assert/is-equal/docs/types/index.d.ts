@@ -33,12 +33,12 @@ import Complex64 = require( './../../../../../../float32/ctor' );
 * var z1 = new Complex64( 5.0, 3.0 );
 * var z2 = new Complex64( 5.0, 3.0 );
 *
-* var v = isEqualf( z1, z2 );
+* var v = isEqual( z1, z2 );
 * // returns true
 */
-declare function isEqualf( z1: Complex64, z2: Complex64 ): boolean;
+declare function isEqual( z1: Complex64, z2: Complex64 ): boolean;
 
 
 // EXPORTS //
 
-export = isEqualf;
+export = isEqual;
