@@ -18,7 +18,9 @@
 
 // TypeScript Version: 4.1
 
-import Complex64 = require( './../../../../../../float32/ctor' );
+/// <reference types="@stdlib/types"/>
+
+import { Complex64 } from '@stdlib/types/complex';
 
 /**
 * Tests whether two single-precision complex floating-point numbers are not equal.
