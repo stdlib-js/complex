@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2022 The Stdlib Authors.
+* Copyright (c) 2025 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -37,40 +37,22 @@ var setReadOnly = require( '@stdlib/utils/define-read-only-property' );
 var ns = {};
 
 /**
-* @name assert
-* @memberof ns
-* @readonly
-* @type {Namespace}
-* @see {@link module:@stdlib/complex/base/assert}
-*/
-setReadOnly( ns, 'assert', require( './../../base/assert' ) );
-
-/**
-* @name cast
+* @name isAlmostEqual
 * @memberof ns
 * @readonly
 * @type {Function}
-* @see {@link module:@stdlib/complex/base/cast-return}
+* @see {@link module:@stdlib/complex/base/assert/is-almost-equal}
 */
-setReadOnly( ns, 'cast', require( './../../base/cast-return' ) );
+setReadOnly( ns, 'isAlmostEqual', require( './../../../base/assert/is-almost-equal' ) );
 
 /**
-* @name parse
+* @name isAlmostSameValue
 * @memberof ns
 * @readonly
 * @type {Function}
-* @see {@link module:@stdlib/complex/base/parse}
+* @see {@link module:@stdlib/complex/base/assert/is-almost-same-value}
 */
-setReadOnly( ns, 'parse', require( './../../base/parse' ) );
-
-/**
-* @name wrap
-* @memberof ns
-* @readonly
-* @type {Function}
-* @see {@link module:@stdlib/complex/base/wrap-function}
-*/
-setReadOnly( ns, 'wrap', require( './../../base/wrap-function' ) );
+setReadOnly( ns, 'isAlmostSameValue', require( './../../../base/assert/is-almost-same-value' ) );
 
 
 // EXPORTS //

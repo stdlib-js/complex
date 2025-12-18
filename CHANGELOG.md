@@ -10,6 +10,10 @@
 
 ### Features
 
+-   [`66c407f`](https://github.com/stdlib-js/stdlib/commit/66c407f1933131a0050c514ce1c878694a4173cf) - add `assert` to namespace
+-   [`6e539e7`](https://github.com/stdlib-js/stdlib/commit/6e539e715f29950ccc8384337d91e2b2ebf678e7) - add `complex/base/assert` namespace
+-   [`95ee9a0`](https://github.com/stdlib-js/stdlib/commit/95ee9a0d45606e4b9c387366f36ba4fcea4adae5) - add `complex/base/assert/is-almost-same-value`
+-   [`d0857d0`](https://github.com/stdlib-js/stdlib/commit/d0857d0faf6a6718ff9cd002f99184a20ca89278) - add `complex/base/assert/is-almost-equal`
 -   [`895d417`](https://github.com/stdlib-js/stdlib/commit/895d417410e631120c7d482ba6a07ab130e18c85) - add `isAlmostSameValue` to namespace
 -   [`95732eb`](https://github.com/stdlib-js/stdlib/commit/95732eba68a330d4038479784cd0d79cc002540a) - add `complex/float32/base/assert/is-almost-same-value`
 -   [`7c681c7`](https://github.com/stdlib-js/stdlib/commit/7c681c773e6ee1817243fbfc788c82cb6abe76ed) - add `isAlmostSameValue` to namespace
@@ -106,6 +110,11 @@ A total of 6 issues were closed in this release:
 
 <details>
 
+-   [`66c407f`](https://github.com/stdlib-js/stdlib/commit/66c407f1933131a0050c514ce1c878694a4173cf) - **feat:** add `assert` to namespace _(by Athan Reines)_
+-   [`6e539e7`](https://github.com/stdlib-js/stdlib/commit/6e539e715f29950ccc8384337d91e2b2ebf678e7) - **feat:** add `complex/base/assert` namespace _(by Athan Reines)_
+-   [`95ee9a0`](https://github.com/stdlib-js/stdlib/commit/95ee9a0d45606e4b9c387366f36ba4fcea4adae5) - **feat:** add `complex/base/assert/is-almost-same-value` _(by Athan Reines)_
+-   [`de7678a`](https://github.com/stdlib-js/stdlib/commit/de7678a5abc59883ba8f0512c71bd0ceb352613b) - **test:** fix descriptions _(by Athan Reines)_
+-   [`d0857d0`](https://github.com/stdlib-js/stdlib/commit/d0857d0faf6a6718ff9cd002f99184a20ca89278) - **feat:** add `complex/base/assert/is-almost-equal` _(by Athan Reines)_
 -   [`f83da1e`](https://github.com/stdlib-js/stdlib/commit/f83da1eb81f4beb34c5480ee188d2c3103bdc20c) - **fix:** use interface rather than class definition _(by Athan Reines)_
 -   [`668e314`](https://github.com/stdlib-js/stdlib/commit/668e3142881cad00228c2931daa527525c71b000) - **fix:** use interface rather than class definition _(by Athan Reines)_
 -   [`ed084b9`](https://github.com/stdlib-js/stdlib/commit/ed084b9112e1fc708074b29fcb63bbc31cdfaf09) - **chore:** rename variables _(by Athan Reines)_
