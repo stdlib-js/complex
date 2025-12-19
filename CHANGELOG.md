@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-18)
+## Unreleased (2025-12-19)
 
 <section class="features">
 
@@ -114,6 +114,8 @@ A total of 6 issues were closed in this release:
 
 <details>
 
+-   [`6cfb626`](https://github.com/stdlib-js/stdlib/commit/6cfb626f79f98649c752a652e003c0917d0a5d19) - **refactor:** use utility to set properties _(by Athan Reines)_
+-   [`29270fb`](https://github.com/stdlib-js/stdlib/commit/29270fbbe57e00d44163dd23f87eaf1db81b563a) - **refactor:** use utility to set properties _(by Athan Reines)_
 -   [`e41ec1a`](https://github.com/stdlib-js/stdlib/commit/e41ec1a68b7da44d7258a1aa1a2ad31714c26b65) - **feat:** update `complex/base/assert` TypeScript declarations [(#9198)](https://github.com/stdlib-js/stdlib/pull/9198) _(by stdlib-bot)_
 -   [`d2379cd`](https://github.com/stdlib-js/stdlib/commit/d2379cd7b805bfab9fb9742a77038a04508038fb) - **feat:** update `complex/base` TypeScript declarations [(#9199)](https://github.com/stdlib-js/stdlib/pull/9199) _(by stdlib-bot)_
 -   [`289cb51`](https://github.com/stdlib-js/stdlib/commit/289cb519b04aac1731b7b872c7fd980090230fc8) - **feat:** update `complex/float32/base/assert` TypeScript declarations [(#9200)](https://github.com/stdlib-js/stdlib/pull/9200) _(by stdlib-bot)_

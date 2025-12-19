@@ -21,7 +21,7 @@
 // MODULES //
 
 var isNumber = require( '@stdlib/assert/is-number' ).isPrimitive;
-var defineProperty = require( '@stdlib/utils/define-property' );
+var setEnumerableReadOnly = require( '@stdlib/utils/define-read-only-property' );
 var setReadOnly = require( '@stdlib/utils/define-nonenumerable-read-only-property' );
 var float64ToFloat32 = require( '@stdlib/number/float64/base/to-float32' );
 var format = require( '@stdlib/string/format' );
@@ -56,18 +56,8 @@ function Complex64( real, imag ) {
 	if ( !isNumber( imag ) ) {
 		throw new TypeError( format( 'invalid argument. Imaginary component must be a number. Value: `%s`.', imag ) );
 	}
-	defineProperty( this, 're', {
-		'configurable': false,
-		'enumerable': true,
-		'writable': false,
-		'value': float64ToFloat32( real )
-	});
-	defineProperty( this, 'im', {
-		'configurable': false,
-		'enumerable': true,
-		'writable': false,
-		'value': float64ToFloat32( imag )
-	});
+	setEnumerableReadOnly( this, 're', float64ToFloat32( real ) );
+	setEnumerableReadOnly( this, 'im', float64ToFloat32( imag ) );
 	return this;
 }
 
