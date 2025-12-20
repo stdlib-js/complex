@@ -62,6 +62,21 @@ function Complex64( real, imag ) {
 }
 
 /**
+* Constructor name.
+*
+* @name name
+* @memberof Complex64
+* @readonly
+* @type {string}
+* @default 'Complex64'
+*
+* @example
+* var name = Complex64.name;
+* // returns 'Complex64'
+*/
+setReadOnly( Complex64, 'name', 'Complex64' );
+
+/**
 * Size (in bytes) of each component.
 *
 * @name BYTES_PER_ELEMENT

@@ -4,12 +4,14 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-19)
+## Unreleased (2025-12-20)
 
 <section class="features">
 
 ### Features
 
+-   [`3286c01`](https://github.com/stdlib-js/stdlib/commit/3286c016f295924c2e2993cdb8c689ceaf03c6d8) - add constructor name property
+-   [`19c80d8`](https://github.com/stdlib-js/stdlib/commit/19c80d8007bc63d10eadd2365dff255d3f71205b) - add constructor name property
 -   [`e41ec1a`](https://github.com/stdlib-js/stdlib/commit/e41ec1a68b7da44d7258a1aa1a2ad31714c26b65) - update `complex/base/assert` TypeScript declarations [(#9198)](https://github.com/stdlib-js/stdlib/pull/9198)
 -   [`d2379cd`](https://github.com/stdlib-js/stdlib/commit/d2379cd7b805bfab9fb9742a77038a04508038fb) - update `complex/base` TypeScript declarations [(#9199)](https://github.com/stdlib-js/stdlib/pull/9199)
 -   [`289cb51`](https://github.com/stdlib-js/stdlib/commit/289cb519b04aac1731b7b872c7fd980090230fc8) - update `complex/float32/base/assert` TypeScript declarations [(#9200)](https://github.com/stdlib-js/stdlib/pull/9200)
@@ -68,6 +70,7 @@
 
 ### Bug Fixes
 
+-   [`66c3419`](https://github.com/stdlib-js/stdlib/commit/66c34197acf3eb6c43480fc93bc92d1ddd31b846) - add missing name to complex constructor TypeScript declarations
 -   [`f83da1e`](https://github.com/stdlib-js/stdlib/commit/f83da1eb81f4beb34c5480ee188d2c3103bdc20c) - use interface rather than class definition
 -   [`668e314`](https://github.com/stdlib-js/stdlib/commit/668e3142881cad00228c2931daa527525c71b000) - use interface rather than class definition
 -   [`2a0ea7f`](https://github.com/stdlib-js/stdlib/commit/2a0ea7feb22806685fef9eac8a32d7012dab7adc) - use correct package names in package.json
@@ -114,6 +117,11 @@ A total of 6 issues were closed in this release:
 
 <details>
 
+-   [`66c3419`](https://github.com/stdlib-js/stdlib/commit/66c34197acf3eb6c43480fc93bc92d1ddd31b846) - **fix:** add missing name to complex constructor TypeScript declarations _(by Philipp Burckhardt)_
+-   [`3642086`](https://github.com/stdlib-js/stdlib/commit/3642086d8a240a2d9d0d0b480ff7475faba28cfa) - **docs:** document property _(by Athan Reines)_
+-   [`5a193fb`](https://github.com/stdlib-js/stdlib/commit/5a193fb3a316a7ea4969c3379dfa9f4ab2b462b1) - **docs:** document property _(by Athan Reines)_
+-   [`3286c01`](https://github.com/stdlib-js/stdlib/commit/3286c016f295924c2e2993cdb8c689ceaf03c6d8) - **feat:** add constructor name property _(by Athan Reines)_
+-   [`19c80d8`](https://github.com/stdlib-js/stdlib/commit/19c80d8007bc63d10eadd2365dff255d3f71205b) - **feat:** add constructor name property _(by Athan Reines)_
 -   [`6cfb626`](https://github.com/stdlib-js/stdlib/commit/6cfb626f79f98649c752a652e003c0917d0a5d19) - **refactor:** use utility to set properties _(by Athan Reines)_
 -   [`29270fb`](https://github.com/stdlib-js/stdlib/commit/29270fbbe57e00d44163dd23f87eaf1db81b563a) - **refactor:** use utility to set properties _(by Athan Reines)_
 -   [`e41ec1a`](https://github.com/stdlib-js/stdlib/commit/e41ec1a68b7da44d7258a1aa1a2ad31714c26b65) - **feat:** update `complex/base/assert` TypeScript declarations [(#9198)](https://github.com/stdlib-js/stdlib/pull/9198) _(by stdlib-bot)_

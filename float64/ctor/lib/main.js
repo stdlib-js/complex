@@ -61,6 +61,21 @@ function Complex128( real, imag ) {
 }
 
 /**
+* Constructor name.
+*
+* @name name
+* @memberof Complex128
+* @readonly
+* @type {string}
+* @default 'Complex128'
+*
+* @example
+* var name = Complex128.name;
+* // returns 'Complex128'
+*/
+setReadOnly( Complex128, 'name', 'Complex128' );
+
+/**
 * Size (in bytes) of each component.
 *
 * @name BYTES_PER_ELEMENT
