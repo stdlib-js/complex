@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-20)
+## Unreleased (2025-12-27)
 
 <section class="features">
 
@@ -117,6 +117,7 @@ A total of 6 issues were closed in this release:
 
 <details>
 
+-   [`312d030`](https://github.com/stdlib-js/stdlib/commit/312d03010490af92d2c0d160ef96de0331fa7f25) - **docs:** fix comment _(by Athan Reines)_
 -   [`66c3419`](https://github.com/stdlib-js/stdlib/commit/66c34197acf3eb6c43480fc93bc92d1ddd31b846) - **fix:** add missing name to complex constructor TypeScript declarations _(by Philipp Burckhardt)_
 -   [`3642086`](https://github.com/stdlib-js/stdlib/commit/3642086d8a240a2d9d0d0b480ff7475faba28cfa) - **docs:** document property _(by Athan Reines)_
 -   [`5a193fb`](https://github.com/stdlib-js/stdlib/commit/5a193fb3a316a7ea4969c3379dfa9f4ab2b462b1) - **docs:** document property _(by Athan Reines)_
