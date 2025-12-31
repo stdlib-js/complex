@@ -72,6 +72,7 @@
 
 ### Bug Fixes
 
+-   [`dd4c201`](https://github.com/stdlib-js/stdlib/commit/dd4c201b7790e12a3bd22eef43d64db0313f35a0) - update type signature for `strided` method in `complex/float64/base/add3`
 -   [`66c3419`](https://github.com/stdlib-js/stdlib/commit/66c34197acf3eb6c43480fc93bc92d1ddd31b846) - add missing name to complex constructor TypeScript declarations
 -   [`f83da1e`](https://github.com/stdlib-js/stdlib/commit/f83da1eb81f4beb34c5480ee188d2c3103bdc20c) - use interface rather than class definition
 -   [`668e314`](https://github.com/stdlib-js/stdlib/commit/668e3142881cad00228c2931daa527525c71b000) - use interface rather than class definition
@@ -119,6 +120,7 @@ A total of 6 issues were closed in this release:
 
 <details>
 
+-   [`dd4c201`](https://github.com/stdlib-js/stdlib/commit/dd4c201b7790e12a3bd22eef43d64db0313f35a0) - **fix:** update type signature for `strided` method in `complex/float64/base/add3` _(by Philipp Burckhardt)_
 -   [`7dc10cb`](https://github.com/stdlib-js/stdlib/commit/7dc10cb52051e0efc84ade242d44fb369d618851) - **bench:** fix invocation _(by Athan Reines)_
 -   [`f7e6175`](https://github.com/stdlib-js/stdlib/commit/f7e6175347c09f61893205fffd49bab4281d278a) - **refactor:** reorder declarations _(by Athan Reines)_
 -   [`1ba537e`](https://github.com/stdlib-js/stdlib/commit/1ba537e7f21003027ec5848d9d0872231a602c23) - **bench:** fix declarations _(by Athan Reines)_
