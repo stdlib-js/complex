@@ -46,6 +46,15 @@ var ns = {};
 setReadOnly( ns, 'add', require( './../../../float64/base/add' ) );
 
 /**
+* @name add3
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/complex/float64/base/add3}
+*/
+setReadOnly( ns, 'add3', require( './../../../float64/base/add3' ) );
+
+/**
 * @name assert
 * @memberof ns
 * @readonly

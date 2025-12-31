@@ -4,12 +4,14 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-27)
+## Unreleased (2025-12-31)
 
 <section class="features">
 
 ### Features
 
+-   [`fc753b9`](https://github.com/stdlib-js/stdlib/commit/fc753b9fdd260ec25461d3750212d0bb777bdb7b) - add `add3` to namespace
+-   [`d346a88`](https://github.com/stdlib-js/stdlib/commit/d346a885ca852b2f4dc58f42e84cc502d3ff05c5) - add `complex/float64/base/add3`
 -   [`3286c01`](https://github.com/stdlib-js/stdlib/commit/3286c016f295924c2e2993cdb8c689ceaf03c6d8) - add constructor name property
 -   [`19c80d8`](https://github.com/stdlib-js/stdlib/commit/19c80d8007bc63d10eadd2365dff255d3f71205b) - add constructor name property
 -   [`e41ec1a`](https://github.com/stdlib-js/stdlib/commit/e41ec1a68b7da44d7258a1aa1a2ad31714c26b65) - update `complex/base/assert` TypeScript declarations [(#9198)](https://github.com/stdlib-js/stdlib/pull/9198)
@@ -117,6 +119,11 @@ A total of 6 issues were closed in this release:
 
 <details>
 
+-   [`7dc10cb`](https://github.com/stdlib-js/stdlib/commit/7dc10cb52051e0efc84ade242d44fb369d618851) - **bench:** fix invocation _(by Athan Reines)_
+-   [`f7e6175`](https://github.com/stdlib-js/stdlib/commit/f7e6175347c09f61893205fffd49bab4281d278a) - **refactor:** reorder declarations _(by Athan Reines)_
+-   [`1ba537e`](https://github.com/stdlib-js/stdlib/commit/1ba537e7f21003027ec5848d9d0872231a602c23) - **bench:** fix declarations _(by Athan Reines)_
+-   [`fc753b9`](https://github.com/stdlib-js/stdlib/commit/fc753b9fdd260ec25461d3750212d0bb777bdb7b) - **feat:** add `add3` to namespace _(by Athan Reines)_
+-   [`d346a88`](https://github.com/stdlib-js/stdlib/commit/d346a885ca852b2f4dc58f42e84cc502d3ff05c5) - **feat:** add `complex/float64/base/add3` _(by Athan Reines)_
 -   [`312d030`](https://github.com/stdlib-js/stdlib/commit/312d03010490af92d2c0d160ef96de0331fa7f25) - **docs:** fix comment _(by Athan Reines)_
 -   [`66c3419`](https://github.com/stdlib-js/stdlib/commit/66c34197acf3eb6c43480fc93bc92d1ddd31b846) - **fix:** add missing name to complex constructor TypeScript declarations _(by Philipp Burckhardt)_
 -   [`3642086`](https://github.com/stdlib-js/stdlib/commit/3642086d8a240a2d9d0d0b480ff7475faba28cfa) - **docs:** document property _(by Athan Reines)_
