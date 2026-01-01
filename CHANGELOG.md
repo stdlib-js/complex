@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-31)
+## Unreleased (2026-01-01)
 
 <section class="features">
 
 ### Features
 
+-   [`e6a30ce`](https://github.com/stdlib-js/stdlib/commit/e6a30ce5227ad8260959fe518e88875e4d85a975) - update `complex/float64/base` TypeScript declarations [(#9466)](https://github.com/stdlib-js/stdlib/pull/9466)
 -   [`fc753b9`](https://github.com/stdlib-js/stdlib/commit/fc753b9fdd260ec25461d3750212d0bb777bdb7b) - add `add3` to namespace
 -   [`d346a88`](https://github.com/stdlib-js/stdlib/commit/d346a885ca852b2f4dc58f42e84cc502d3ff05c5) - add `complex/float64/base/add3`
 -   [`3286c01`](https://github.com/stdlib-js/stdlib/commit/3286c016f295924c2e2993cdb8c689ceaf03c6d8) - add constructor name property
@@ -120,6 +121,7 @@ A total of 6 issues were closed in this release:
 
 <details>
 
+-   [`e6a30ce`](https://github.com/stdlib-js/stdlib/commit/e6a30ce5227ad8260959fe518e88875e4d85a975) - **feat:** update `complex/float64/base` TypeScript declarations [(#9466)](https://github.com/stdlib-js/stdlib/pull/9466) _(by stdlib-bot)_
 -   [`dd4c201`](https://github.com/stdlib-js/stdlib/commit/dd4c201b7790e12a3bd22eef43d64db0313f35a0) - **fix:** update type signature for `strided` method in `complex/float64/base/add3` _(by Philipp Burckhardt)_
 -   [`7dc10cb`](https://github.com/stdlib-js/stdlib/commit/7dc10cb52051e0efc84ade242d44fb369d618851) - **bench:** fix invocation _(by Athan Reines)_
 -   [`f7e6175`](https://github.com/stdlib-js/stdlib/commit/f7e6175347c09f61893205fffd49bab4281d278a) - **refactor:** reorder declarations _(by Athan Reines)_
