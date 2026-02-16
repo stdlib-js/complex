@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-01-31)
+## Unreleased (2026-02-16)
 
 <section class="features">
 
@@ -121,6 +121,7 @@ A total of 6 issues were closed in this release:
 
 <details>
 
+-   [`2ed3934`](https://github.com/stdlib-js/stdlib/commit/2ed3934650fc6e9dd7065f21c4de66e3457cc5cb) - **test:** fix argument order and regenerate fixtures _(by Philipp Burckhardt)_
 -   [`ee4e852`](https://github.com/stdlib-js/stdlib/commit/ee4e852c6aebea0c9ce7316f364736622e4bf6a4) - **docs:** fix comments and returns description [(#10015)](https://github.com/stdlib-js/stdlib/pull/10015) _(by Sachin Pangal)_
 -   [`68446dc`](https://github.com/stdlib-js/stdlib/commit/68446dcb55d7b08e39baf6efae7ba5ba038c923f) - **docs:** update namespace table of contents [(#9848)](https://github.com/stdlib-js/stdlib/pull/9848) _(by stdlib-bot)_
 -   [`e6a30ce`](https://github.com/stdlib-js/stdlib/commit/e6a30ce5227ad8260959fe518e88875e4d85a975) - **feat:** update `complex/float64/base` TypeScript declarations [(#9466)](https://github.com/stdlib-js/stdlib/pull/9466) _(by stdlib-bot)_
