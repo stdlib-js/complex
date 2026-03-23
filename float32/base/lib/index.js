@@ -46,6 +46,15 @@ var ns = {};
 setReadOnly( ns, 'add', require( './../../../float32/base/add' ) );
 
 /**
+* @name add3
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/complex/float32/base/add3}
+*/
+setReadOnly( ns, 'add3', require( './../../../float32/base/add3' ) );
+
+/**
 * @name assert
 * @memberof ns
 * @readonly
@@ -71,6 +80,15 @@ setReadOnly( ns, 'identity', require( './../../../float32/base/identity' ) );
 * @see {@link module:@stdlib/complex/float32/base/mul}
 */
 setReadOnly( ns, 'mul', require( './../../../float32/base/mul' ) );
+
+/**
+* @name muladd
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/complex/float32/base/mul-add}
+*/
+setReadOnly( ns, 'muladd', require( './../../../float32/base/mul-add' ) );
 
 /**
 * @name neg

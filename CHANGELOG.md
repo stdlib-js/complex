@@ -10,6 +10,8 @@
 
 ### Features
 
+-   [`40a9690`](https://github.com/stdlib-js/stdlib/commit/40a9690b3cc701abfe2063cf4c1cf055582bed35) - add `muladd` to namespace
+-   [`ad16f6a`](https://github.com/stdlib-js/stdlib/commit/ad16f6a74846cb072d4b5fe2ac95f38ef3005c19) - add `add3` to namespace
 -   [`ae684df`](https://github.com/stdlib-js/stdlib/commit/ae684dfad39a7f9dc4b2299a08942292d3d4dd09) - add `complex/float32/base/add3` [(#9946)](https://github.com/stdlib-js/stdlib/pull/9946)
 -   [`e6a30ce`](https://github.com/stdlib-js/stdlib/commit/e6a30ce5227ad8260959fe518e88875e4d85a975) - update `complex/float64/base` TypeScript declarations [(#9466)](https://github.com/stdlib-js/stdlib/pull/9466)
 -   [`fc753b9`](https://github.com/stdlib-js/stdlib/commit/fc753b9fdd260ec25461d3750212d0bb777bdb7b) - add `add3` to namespace
@@ -122,6 +124,8 @@ A total of 7 issues were closed in this release:
 
 <details>
 
+-   [`40a9690`](https://github.com/stdlib-js/stdlib/commit/40a9690b3cc701abfe2063cf4c1cf055582bed35) - **feat:** add `muladd` to namespace _(by Athan Reines)_
+-   [`ad16f6a`](https://github.com/stdlib-js/stdlib/commit/ad16f6a74846cb072d4b5fe2ac95f38ef3005c19) - **feat:** add `add3` to namespace _(by Athan Reines)_
 -   [`ae684df`](https://github.com/stdlib-js/stdlib/commit/ae684dfad39a7f9dc4b2299a08942292d3d4dd09) - **feat:** add `complex/float32/base/add3` [(#9946)](https://github.com/stdlib-js/stdlib/pull/9946) _(by Sachin Pangal, stdlib-bot, Athan Reines)_
 -   [`2ed3934`](https://github.com/stdlib-js/stdlib/commit/2ed3934650fc6e9dd7065f21c4de66e3457cc5cb) - **test:** fix argument order and regenerate fixtures _(by Philipp Burckhardt)_
 -   [`ee4e852`](https://github.com/stdlib-js/stdlib/commit/ee4e852c6aebea0c9ce7316f364736622e4bf6a4) - **docs:** fix comments and returns description [(#10015)](https://github.com/stdlib-js/stdlib/pull/10015) _(by Sachin Pangal)_
