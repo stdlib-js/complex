@@ -125,6 +125,7 @@ A total of 7 issues were closed in this release:
 
 <details>
 
+-   [`d9a5e08`](https://github.com/stdlib-js/stdlib/commit/d9a5e081c5376c8688ffd96f29dec0e135cb123c) - **docs:** update namespace table of contents [(#11114)](https://github.com/stdlib-js/stdlib/pull/11114) _(by stdlib-bot)_
 -   [`a921830`](https://github.com/stdlib-js/stdlib/commit/a921830140c2ed2909d462864a21890615f6e082) - **feat:** update `complex/float32/base` TypeScript declarations [(#11112)](https://github.com/stdlib-js/stdlib/pull/11112) _(by stdlib-bot)_
 -   [`40a9690`](https://github.com/stdlib-js/stdlib/commit/40a9690b3cc701abfe2063cf4c1cf055582bed35) - **feat:** add `muladd` to namespace _(by Athan Reines)_
 -   [`ad16f6a`](https://github.com/stdlib-js/stdlib/commit/ad16f6a74846cb072d4b5fe2ac95f38ef3005c19) - **feat:** add `add3` to namespace _(by Athan Reines)_
