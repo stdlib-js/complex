@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-03-29)
+## Unreleased (2026-04-10)
 
 <section class="features">
 
@@ -125,6 +125,7 @@ A total of 7 issues were closed in this release:
 
 <details>
 
+-   [`35566af`](https://github.com/stdlib-js/stdlib/commit/35566af0add64775e60422fd16e50e1bec3947e7) - **docs:** fix C examples in READMEs [(#11229)](https://github.com/stdlib-js/stdlib/pull/11229) _(by anee3, Athan Reines)_
 -   [`d9a5e08`](https://github.com/stdlib-js/stdlib/commit/d9a5e081c5376c8688ffd96f29dec0e135cb123c) - **docs:** update namespace table of contents [(#11114)](https://github.com/stdlib-js/stdlib/pull/11114) _(by stdlib-bot)_
 -   [`a921830`](https://github.com/stdlib-js/stdlib/commit/a921830140c2ed2909d462864a21890615f6e082) - **feat:** update `complex/float32/base` TypeScript declarations [(#11112)](https://github.com/stdlib-js/stdlib/pull/11112) _(by stdlib-bot)_
 -   [`40a9690`](https://github.com/stdlib-js/stdlib/commit/40a9690b3cc701abfe2063cf4c1cf055582bed35) - **feat:** add `muladd` to namespace _(by Athan Reines)_
@@ -291,7 +292,7 @@ A total of 7 issues were closed in this release:
 
 ### Contributors
 
-A total of 13 people contributed to this release. Thank you to the following contributors:
+A total of 14 people contributed to this release. Thank you to the following contributors:
 
 -   Aayush Khanna
 -   Aryan J
@@ -306,6 +307,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 -   SAHIL KUMAR
 -   Sachin Pangal
 -   Shabareesh Shetty
+-   anee3
 
 </section>
 
