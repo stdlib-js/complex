@@ -28,6 +28,7 @@ var Complex64 = require( './../../../../float32/ctor' );
 var realf = require( './../../../../float32/real' );
 var imagf = require( './../../../../float32/imag' );
 var tryRequire = require( '@stdlib/utils/try-require' );
+var format = require( '@stdlib/string/format' );
 var pkg = require( './../package.json' ).name;
 
 
@@ -41,7 +42,7 @@ var opts = {
 
 // MAIN //
 
-bench( pkg+'::native', opts, function benchmark( b ) {
+bench( format( '%s::native', pkg ), opts, function benchmark( b ) {
 	var values;
 	var out;
 	var z;
