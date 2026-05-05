@@ -77,6 +77,7 @@
 
 ### Bug Fixes
 
+-   [`74e79f9`](https://github.com/stdlib-js/stdlib/commit/74e79f9fd8dfae766dd9a016f0c1e63b9abae097) - propagate `API_SUFFIX` wrappers and complex number description wording [(#11952)](https://github.com/stdlib-js/stdlib/pull/11952)
 -   [`dd4c201`](https://github.com/stdlib-js/stdlib/commit/dd4c201b7790e12a3bd22eef43d64db0313f35a0) - update type signature for `strided` method in `complex/float64/base/add3`
 -   [`66c3419`](https://github.com/stdlib-js/stdlib/commit/66c34197acf3eb6c43480fc93bc92d1ddd31b846) - add missing name to complex constructor TypeScript declarations
 -   [`f83da1e`](https://github.com/stdlib-js/stdlib/commit/f83da1eb81f4beb34c5480ee188d2c3103bdc20c) - use interface rather than class definition
@@ -125,6 +126,7 @@ A total of 7 issues were closed in this release:
 
 <details>
 
+-   [`74e79f9`](https://github.com/stdlib-js/stdlib/commit/74e79f9fd8dfae766dd9a016f0c1e63b9abae097) - **fix:** propagate `API_SUFFIX` wrappers and complex number description wording [(#11952)](https://github.com/stdlib-js/stdlib/pull/11952) _(by Philipp Burckhardt)_
 -   [`9f41dab`](https://github.com/stdlib-js/stdlib/commit/9f41daba5e816a9e63c3b0fbfb810cee8bb01258) - **bench:** refactor to use string interpolation in `complex` [(#11620)](https://github.com/stdlib-js/stdlib/pull/11620) _(by Karan Anand)_
 -   [`35566af`](https://github.com/stdlib-js/stdlib/commit/35566af0add64775e60422fd16e50e1bec3947e7) - **docs:** fix C examples in READMEs [(#11229)](https://github.com/stdlib-js/stdlib/pull/11229) _(by anee3, Athan Reines)_
 -   [`d9a5e08`](https://github.com/stdlib-js/stdlib/commit/d9a5e081c5376c8688ffd96f29dec0e135cb123c) - **docs:** update namespace table of contents [(#11114)](https://github.com/stdlib-js/stdlib/pull/11114) _(by stdlib-bot)_
