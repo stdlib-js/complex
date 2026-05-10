@@ -23,8 +23,8 @@
 var tape = require( 'tape' );
 var isnanf = require( '@stdlib/math/base/assert/is-nanf' );
 var Complex64 = require( './../../../../float32/ctor' );
-var real = require( './../../../../float64/real' );
-var imag = require( './../../../../float64/imag' );
+var real = require( './../../../../float32/real' );
+var imag = require( './../../../../float32/imag' );
 var add = require( './../lib' );
 
 
