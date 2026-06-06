@@ -2,6 +2,28 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2026-06-06)
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`2115dd3`](https://github.com/stdlib-js/stdlib/commit/2115dd3b946f768327368994b44c92f7315c081d) - **docs:** update `complex/float32` TypeScript declarations [(#12580)](https://github.com/stdlib-js/stdlib/pull/12580) _(by stdlib-bot)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.4.1">
 
 ## 0.4.1 (2026-06-05)
