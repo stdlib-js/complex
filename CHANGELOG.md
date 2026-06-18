@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-06-13)
+## Unreleased (2026-06-18)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`f4bc442`](https://github.com/stdlib-js/stdlib/commit/f4bc442f019061ce55cc1a654722a325e35fd5f0) - **test:** remove redundant filename output in test blocks [(#12951)](https://github.com/stdlib-js/stdlib/pull/12951) _(by Abdul Kaium)_
 -   [`2115dd3`](https://github.com/stdlib-js/stdlib/commit/2115dd3b946f768327368994b44c92f7315c081d) - **docs:** update `complex/float32` TypeScript declarations [(#12580)](https://github.com/stdlib-js/stdlib/pull/12580) _(by stdlib-bot)_
 
 </details>
@@ -19,6 +20,18 @@
 </section>
 
 <!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Abdul Kaium
+
+</section>
+
+<!-- /.contributors -->
 
 </section>
 
