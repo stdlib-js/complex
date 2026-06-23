@@ -4,7 +4,17 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-06-18)
+## Unreleased (2026-06-23)
+
+<section class="bug-fixes">
+
+### Bug Fixes
+
+-   [`83bfd15`](https://github.com/stdlib-js/stdlib/commit/83bfd159fa82bb3fd5d2d46e2eeb597fc7fb7a47) - fix and unify complex parsing logic [(#13069)](https://github.com/stdlib-js/stdlib/pull/13069)
+
+</section>
+
+<!-- /.bug-fixes -->
 
 <section class="commits">
 
@@ -12,6 +22,7 @@
 
 <details>
 
+-   [`83bfd15`](https://github.com/stdlib-js/stdlib/commit/83bfd159fa82bb3fd5d2d46e2eeb597fc7fb7a47) - **fix:** fix and unify complex parsing logic [(#13069)](https://github.com/stdlib-js/stdlib/pull/13069) _(by Abdul Kaium, Athan Reines)_
 -   [`f4bc442`](https://github.com/stdlib-js/stdlib/commit/f4bc442f019061ce55cc1a654722a325e35fd5f0) - **test:** remove redundant filename output in test blocks [(#12951)](https://github.com/stdlib-js/stdlib/pull/12951) _(by Abdul Kaium)_
 -   [`2115dd3`](https://github.com/stdlib-js/stdlib/commit/2115dd3b946f768327368994b44c92f7315c081d) - **docs:** update `complex/float32` TypeScript declarations [(#12580)](https://github.com/stdlib-js/stdlib/pull/12580) _(by stdlib-bot)_
 
@@ -25,9 +36,10 @@
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 2 people contributed to this release. Thank you to the following contributors:
 
 -   Abdul Kaium
+-   Athan Reines
 
 </section>
 
