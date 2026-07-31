@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`2222357`](https://github.com/stdlib-js/stdlib/commit/22223574bc9399852e888aac54977435722a8438) - **docs:** improve doctests for complex number instances [(#13804)](https://github.com/stdlib-js/stdlib/pull/13804) _(by fiboNacci1163)_
 -   [`10ee0a5`](https://github.com/stdlib-js/stdlib/commit/10ee0a56ed60ae3d051ff0426b8e203a29c44cdc) - **chore:** clean-up [(#13754)](https://github.com/stdlib-js/stdlib/pull/13754) _(by Philipp Burckhardt)_
 -   [`f30fe01`](https://github.com/stdlib-js/stdlib/commit/f30fe0156a585359cbaac81f385926458ed7f26e) - **refactor:** simplify strided array type signatures [(#13128)](https://github.com/stdlib-js/stdlib/pull/13128) _(by Karan Anand)_
 -   [`83bfd15`](https://github.com/stdlib-js/stdlib/commit/83bfd159fa82bb3fd5d2d46e2eeb597fc7fb7a47) - **fix:** fix and unify complex parsing logic [(#13069)](https://github.com/stdlib-js/stdlib/pull/13069) _(by Abdul Kaium, Athan Reines)_
@@ -38,12 +39,13 @@
 
 ### Contributors
 
-A total of 4 people contributed to this release. Thank you to the following contributors:
+A total of 5 people contributed to this release. Thank you to the following contributors:
 
 -   Abdul Kaium
 -   Athan Reines
 -   Karan Anand
 -   Philipp Burckhardt
+-   fiboNacci1163
 
 </section>
 
