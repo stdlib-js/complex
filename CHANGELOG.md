@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-08-01)
+## Unreleased (2026-08-02)
 
 <section class="bug-fixes">
 
@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`7ae11bc`](https://github.com/stdlib-js/stdlib/commit/7ae11bca9e05607a14425d165dfed57584b880b8) - **chore:** clean-up [(#13834)](https://github.com/stdlib-js/stdlib/pull/13834) _(by Philipp Burckhardt)_
 -   [`402f7ff`](https://github.com/stdlib-js/stdlib/commit/402f7ff797cd4f4854392aff69d11c6832fccd15) - **docs:** update example [(#13823)](https://github.com/stdlib-js/stdlib/pull/13823) _(by stdlib-bot)_
 -   [`2222357`](https://github.com/stdlib-js/stdlib/commit/22223574bc9399852e888aac54977435722a8438) - **docs:** improve doctests for complex number instances [(#13804)](https://github.com/stdlib-js/stdlib/pull/13804) _(by fiboNacci1163)_
 -   [`10ee0a5`](https://github.com/stdlib-js/stdlib/commit/10ee0a56ed60ae3d051ff0426b8e203a29c44cdc) - **chore:** clean-up [(#13754)](https://github.com/stdlib-js/stdlib/pull/13754) _(by Philipp Burckhardt)_
