@@ -4,7 +4,17 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-08-02)
+## Unreleased (2026-08-04)
+
+<section class="features">
+
+### Features
+
+-   [`b423804`](https://github.com/stdlib-js/stdlib/commit/b423804f3fe422a29dc82c8043e20317706b6df8) - add `complex/float32/base/div` [(#9371)](https://github.com/stdlib-js/stdlib/pull/9371)
+
+</section>
+
+<!-- /.features -->
 
 <section class="bug-fixes">
 
@@ -22,6 +32,7 @@
 
 <details>
 
+-   [`b423804`](https://github.com/stdlib-js/stdlib/commit/b423804f3fe422a29dc82c8043e20317706b6df8) - **feat:** add `complex/float32/base/div` [(#9371)](https://github.com/stdlib-js/stdlib/pull/9371) _(by Pratik, Athan Reines, Karan Anand)_
 -   [`7ae11bc`](https://github.com/stdlib-js/stdlib/commit/7ae11bca9e05607a14425d165dfed57584b880b8) - **chore:** clean-up [(#13834)](https://github.com/stdlib-js/stdlib/pull/13834) _(by Philipp Burckhardt)_
 -   [`402f7ff`](https://github.com/stdlib-js/stdlib/commit/402f7ff797cd4f4854392aff69d11c6832fccd15) - **docs:** update example [(#13823)](https://github.com/stdlib-js/stdlib/pull/13823) _(by stdlib-bot)_
 -   [`2222357`](https://github.com/stdlib-js/stdlib/commit/22223574bc9399852e888aac54977435722a8438) - **docs:** improve doctests for complex number instances [(#13804)](https://github.com/stdlib-js/stdlib/pull/13804) _(by fiboNacci1163)_
@@ -41,12 +52,13 @@
 
 ### Contributors
 
-A total of 5 people contributed to this release. Thank you to the following contributors:
+A total of 6 people contributed to this release. Thank you to the following contributors:
 
 -   Abdul Kaium
 -   Athan Reines
 -   Karan Anand
 -   Philipp Burckhardt
+-   Pratik
 -   fiboNacci1163
 
 </section>
