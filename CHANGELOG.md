@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-08-04)
+## Unreleased (2026-08-05)
 
 <section class="features">
 
 ### Features
 
+-   [`59e0278`](https://github.com/stdlib-js/stdlib/commit/59e02788851cc22cc83595c34275d268f6f68c90) - update `complex/float32/base` TypeScript declarations [(#13931)](https://github.com/stdlib-js/stdlib/pull/13931)
 -   [`1f6aa3d`](https://github.com/stdlib-js/stdlib/commit/1f6aa3dd999f22c5aaca539c41d01bc4614b1a5a) - add `div` to namespace
 -   [`b423804`](https://github.com/stdlib-js/stdlib/commit/b423804f3fe422a29dc82c8043e20317706b6df8) - add `complex/float32/base/div` [(#9371)](https://github.com/stdlib-js/stdlib/pull/9371)
 
@@ -33,6 +34,8 @@
 
 <details>
 
+-   [`59e0278`](https://github.com/stdlib-js/stdlib/commit/59e02788851cc22cc83595c34275d268f6f68c90) - **feat:** update `complex/float32/base` TypeScript declarations [(#13931)](https://github.com/stdlib-js/stdlib/pull/13931) _(by stdlib-bot)_
+-   [`879f1c8`](https://github.com/stdlib-js/stdlib/commit/879f1c8c38558b441ceed6b0d086e0a715a81c99) - **docs:** update namespace table of contents [(#13932)](https://github.com/stdlib-js/stdlib/pull/13932) _(by stdlib-bot)_
 -   [`1f6aa3d`](https://github.com/stdlib-js/stdlib/commit/1f6aa3dd999f22c5aaca539c41d01bc4614b1a5a) - **feat:** add `div` to namespace _(by Athan Reines)_
 -   [`b423804`](https://github.com/stdlib-js/stdlib/commit/b423804f3fe422a29dc82c8043e20317706b6df8) - **feat:** add `complex/float32/base/div` [(#9371)](https://github.com/stdlib-js/stdlib/pull/9371) _(by Pratik, Athan Reines, Karan Anand)_
 -   [`7ae11bc`](https://github.com/stdlib-js/stdlib/commit/7ae11bca9e05607a14425d165dfed57584b880b8) - **chore:** clean-up [(#13834)](https://github.com/stdlib-js/stdlib/pull/13834) _(by Philipp Burckhardt)_
