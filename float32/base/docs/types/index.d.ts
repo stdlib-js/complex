@@ -23,7 +23,6 @@
 import add = require( './../../../../float32/base/add' );
 import add3 = require( './../../../../float32/base/add3' );
 import assert = require( './../../../../float32/base/assert' );
-import div = require( './../../../../float32/base/div' );
 import identity = require( './../../../../float32/base/identity' );
 import mul = require( './../../../../float32/base/mul' );
 import muladd = require( './../../../../float32/base/mul-add' );
@@ -113,43 +112,6 @@ interface Namespace {
 	* Base (i.e., lower-level) single-precision complex number assertion functions.
 	*/
 	assert: typeof assert;
-
-	/**
-	* Divides two single-precision complex floating-point numbers.
-	*
-	* @param z1 - complex number
-	* @param z2 - complex number
-	* @returns result
-	*
-	* @example
-	* var Complex64 = require( './../../../../float32/ctor' );
-	*
-	* var z1 = new Complex64( -13.0, -1.0 );
-	* var z2 = new Complex64( -2.0, 1.0 );
-	*
-	* var out = ns.div( z1, z2 );
-	* // returns <Complex64>[ 5.0, 3.0 ]
-	*
-	* @example
-	* var Float32Array = require( '@stdlib/array/float32' );
-	*
-	* var out = new Float32Array( 2 );
-	* var v = ns.div.assign( -13.0, -1.0, -2.0, 1.0, out, 1, 0 );
-	* // returns <Float32Array>[ 5.0, 3.0 ]
-	*
-	* var bool = ( out === v );
-	* // returns true
-	*
-	* @example
-	* var Float32Array = require( '@stdlib/array/float32' );
-	*
-	* var z1 = new Float32Array( [ -13.0, -1.0 ] );
-	* var z2 = new Float32Array( [ -2.0, 1.0 ] );
-	*
-	* var out = ns.div.strided( z1, 1, 0, z2, 1, 0, new Float32Array( 2 ), 1, 0 );
-	* // returns <Float32Array>[ 5.0, 3.0 ]
-	*/
-	div: typeof div;
 
 	/**
 	* Evaluates the identity function for single-precision complex floating-point number.
