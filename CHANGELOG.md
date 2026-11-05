@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-10-24)
+## Unreleased (2026-11-05)
 
 <section class="features">
 
@@ -34,6 +34,7 @@
 
 <details>
 
+-   [`78ad2fa`](https://github.com/stdlib-js/stdlib/commit/78ad2fa5dbb12ce808dec93197d5343745ff91b8) - **docs:** normalize trailing newlines in REPL help texts [(#16420)](https://github.com/stdlib-js/stdlib/pull/16420) _(by Philipp Burckhardt)_
 -   [`9a077a2`](https://github.com/stdlib-js/stdlib/commit/9a077a2d7dee22062c7bf6d9fef01ef2548bee42) - **test:** migrate `complex/float64/base/div` to ULP-based assertions [(#16221)](https://github.com/stdlib-js/stdlib/pull/16221) _(by Athan Reines)_
 -   [`8f62240`](https://github.com/stdlib-js/stdlib/commit/8f622403b8f6ff3781a17dc7ceb077e341e91aa3) - **docs:** clean-up [(#16084)](https://github.com/stdlib-js/stdlib/pull/16084) _(by Philipp Burckhardt)_
 -   [`3d19e26`](https://github.com/stdlib-js/stdlib/commit/3d19e26c5ac90f6e1902ee773e06728fe7d0ec6d) - **chore:** clean-up [(#13914)](https://github.com/stdlib-js/stdlib/pull/13914) _(by Philipp Burckhardt)_
